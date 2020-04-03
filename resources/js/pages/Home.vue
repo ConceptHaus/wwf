@@ -31,20 +31,23 @@
                         button.btn.btn-lg.btn-primary Conoce los recursos
                     div.col-6
                         img.img-fluid(src="../../images/home/ren_02_desk.jpg")
+        Noticias
         Footer
         
 </template>
 
 <script>
-import Header from '../components/Header.vue';
-import Nav from '../components/Nav.vue';
-import Slider from '../components/Slider.vue';
-import Footer from '../components/Footer.vue';
+import Header from '../components/Header';
+import Nav from '../components/Nav';
+import Slider from '../components/Slider';
+import Footer from '../components/Footer';
+import Noticias from '../components/Noticias';
 export default {
     components:{
         Header,
         Nav,
         Slider,
+        Noticias,
         Footer
     }
 }
