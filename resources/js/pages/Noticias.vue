@@ -21,6 +21,19 @@
                                 h5 Cemento 100% Renovable, Una realidad en Argentina
                                 p Para Toyota la generación en sitio es la solución más apropiada para ahorrar y combatir su huella de carbono. ¿Cuál es tu solución?.
                                 a.text-right(href="#") Leer completo
+                ul.pagination.pagination-sm
+                        li.page-item
+                            a.page-link(href="#") Previous
+                        li.page-item
+                            a.page-link(href="#") 1
+                        li.page-item
+                            a.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") 4
+                        li.page-item
+                            a.page-link(href="#") Next
 </template>
 <script>
 import Header from '../components/Header'
