@@ -1,0 +1,14 @@
+.navbar{
+    .nav-item{
+        .nav-link{
+            color:$blanco;
+            text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+            border-radius: 20px;
+            &:hover, &:focus{
+                color: $primary;
+                background-color: $blanco;
+                text-shadow: none;
+            }
+        }
+    }
+}

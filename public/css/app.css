@@ -10882,6 +10882,33 @@ a.text-dark:focus {
   }
 }
 
+.carousel-caption {
+  right: 5%;
+  left: inherit;
+  width: 600px;
+  bottom: 20%;
+}
+
+.carousel-caption h3 {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-caption h3 {
+  font-size: 45px;
+}
+
+@media screen and (min-width: 360px) {
+  .carousel-caption h3 {
+    font-size: calc(45px + 5 * ((100vw - 360px) / 1080));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .carousel-caption h3 {
+    font-size: 50px;
+  }
+}
+
 footer {
   background: #fff url(/images/bkg-footer.jpg?9af57efae9743c221afd8b593116cb2c) 50% 100% no-repeat;
   background-size: 100% auto;
@@ -10889,6 +10916,19 @@ footer {
 
 footer a {
   color: #fff;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link:focus {
+  color: #26a9e1;
+  background-color: #fff;
+  text-shadow: none;
 }
 
 body {

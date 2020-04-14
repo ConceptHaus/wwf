@@ -2,7 +2,12 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'variables';
 
+@import 'mixins/screen';
+@import 'mixins/fluid';
+
+@import 'components/slider';
 @import 'components/footer';
+@import 'components/navbar';
 
 @import 'base';
 @import 'home';

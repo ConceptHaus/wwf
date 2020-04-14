@@ -3130,6 +3130,194 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hero.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Hero.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    ImgSrc: String
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/About.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Hero */ "./resources/js/components/Hero.vue");
+/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Nav */ "./resources/js/components/Nav.vue");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Header: _components_Header__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Hero: _components_Hero__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Nav: _components_Nav__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Home.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Home.vue?vue&type=script&lang=js& ***!
@@ -3193,6 +3381,114 @@ __webpack_require__.r(__webpack_exports__);
     Nav: _components_Nav__WEBPACK_IMPORTED_MODULE_1__["default"],
     Slider: _components_Slider__WEBPACK_IMPORTED_MODULE_2__["default"],
     Noticias: _components_Noticias__WEBPACK_IMPORTED_MODULE_4__["default"],
+    Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Market.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Market.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
+/* harmony import */ var _components_Hero__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Hero */ "./resources/js/components/Hero.vue");
+/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Nav */ "./resources/js/components/Nav.vue");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Header: _components_Header__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Hero: _components_Hero__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Nav: _components_Nav__WEBPACK_IMPORTED_MODULE_2__["default"],
     Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
   }
 });
@@ -67582,6 +67878,193 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug&":
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug& ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "hero" }, [
+    _c("img", {
+      staticClass: "img-fluid",
+      attrs: { src: __webpack_require__("./resources/images/acercade/desktop sync recursive ^\\.\\/.*$")("./" + _vm.ImgSrc) }
+    }),
+    _c("div", { staticClass: "icon-scroll" })
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug&":
+/*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug& ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "b-navbar",
+        [
+          _c("b-navbar-brand", { attrs: { href: "/" } }, [
+            _c("img", {
+              staticClass: "img-fluid w-50",
+              attrs: { src: __webpack_require__(/*! ../../images/logo.png */ "./resources/images/logo.png") }
+            })
+          ]),
+          _c(
+            "b-collapse",
+            { staticClass: "justify-content-end", attrs: { "is-nav": "" } },
+            [
+              _c(
+                "b-navbar-nav",
+                [
+                  _c("b-nav-item", [_vm._v("Iniciar sesión")]),
+                  _c("b-nav-item", [_vm._v("Registrarse")])
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _c(
+        "b-navbar",
+        { attrs: { type: "light", toggleable: "lg" } },
+        [
+          _c("b-navbar-toggle", { attrs: { target: "nav-collapse" } }),
+          _c(
+            "b-collapse",
+            { attrs: { id: "nav-collapse", "is-nav": "" } },
+            [
+              _c(
+                "b-navbar-nav",
+                [
+                  _c(
+                    "b-nav-item-dropdown",
+                    {
+                      staticClass: "mx-3",
+                      attrs: { text: "Acerca de Ren mx", left: "" }
+                    },
+                    [
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("¿Qué hacemos?")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Súmate a la inciativa")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Beneficios del suministro renovable")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Acerca de WWF")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Nuestro equipo")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Nuestros socios")
+                      ])
+                    ],
+                    1
+                  ),
+                  _c("b-nav-item", { staticClass: "mx-3" }, [
+                    _vm._v("Estrategía de compra")
+                  ]),
+                  _c(
+                    "b-nav-item-dropdown",
+                    {
+                      staticClass: "mx-3",
+                      attrs: { text: "El mercado eléctrico mayorista" }
+                    },
+                    [
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("El MEM y la energía renovable")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v(
+                          "Tendencias en la compra corporativa de electricidad"
+                        )
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Usuarios finales")
+                      ]),
+                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
+                        _vm._v("Opciones de compra de energía")
+                      ])
+                    ],
+                    1
+                  ),
+                  _c("b-nav-item", { staticClass: "mx-3" }, [
+                    _vm._v("Recursos")
+                  ]),
+                  _c("b-nav-item", { staticClass: "mx-3" }, [
+                    _vm._v("Noticias")
+                  ]),
+                  _c(
+                    "b-nav-form",
+                    { staticClass: "mx-3" },
+                    [
+                      _c("b-nav-form"),
+                      _c("b-form-input", {
+                        attrs: { placeholder: "Buscar..." }
+                      }),
+                      _c(
+                        "b-button",
+                        {
+                          staticClass: "my-2 my-sm-0",
+                          attrs: { variant: "outline-light", type: "submit" }
+                        },
+                        [_vm._v("Buscar")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Noticias.vue?vue&type=template&id=038bba79&lang=pug&":
 /*!****************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Noticias.vue?vue&type=template&id=038bba79&lang=pug& ***!
@@ -67689,6 +68172,445 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug&":
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug& ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "about" },
+    [
+      _c("Header"),
+      _c("Hero", { attrs: { ImgSrc: "banner.jpg" } }),
+      _vm._m(0),
+      _vm._m(1),
+      _vm._m(2),
+      _vm._m(3),
+      _vm._m(4),
+      _vm._m(5),
+      _c("Footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "que-hacemos" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-6" }, [
+            _c("h1", [_vm._v("¿Qué hacemos?")]),
+            _c("h3", [
+              _vm._v(
+                "La iniciativa Ren mx tiene como objetivo acelerar y facilitar el acceso a energía renovable a usuarios industriales y comerciales en México."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Ayudamos al sector empresarial mexicano a ser más competitivo a través del consumo de energía renovable, descarbonizando sus operaciones y aumentando la aportación de las fuentes renovables a la red eléctrica de México."
+              )
+            ])
+          ]),
+          _c("div", { staticClass: "col-6" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/img-quehacemos.jpg */ "./resources/images/home/img-quehacemos.jpg") }
+            })
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("h3", [_vm._v("Líneas de trabajo")])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-2" }, [
+                _c("img", {
+                  attrs: { src: __webpack_require__(/*! ../../images/home/linea-01.jpg */ "./resources/images/home/linea-01.jpg") }
+                })
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("h4", [_vm._v("Generamos y compartimos conocimiento")])
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("p", [
+                  _vm._v(
+                    "Proporcionamos información relevante y simplificada sobre el mercado eléctrico en México y las opciones para adquirir energía renovable. También, difundimos historias de éxito para promover el aprendizaje colectivo y eliminar barreras existentes."
+                  )
+                ])
+              ])
+            ]),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-2" }, [
+                _c("img", {
+                  attrs: { src: __webpack_require__(/*! ../../images/home/linea-02.jpg */ "./resources/images/home/linea-02.jpg") }
+                })
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("h4", [_vm._v("Capacitamos a usuarios potenciales")])
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("p", [
+                  _vm._v(
+                    "Capacitamos a empresas en el proceso de adquisición de energía renovable y ponemos a su disposición herramientas para analizar sus necesidades y agilizar la toma de decisiones."
+                  )
+                ])
+              ])
+            ]),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-2" }, [
+                _c("img", {
+                  attrs: { src: __webpack_require__(/*! ../../images/home/linea-03.jpg */ "./resources/images/home/linea-03.jpg") }
+                })
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("h4", [_vm._v("Conectamos a usuarios y suministradores")])
+              ]),
+              _c("div", { staticClass: "col-4" }, [
+                _c("p", [
+                  _vm._v(
+                    "Fomentamos interacción entre compradores potenciales y suministradores y generadores de energía renovable para promover transacciones bilaterales beneficiosas."
+                  )
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "sumate" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("h1", [_vm._v("Súmate a la iniciativa")]),
+            _c("p", [
+              _vm._v(
+                "Invitamos a todas las empresas que operan en México a tomar medidas ambiciosas y rápidas para aumentar su productividad por medio del suministro de energía renovable, la eficiencia energética y el establecimiento de objetivos de reducción de emisiones."
+              )
+            ])
+          ]),
+          _c("div", { staticClass: "col-4" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/sumate-01.png */ "./resources/images/home/sumate-01.png") }
+            })
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-6" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/sumate-02.png */ "./resources/images/home/sumate-02.png") }
+            })
+          ]),
+          _c("div", { staticClass: "col-6" }, [
+            _c("h3", [
+              _vm._v(
+                "Al registrar a tu empresa en la iniciativa Ren mx, obtendrás acceso a nuestras herramientas y guías exclusivas, incluyendo:"
+              )
+            ]),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "La Estrategia de Compra, que indica los principales pasos e hitos para abastecer tu empresa con energía renovable"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Análisis de consumo y demanda energética para saber cuánta electricidad necesitas contratar"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Guía sobre la estructura y negociación de un PPA para asegurar las mejores condiciones de contratación para tu empresa"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Formularios para elaborar y lanzar licitaciones listos para ser llenados con la información de tu empresa"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Formulario comparativo de propuestas para que puedas comparar y hagas la mejor contratación de suministro"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Recomendaciones legales para que entiendas las letras chiquitas del contrato"
+                )
+              ])
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-6 text-center" }, [
+            _c("p", [
+              _vm._v(
+                "Además, podrás participar en nuestras sesiones de entrenamiento virtual y presencial donde obtendrás acompañamiento en la utilización de nuestras guías y herramientas para elaborar una estrategia de compra de energía renovable."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "¿Quieres ser parte de la transición hacia un México más competitivo y renovable? Regístrate aquí:"
+              )
+            ]),
+            _c("button", { staticClass: "btn btn-primary btn-lg" }, [
+              _vm._v("Registrarse")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "beneficios" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-6" }, [
+            _c("h1", [_vm._v("Beneficios del Suministro Renovable")]),
+            _c("p", [
+              _vm._v(
+                "El nuevo mercado energético ofrece a los usuarios comerciales e industriales libertad para elegir entre diferentes opciones de suministro de electricidad que ofrezcan precios competitivos y les permitan acceder a energías renovables."
+              )
+            ]),
+            _c("h3", [
+              _vm._v(
+                "La elección de un proveedor privado de energía renovable ofrece ventajas considerables como:"
+              )
+            ]),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "Flexibilidad para negociar un contrato a tu conveniencia"
+                )
+              ]),
+              _c("li", [_vm._v("Estabilidad en el costo de la electricidad")]),
+              _c("li", [
+                _vm._v("Ahorros atractivos y gestión efectiva de riesgos")
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Beneficio en los márgenes de operación, al liberar capital para otras inversiones"
+                )
+              ]),
+              _c("li", [_vm._v("Cumplimiento de metas de sostenibilidad")]),
+              _c("li", [
+                _vm._v(
+                  "Transparencia en los costos de la electricidad y los productos asociados del mercado"
+                )
+              ]),
+              _c("li", [
+                _vm._v("Asesoría en estrategias de gestión y ahorro de energía")
+              ])
+            ]),
+            _c("p", [
+              _vm._v(
+                "Además, tu empresa estaría contribuyendo a impulsar a México hacia una economía sostenible, mejorando su reputación y anticipándose a nuevas regulaciones sobre emisiones."
+              )
+            ])
+          ]),
+          _c("div", { staticClass: "col-6" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/img-beneficios.jpg */ "./resources/images/home/img-beneficios.jpg") }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "wwf" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-6" }, [
+            _c("h1", [_vm._v("Acerca de WWF")]),
+            _c("p", [
+              _vm._v(
+                "El Fondo Mundial para la Naturaleza es la organización de conservación líder en el mundo. Nacida en Suiza en 1961, es conocida por el logo del panda y tiene presencia en más de 100 países."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Bajo el nombre de World Wildlife Fund (WWF), surgió como un pequeño grupo de naturalistas preocupados y comprometidos con la conservación del planeta y ha crecido hasta convertirse en una de las organizaciones independientes más grandes y respetadas del mundo, apoyada por unos cinco millones de personas. Con los años, el objetivo de WWF ha evolucionado hacia una ambiciosa estrategia para preservar la biodiversidad y alcanzar el desarrollo sostenible en todo el planeta."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "En México trabajamos para conservar las riquezas naturales, impulsar políticas públicas innovadoras y asegurar la transformación del mercado hacia un modelo más justo y sostenible. Nuestro trabajo en el área de clima y energía se enfoca en catalizar la acción climática por parte de los actores no estatales para cumplir las metas planteadas en la política nacional e internacional y para acelerar la transición del país hacia una economía baja en carbono."
+              )
+            ]),
+            _c("h3", [
+              _vm._v("Para ello, nos hemos planteado las siguientes metas:")
+            ]),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "Acelerar la adquisición de energía renovable a través de la generación de conocimiento, capacitación y facilitación de transacciones bilaterales"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Fortalecer el diseño e implementación de acciones climáticas coordinadas entre empresas, gobiernos locales, universidades y representantes de la sociedad civil"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Impulsar a las empresas a adoptar metas de reducción de emisiones basadas en la ciencia del cambio climático"
+                )
+              ])
+            ]),
+            _c("h3", [_vm._v("Para conocer más:")]),
+            _c("a", { attrs: { href: "www.wwf.org.mx", target: "_blank" } }, [
+              _vm._v("www.wwf.org.mx")
+            ])
+          ]),
+          _c("div", { staticClass: "col-6" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/ren_03_desk.jpg */ "./resources/images/home/ren_03_desk.jpg") }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "equipo" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-4" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/luli-pequeira.png */ "./resources/images/home/luli-pequeira.png") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [_vm._v("Luli Pesqueira")]),
+            _c("p", [_vm._v("Coordinadora de Relaciones Corporativas")]),
+            _c("p", [
+              _vm._v(
+                "Es especialista en nuevos modelos de acción colectiva, sobre todo en alianzas entre el sector privado y organismos no gubernamentales (ONG) para la creación de estándares de producción sustentable y certificación, así como para asegurar la transición a una economía baja en carbono. Tiene experiencia de trabajo en áreas comerciales, tanto en el sector privado, como en ONG y sector público, así como en áreas de investigación y enseñanza. Luli es doctora y maestra en Desarrollo Sostenible por la Universidad de Utrecht en los Países Bajos y licenciada en Comunicación por la Universidad Iberoamericana en la Ciudad de México."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-4" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/luis-romero.png */ "./resources/images/home/luis-romero.png") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [_vm._v("Luis Romero")]),
+            _c("p", [_vm._v("Oficial de energías renovables")]),
+            _c("p", [
+              _vm._v(
+                "Es especialista en mercados eléctricos y política energética con experiencia en planeación del sector y mecanismos de mitigación de gases de efecto invernadero. Su trabajo está enfocado en el desarrollo de herramientas para la compra de electricidad proveniente de fuentes renovables para usuarios finales del sector industrial y comercial en México. Es ingeniero ambiental y cuenta con una maestría en Ingeniería en Energía por la Universidad Nacional Autónoma de México (UNAM)."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-4" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/home/ninel-escobar.png */ "./resources/images/home/ninel-escobar.png") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [_vm._v("Ninel Escobar")]),
+            _c("p", [_vm._v("Coordinadora de Cambio Climático y Energía")]),
+            _c("p", [
+              _vm._v(
+                "Es especialista en adaptación al cambio climático. Su trabajo se enfoca en la planeación estratégica de WWF en cambio climático y energía; coordinar la implementación de proyectos y brindar apoyo técnico al resto de la organización en materia de mitigación y adaptación. Ha coordinado las contribuciones de WWF en instrumentos de política como la Estrategia Nacional de Cambio Climático, el Programa Especial de Cambio Climático y la Estrategia de Cambio Climático desde las Área Naturales Protegidas. Ninel cuenta con una maestría en Economía Ambiental y Recursos Naturales de la Universidad de Concepción en Chile y una licenciatura en Economía por el Centro de Investigación y Docencia Económicas (CIDE)."
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "socios" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("h1", [_vm._v("Nuestro socios")]),
+            _c("p", [
+              _vm._v(
+                "Trabajamos e invertimos en conjunto con una red de socios con el fin de emplear estrategias efectivas y compartir conocimiento."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "En México, colaboramos con organizaciones que comparten nuestra visión de transformación para el sector eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales."
+              )
+            ]),
+            _c("img", {
+              staticClass: "d-inline-block w-25",
+              attrs: { src: __webpack_require__(/*! ../../images/acercade/socios/zumma.jpg */ "./resources/images/acercade/socios/zumma.jpg") }
+            }),
+            _c("img", {
+              staticClass: "d-inline-block w-25",
+              attrs: {
+                src: __webpack_require__(/*! ../../images/acercade/socios/WRI-Mexico.jpg */ "./resources/images/acercade/socios/WRI-Mexico.jpg")
+              }
+            }),
+            _c("img", {
+              staticClass: "d-inline-block w-25",
+              attrs: { src: __webpack_require__(/*! ../../images/acercade/socios/antuko.jpg */ "./resources/images/acercade/socios/antuko.jpg") }
+            }),
+            _c("img", {
+              staticClass: "d-inline-block w-25",
+              attrs: {
+                src: __webpack_require__(/*! ../../images/acercade/socios/gizlogo.jpg */ "./resources/images/acercade/socios/gizlogo.jpg")
+              }
+            }),
+            _c("p", [
+              _vm._v(
+                "Además, colaboramos con otras organizaciones de la sociedad civil y con otras oficinas de WWF que promueven la compra corporativa de energía renovable en países como Australia, China, Corea, Estados Unidos e India."
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -67827,6 +68749,284 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug&":
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/pug-plain-loader!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug& ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "market" },
+    [
+      _c("Header"),
+      _c("Hero", { attrs: { ImgSrc: "banner.jpg" } }),
+      _vm._m(0),
+      _vm._m(1),
+      _vm._m(2),
+      _vm._m(3),
+      _c("Footer")
+    ],
+    1
+  )
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "mem" }, [
+      _c("div", { staticClass: "continer-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-6" }, [
+            _c("h1", [_vm._v("El MEM y la energía renovable")]),
+            _c("p", [
+              _vm._v(
+                "En México y el mundo, el sistema eléctrico se encuentra en una transición sin precedentes. Un modelo orientado hacia la competencia y la incorporación de una mayor proporción de fuentes de renovables de energía son los principales agentes de este cambio. En esta transición los usuarios finales de electricidad, como tu empresa, tiene una participación e influencia positiva nunca antes vista en el sector."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Un modelo eléctrico que fomenta la competencia permite una mayor interacción de los usuarios finales o consumidores de energía, habilitando opciones para diversificar el suministro de electricidad. En particular, empresas de los sectores comercial e industrial se han visto beneficiadas gracias a las ventajas de un modelo donde es posible participar en un mercado eléctrico."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Algunos de los beneficios logrados por empresas líderes en México y a nivel mundial son:"
+              )
+            ]),
+            _c("ul", [
+              _c("li", [
+                _vm._v(
+                  "Generar ahorros en los costos de operación asociados al consumo eléctrico"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Tener certidumbre sobre los precios de la energía en el largo plazo"
+                )
+              ]),
+              _c("li", [
+                _vm._v(
+                  "Y garantizar operaciones sostenibles y amigables con el medioambiente"
+                )
+              ])
+            ]),
+            _c("p", [
+              _vm._v(
+                "Las fuentes de energía renovable encabezan las formas más costo-efectivas de producir electricidad, incluso por delante de fuentes tradicionales como los combustibles fósiles. Además de un menor costo, la reducción de gases de efecto invernadero es una de sus principales ventajas que además contribuye a tu estrategia de reducción de emisiones y aumento de productividad."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Las energías renovables son fuentes de energía inagotables que se diferencian de los combustibles fósiles por su diversidad, abundancia y potencial de aprovechamiento. Las fuentes más populares en México son la eólica, la solar y la hidroeléctrica, pero también existen la energía geotérmica, la mareomotriz, el biogás y el bioetanol."
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "tendencias" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("h1", [
+          _vm._v("Tendencias en la compra corporativa de electricidad")
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("p", [
+              _vm._v(
+                "A nivel mundial, la compra de electricidad de fuentes renovables por parte de las empresas alcanzó un total de 465 TWh en 2017 (IRENA, 2018), más de la mitad del consumo total de electricidad en México en el mismo año. Compañías de los sectores minero, industrial y tecnologías de la información, así como el sector comercial, lideran esta tendencia."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "En el panorama global, las principales formas de adquirir energía por empresas son: 1) generación en sitio, 2) garantías de origen, y 3) contratos bilaterales (PPA)"
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "En México, los usuarios finales de los sectores industrial y comercial han podido comprar electricidad directamente de generadores desde 1994. Actualmente existen más de 1,500 empresas en México que compran electricidad renovable a través de contratos bilaterales (PPA), siendo los sectores minero, industrial y químico los que tienen una mayor demanda de energía y las tecnologías eólica y solar las encargadas de satisfacerla."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/grafica-01.png */ "./resources/images/mercado/grafica-01.png") }
+            })
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "usuarios-finales" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("h1", [_vm._v("Usuarios finales")]),
+            _c("p", [
+              _vm._v(
+                "En el modelo eléctrico mexicano existen tres tipos de usuarios finales o consumidores. La segmentación está hecha con base en su demanda y consumo de electricidad, y cada uno de estos usuarios interactúa en mayor o menor medida con el MEM."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-2" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/numero-01.jpg */ "./resources/images/mercado/numero-01.jpg") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [_vm._v("Usuarios básicos")]),
+            _c("p", [
+              _vm._v(
+                "Este tipo de usuario tiene una demanda de electricidad no superior a 1 MW y su única interacción con el MEM es a través de un Suministrador de Servicios Básicos (SSB). El Usuario Básico (UB) tiene pocas opciones de participar en el MEM y el precio que paga por la energía consumida y demás servicios está sujeto a Tarifas Finales del Suministro Básico establecidas por la Comisión Reguladora de Energía (CRE) sin ninguna opción de negociación."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-2" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/numero-02.jpg */ "./resources/images/mercado/numero-02.jpg") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [_vm._v("Usuarios calificados")]),
+            _c("p", [
+              _vm._v(
+                "Los Usuarios Calificados (UC) tienen una demanda mayor o igual a 1 MW y su interacción con el MEM es a través de un Suministrador de Servicios Calificados (SSC) que los representa ante el mercado. El precio por la energía consumida y demás servicios está sujeto a negociaciones entre el SSC y el UC y establecido en un Contrato de Compra de Energía o PPA, por sus siglas en inglés (Power Purchase Agreement)."
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Además de la modalidad PPA, los UC pueden acceder a dos modalidades para la generación de electricidad renovable en sitio. La primera es la Generación Local (GL) y la segunda es la Generación Distribuida (GD)."
+              )
+            ])
+          ])
+        ]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-2" }, [
+            _c("img", {
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/numero-03.jpg */ "./resources/images/mercado/numero-03.jpg") }
+            })
+          ]),
+          _c("div", { staticClass: "col-8" }, [
+            _c("h3", [
+              _vm._v("Usuarios calificados participantes del mercado")
+            ]),
+            _c("p", [
+              _vm._v(
+                "Son usuarios responsables de su carga. Se representan a sí mismos en el MEM, sin la necesidad de ningún intermediario. Su demanda debe ser mayor a 5 MW y su consumo de energía de al menos 20 GWh. La principal opción para comprar energía para un Usuario Calificado Participante del Mercado (UCPM) es a través de un PPA directamente con un Generador. También cuenta con las opciones para generación en sitio como GL y GD."
+              )
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", { staticClass: "opciones-compra" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-7" }, [
+            _c("h1", [_vm._v("Opciones de compra de energía")]),
+            _c("h3", [_vm._v("Opciones fuera de sitio")]),
+            _c("h4", [_vm._v("Suministro básico")]),
+            _c("p", [
+              _vm._v(
+                "Es la opción de “no hacer nada”. Bajo este esquema los usuarios finales pagan una tarifa regulada por la CRE a través de un Suministrador de Servicios Básicos (SSB). Actualmente el SSB con mayor preponderancia en el mercado es la CFE, sin embargo, existen nuevas compañías que buscan proveer electricidad a este segmento de usuarios."
+              )
+            ]),
+            _c("h4", [
+              _vm._v(
+                "Contrato de compra de energía (PPA) con suministrador calificado"
+              )
+            ]),
+            _c("p", [
+              _vm._v(
+                "Es un acuerdo para la compra de energía entre un UC y un SSC. Entre las principales ventajas se encuentra la posibilidad de seleccionar al suministrador y mejorar el precio por la energía y productos asociados. Estos acuerdos suelen ser de corto plazo, entre 1 y 5 años, pero es importante mencionar que un mayor plazo aumenta sustancialmente las posibilidades de conseguir un precio menor."
+              )
+            ]),
+            _c("h4", [
+              _vm._v("Contrato de compra de energía (PPA) con Generador")
+            ]),
+            _c("p", [
+              _vm._v(
+                "Los usuarios calificados participantes del mercado tienen la opción de celebrar contratos para la compra de energía directamente con Generadores. Al no requerir de ningún intermediador entre el usuario y el MEM, el usuario absorbe los beneficios y riesgos del MEM."
+              )
+            ]),
+            _c("h3", [_vm._v("Opciones en sitio")]),
+            _c("h4", [_vm._v("Generación local (GL) y abasto aislado (AA)")]),
+            _c("p", [
+              _vm._v(
+                "Consisten en la generación de electricidad en el sitio del consumo, para lo cual se requiere de una red privada. En estas modalidades se puede o no conectar el sistema (generador-red privada) al sistema interconectado nacional para la compra de energía faltante y venta de excedentes."
+              )
+            ]),
+            _c("h4", [_vm._v("Generación distribuida (GD)")]),
+            _c("p", [
+              _vm._v(
+                "A diferencia de los opciones anteriores la GD es una opción de generación de energía a pequeña escala, la capacidad máxima por sistema debe ser menor a 0.5 MW. A pesar de que esta modalidad es la preferida de los UB, también ha sido ampliamente utilizada por grandes usuarios como una estrategia de compra de electricidad complementaria."
+              )
+            ]),
+            _c("h4", [
+              _vm._v("Garantías de origen (Certificados de Energía Limpia)")
+            ]),
+            _c("p", [
+              _vm._v(
+                "La compra de certificados o CEL es un mecanismo para garantizar que la energía consumida provenga de fuentes renovables. Se pueden adquirir vía PPA o en el mercado que organiza el Centro Nacional de Control de Energía (Cenace) anualmente. Una de sus ventajas es las facilidad para adquirirlos y así cumplir con metas establecidas."
+              )
+            ])
+          ]),
+          _c("div", { staticClass: "col-5" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/opciones.jpg */ "./resources/images/mercado/opciones.jpg") }
+            })
+          ])
+        ]),
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-10" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: __webpack_require__(/*! ../../images/mercado/opciones-01.jpg */ "./resources/images/mercado/opciones-01.jpg") }
+            })
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/App.vue?vue&type=template&id=f348271a&":
 /*!*******************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/App.vue?vue&type=template&id=f348271a& ***!
@@ -67845,156 +69045,6 @@ var render = function() {
   return _c("router-view")
 }
 var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788& ***!
-  \******************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light" }, [
-      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-        _vm._v("Ren mx")
-      ]),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggler",
-          attrs: {
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#navbarSupportedContent",
-            "aria-controls": "navbarSupportedContent",
-            "aria-expanded": "false",
-            "aria-label": "Toggle navigation"
-          }
-        },
-        [_c("span", { staticClass: "navbar-toggler-icon" })]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "collapse navbar-collapse",
-          attrs: { id: "navbarSupportedContent" }
-        },
-        [
-          _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-            _c("li", { staticClass: "nav-item active" }, [
-              _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                _vm._v("Home "),
-                _c("span", { staticClass: "sr-only" }, [_vm._v("(current)")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "nav-item" }, [
-              _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                _vm._v("Link")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "nav-item dropdown" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "nav-link dropdown-toggle",
-                  attrs: {
-                    href: "#",
-                    id: "navbarDropdown",
-                    role: "button",
-                    "data-toggle": "dropdown",
-                    "aria-haspopup": "true",
-                    "aria-expanded": "false"
-                  }
-                },
-                [_vm._v("\n                    Dropdown\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "dropdown-menu",
-                  attrs: { "aria-labelledby": "navbarDropdown" }
-                },
-                [
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Action")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Another action")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "dropdown-divider" }),
-                  _vm._v(" "),
-                  _c(
-                    "a",
-                    { staticClass: "dropdown-item", attrs: { href: "#" } },
-                    [_vm._v("Something else here")]
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "nav-item" }, [
-              _c(
-                "a",
-                { staticClass: "nav-link disabled", attrs: { href: "#" } },
-                [_vm._v("Disabled")]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("form", { staticClass: "form-inline my-2 my-lg-0" }, [
-            _c("input", {
-              staticClass: "form-control mr-sm-2",
-              attrs: {
-                type: "search",
-                placeholder: "Search",
-                "aria-label": "Search"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-outline-success my-2 my-sm-0",
-                attrs: { type: "submit" }
-              },
-              [_vm._v("Search")]
-            )
-          ])
-        ]
-      )
-    ])
-  }
-]
 render._withStripped = true
 
 
@@ -87947,6 +88997,182 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/images/acercade/desktop sync recursive ^\\.\\/.*$":
+/*!*********************************************************!*\
+  !*** ./resources/images/acercade/desktop sync ^\.\/.*$ ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./banner.jpg": "./resources/images/acercade/desktop/banner.jpg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./resources/images/acercade/desktop sync recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./resources/images/acercade/desktop/banner.jpg":
+/*!******************************************************!*\
+  !*** ./resources/images/acercade/desktop/banner.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/banner.jpg?991f35527c36430f9ff952d98b4a8c36";
+
+/***/ }),
+
+/***/ "./resources/images/acercade/socios/WRI-Mexico.jpg":
+/*!*********************************************************!*\
+  !*** ./resources/images/acercade/socios/WRI-Mexico.jpg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/WRI-Mexico.jpg?6566a7c96f0f6108bd2cb71580356eef";
+
+/***/ }),
+
+/***/ "./resources/images/acercade/socios/antuko.jpg":
+/*!*****************************************************!*\
+  !*** ./resources/images/acercade/socios/antuko.jpg ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/antuko.jpg?58e51daede7e91255b122a731032962c";
+
+/***/ }),
+
+/***/ "./resources/images/acercade/socios/gizlogo.jpg":
+/*!******************************************************!*\
+  !*** ./resources/images/acercade/socios/gizlogo.jpg ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/gizlogo.jpg?8916b4d3135315679cb6675e691a62f0";
+
+/***/ }),
+
+/***/ "./resources/images/acercade/socios/zumma.jpg":
+/*!****************************************************!*\
+  !*** ./resources/images/acercade/socios/zumma.jpg ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/zumma.jpg?ae6b08c8aad10b0ffddb4b732b971cb6";
+
+/***/ }),
+
+/***/ "./resources/images/home/img-beneficios.jpg":
+/*!**************************************************!*\
+  !*** ./resources/images/home/img-beneficios.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-beneficios.jpg?1374ca9ad262653c2986932fab710d8b";
+
+/***/ }),
+
+/***/ "./resources/images/home/img-quehacemos.jpg":
+/*!**************************************************!*\
+  !*** ./resources/images/home/img-quehacemos.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/img-quehacemos.jpg?f2ea732450cd33b25eaa9e59b4eceecc";
+
+/***/ }),
+
+/***/ "./resources/images/home/linea-01.jpg":
+/*!********************************************!*\
+  !*** ./resources/images/home/linea-01.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/linea-01.jpg?7fb640e737ba39b01edd0366abd904b1";
+
+/***/ }),
+
+/***/ "./resources/images/home/linea-02.jpg":
+/*!********************************************!*\
+  !*** ./resources/images/home/linea-02.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/linea-02.jpg?adbe29417039435accf52fde9f93247c";
+
+/***/ }),
+
+/***/ "./resources/images/home/linea-03.jpg":
+/*!********************************************!*\
+  !*** ./resources/images/home/linea-03.jpg ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/linea-03.jpg?38a105ed4b6ed56d4eba9aaa21dc4501";
+
+/***/ }),
+
+/***/ "./resources/images/home/luis-romero.png":
+/*!***********************************************!*\
+  !*** ./resources/images/home/luis-romero.png ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/luis-romero.png?553135d8a8a9c77363bdc5f70c3c1519";
+
+/***/ }),
+
+/***/ "./resources/images/home/luli-pequeira.png":
+/*!*************************************************!*\
+  !*** ./resources/images/home/luli-pequeira.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/luli-pequeira.png?25d3491101db566ffd48b79980e0c2c0";
+
+/***/ }),
+
+/***/ "./resources/images/home/ninel-escobar.png":
+/*!*************************************************!*\
+  !*** ./resources/images/home/ninel-escobar.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/ninel-escobar.png?6e79520e841bd1ebc975d688404a21da";
+
+/***/ }),
+
 /***/ "./resources/images/home/ren_01_desk.jpg":
 /*!***********************************************!*\
   !*** ./resources/images/home/ren_01_desk.jpg ***!
@@ -87969,6 +89195,17 @@ module.exports = "/images/ren_02_desk.jpg?2d50413e890fe45deb6e9dd509624fd6";
 
 /***/ }),
 
+/***/ "./resources/images/home/ren_03_desk.jpg":
+/*!***********************************************!*\
+  !*** ./resources/images/home/ren_03_desk.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/ren_03_desk.jpg?c228c0fe176a05419ecc90e69087ff67";
+
+/***/ }),
+
 /***/ "./resources/images/home/ren_desk.jpg":
 /*!********************************************!*\
   !*** ./resources/images/home/ren_desk.jpg ***!
@@ -87980,6 +89217,28 @@ module.exports = "/images/ren_desk.jpg?4d4d32c9753de5270df608038cf02a74";
 
 /***/ }),
 
+/***/ "./resources/images/home/sumate-01.png":
+/*!*********************************************!*\
+  !*** ./resources/images/home/sumate-01.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sumate-01.png?9bb591484d83f24503f06675bca3b725";
+
+/***/ }),
+
+/***/ "./resources/images/home/sumate-02.png":
+/*!*********************************************!*\
+  !*** ./resources/images/home/sumate-02.png ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/sumate-02.png?3fab26821c9691b3d636497992f6992e";
+
+/***/ }),
+
 /***/ "./resources/images/ico-logo.png":
 /*!***************************************!*\
   !*** ./resources/images/ico-logo.png ***!
@@ -87988,6 +89247,83 @@ module.exports = "/images/ren_desk.jpg?4d4d32c9753de5270df608038cf02a74";
 /***/ (function(module, exports) {
 
 module.exports = "/images/ico-logo.png?8344cdf1e71e5927cf81d551a125cf91";
+
+/***/ }),
+
+/***/ "./resources/images/logo.png":
+/*!***********************************!*\
+  !*** ./resources/images/logo.png ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/logo.png?6c44be0202273ac2a2fa4eb7551341d1";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/grafica-01.png":
+/*!*************************************************!*\
+  !*** ./resources/images/mercado/grafica-01.png ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/grafica-01.png?a29613ce4426b1eda63f006efc2a7ed7";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/numero-01.jpg":
+/*!************************************************!*\
+  !*** ./resources/images/mercado/numero-01.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/numero-01.jpg?3ea46b2fa8a8c3e33689c6d8a19e82c4";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/numero-02.jpg":
+/*!************************************************!*\
+  !*** ./resources/images/mercado/numero-02.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/numero-02.jpg?66dbd6590146f5809c0d570e65b22dc1";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/numero-03.jpg":
+/*!************************************************!*\
+  !*** ./resources/images/mercado/numero-03.jpg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/numero-03.jpg?82a54446c68bc439315dcaac0b32aad8";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/opciones-01.jpg":
+/*!**************************************************!*\
+  !*** ./resources/images/mercado/opciones-01.jpg ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/opciones-01.jpg?5a7da2011f9bb573a4e647ab23882cda";
+
+/***/ }),
+
+/***/ "./resources/images/mercado/opciones.jpg":
+/*!***********************************************!*\
+  !*** ./resources/images/mercado/opciones.jpg ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/opciones.jpg?d53fd0e4d7e8d58e4b14bbcd14fa41d0";
 
 /***/ }),
 
@@ -88109,7 +89445,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var sweetalert2_dist_sweetalert2_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! sweetalert2/dist/sweetalert2.min.css */ "./node_modules/sweetalert2/dist/sweetalert2.min.css");
 /* harmony import */ var sweetalert2_dist_sweetalert2_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(sweetalert2_dist_sweetalert2_min_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _App_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./App.vue */ "./resources/js/App.vue");
-/* harmony import */ var _pages_Home_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Home.vue */ "./resources/js/pages/Home.vue");
+/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Home */ "./resources/js/pages/Home.vue");
+/* harmony import */ var _pages_About__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/About */ "./resources/js/pages/About.vue");
+/* harmony import */ var _pages_Market__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Market */ "./resources/js/pages/Market.vue");
+
+
 
 
 
@@ -88131,6 +89471,7 @@ var optionsAlert = {
 };
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["NavbarPlugin"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_1__["CarouselPlugin"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_axios__WEBPACK_IMPORTED_MODULE_4___default.a, axios__WEBPACK_IMPORTED_MODULE_3___default.a);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_sweetalert2__WEBPACK_IMPORTED_MODULE_5__["default"], optionsAlert);
@@ -88153,7 +89494,15 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
   routes: [{
     path: '/',
     name: 'home',
-    component: _pages_Home_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
+    component: _pages_Home__WEBPACK_IMPORTED_MODULE_8__["default"]
+  }, {
+    path: '/acerca-de-ren',
+    name: 'acercade',
+    component: _pages_About__WEBPACK_IMPORTED_MODULE_9__["default"]
+  }, {
+    path: '/el-mercado-electrico-mayorista',
+    name: 'mercado',
+    component: _pages_Market__WEBPACK_IMPORTED_MODULE_10__["default"]
   }]
 });
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.router = router;
@@ -88235,15 +89584,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************!*\
   !*** ./resources/js/components/Header.vue ***!
   \********************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue_vue_type_template_id_1f42fb90_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=1f42fb90&lang=pug& */ "./resources/js/components/Header.vue?vue&type=template&id=1f42fb90&lang=pug&");
 /* harmony import */ var _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js& */ "./resources/js/components/Header.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -88273,7 +89621,7 @@ component.options.__file = "resources/js/components/Header.vue"
 /*!*********************************************************************!*\
   !*** ./resources/js/components/Header.vue?vue&type=script&lang=js& ***!
   \*********************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -88301,6 +89649,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Hero.vue":
+/*!******************************************!*\
+  !*** ./resources/js/components/Hero.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug& */ "./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug&");
+/* harmony import */ var _Hero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hero.vue?vue&type=script&lang=js& */ "./resources/js/components/Hero.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Hero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Hero.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Hero.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Hero.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Hero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Hero.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hero.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Hero_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/pug-plain-loader!../../../node_modules/vue-loader/lib??vue-loader-options!./Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Hero.vue?vue&type=template&id=7ebbb9e5&lang=pug&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Hero_vue_vue_type_template_id_7ebbb9e5_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Nav.vue":
 /*!*****************************************!*\
   !*** ./resources/js/components/Nav.vue ***!
@@ -88310,7 +89727,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Nav.vue?vue&type=template&id=7cd4f788& */ "./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&");
+/* harmony import */ var _Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Nav.vue?vue&type=template&id=7cd4f788&lang=pug& */ "./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
@@ -88320,8 +89737,8 @@ var script = {}
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -88336,19 +89753,19 @@ component.options.__file = "resources/js/components/Nav.vue"
 
 /***/ }),
 
-/***/ "./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&":
-/*!************************************************************************!*\
-  !*** ./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788& ***!
-  \************************************************************************/
+/***/ "./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug& ***!
+  \*********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Nav.vue?vue&type=template&id=7cd4f788& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/pug-plain-loader!../../../node_modules/vue-loader/lib??vue-loader-options!./Nav.vue?vue&type=template&id=7cd4f788&lang=pug& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&lang=pug&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_template_id_7cd4f788_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -88460,6 +89877,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/pages/About.vue":
+/*!**************************************!*\
+  !*** ./resources/js/pages/About.vue ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./About.vue?vue&type=template&id=520b5d54&lang=pug& */ "./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug&");
+/* harmony import */ var _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./About.vue?vue&type=script&lang=js& */ "./resources/js/pages/About.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/About.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/About.vue?vue&type=script&lang=js&":
+/*!***************************************************************!*\
+  !*** ./resources/js/pages/About.vue?vue&type=script&lang=js& ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug& ***!
+  \******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/pug-plain-loader!../../../node_modules/vue-loader/lib??vue-loader-options!./About.vue?vue&type=template&id=520b5d54&lang=pug& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/About.vue?vue&type=template&id=520b5d54&lang=pug&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_520b5d54_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/pages/Home.vue":
 /*!*************************************!*\
   !*** ./resources/js/pages/Home.vue ***!
@@ -88524,6 +90010,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_b3c5cf30_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_template_id_b3c5cf30_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/pages/Market.vue":
+/*!***************************************!*\
+  !*** ./resources/js/pages/Market.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Market.vue?vue&type=template&id=41592df6&lang=pug& */ "./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug&");
+/* harmony import */ var _Market_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Market.vue?vue&type=script&lang=js& */ "./resources/js/pages/Market.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Market_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/pages/Market.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Market.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./resources/js/pages/Market.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Market_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Market.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Market.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Market_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/pug-plain-loader!../../../node_modules/vue-loader/lib??vue-loader-options!./Market.vue?vue&type=template&id=41592df6&lang=pug& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/pug-plain-loader/index.js!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Market.vue?vue&type=template&id=41592df6&lang=pug&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_pug_plain_loader_index_js_node_modules_vue_loader_lib_index_js_vue_loader_options_Market_vue_vue_type_template_id_41592df6_lang_pug___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
