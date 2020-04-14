@@ -3577,6 +3577,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -69605,6 +69607,9 @@ var staticRenderFns = [
                   _vm._v(
                     "La cementera Holcim consumirá electricidad de un parque solar en construcción ubicado en la provincia de Buenos Aires (Argentina)."
                   )
+                ]),
+                _c("a", { staticClass: "text-right", attrs: { href: "#" } }, [
+                  _vm._v("Leer completo")
                 ])
               ])
             ])
@@ -69627,6 +69632,9 @@ var staticRenderFns = [
                   _vm._v(
                     "Para Toyota la generación en sitio es la solución más apropiada para ahorrar y combatir su huella de carbono. ¿Cuál es tu solución?."
                   )
+                ]),
+                _c("a", { staticClass: "text-right", attrs: { href: "#" } }, [
+                  _vm._v("Leer completo")
                 ])
               ])
             ])
