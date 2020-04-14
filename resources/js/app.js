@@ -7,10 +7,19 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
+
 import App from './App.vue';
 import Home from './pages/Home';
 import About from './pages/About';
 import Market from './pages/Market';
+import Ruta from './pages/Ruta';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Recursos from './pages/Recursos';
+import Noticias from './pages/Noticias';
+import Contacto from './pages/Contacto';
+
+
 const moment = require('moment');
 require('moment/locale/es');
 
@@ -56,6 +65,31 @@ const router = new VueRouter({
             path:'/el-mercado-electrico-mayorista',
             name:'mercado',
             component:Market
+        },
+        {
+            path:'/ruta-de-compra',
+            name:'ruta',
+            component:Ruta
+        },
+        {
+            path:'/recursos',
+            name:'recursos',
+            component:Recursos
+        },
+        {
+            path:'/noticias',
+            name:'noticias',
+            component:Noticias
+        },
+        {
+            path:'/login',
+            name:'login',
+            component:Login
+        },
+        {
+            path:'/registro',
+            name:'registro',
+            component:Register
         }
     ]
 })
