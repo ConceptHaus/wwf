@@ -5,8 +5,8 @@
                 img.img-fluid.w-50(src="../../images/logo.png")
             b-collapse.justify-content-end(is-nav)
                 b-navbar-nav
-                    b-nav-item Iniciar sesión
-                    b-nav-item Registrarse
+                    b-nav-item(href="/login") Iniciar sesión
+                    b-nav-item(href="/registro") Registrarse
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
             b-collapse#nav-collapse(is-nav)

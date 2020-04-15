@@ -1,13 +1,14 @@
 <template lang="pug">
     div.register
+        Header
         Nav.bg-header
         section.register__content
             div.container-fluid
-                h1 Registro
+                h1.home__h1.my-4.p-4 #[span] Registro
                 div.row.justify-content-center
                     div.col-5
-                        h3 Registrate para conocer nuestra ruta de compra de energía renovable
-                        form
+                        h3.my-4 Registrate para conocer nuestra ruta de compra de energía renovable
+                        form.my-4
                             div.form-group
                                 input.form-control(type="text", placeholder="Nombre Completo")
                             div.form-group
@@ -24,7 +25,7 @@
                                 input.form-control(type="text", placeholder="Puesto")
                             div.form-group
                                 input.form-control(type="text", placeholder="Sector")
-                            h3 ¿Cuál es tu interés principal al visitar nuestro sitio?
+                            h3.my-4 ¿Cuál es tu interés principal al visitar nuestro sitio?
                             div.form-group.form-check
                                 label.form-check-label
                                     input.form-check-input(type="checkbox")
@@ -49,7 +50,7 @@
                                 label.form-check-label
                                     input.form-check-input(type="checkbox")
                                     | Otro
-                            h3 ¿Conoces el consumo eléctrico de tu empresa?
+                            h3.my-4 ¿Conoces el consumo eléctrico de tu empresa?
                             div.form-group.form-check-inline
                                 label.form-check-label
                                     input.form-check-input(type="radio")
@@ -62,7 +63,7 @@
                                 label.form-check-label
                                     input.form-check-input(type="radio")
                                     | Sí, mayor a 20GWh
-                            button.btn.btn-primary.btn-lg Crear cuenta
+                            button.btn.btn-primary.btn-lg.my-4.mx-auto.d-block Crear cuenta
         Footer
                                 
 
@@ -86,6 +87,9 @@ export default {
             background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat;
             background-size: auto 100%;
             padding: 25px 0 50px 0;
+        }
+        &__content{
+            margin-top: 300px;
         }
     }
 </style>

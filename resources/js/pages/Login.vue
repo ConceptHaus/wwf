@@ -1,11 +1,12 @@
 <template lang="pug">
     div.login
+        Header
         Nav.bg-header
         section.login__content
             div.container-fluid
-                h1 Inicia sesión
-                div.row.justify-content-center
-                    div.col-4
+                h1.home__h1.my-4.p-4 #[span] Inicia sesión
+                div.row.justify-content-center.p-4
+                    div.col-4.my-5
                         form
                             div.form-group
                                 input.form-control(type="email", placeholder="E-mail")
@@ -39,6 +40,9 @@ export default {
             background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat;
             background-size: auto 100%;
             padding: 25px 0 50px 0;
+        }
+        &__content{
+            margin-top: 300px;
         }
     }
 </style>

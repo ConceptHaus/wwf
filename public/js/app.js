@@ -3423,6 +3423,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3662,6 +3663,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Nav */ "./resources/js/components/Nav.vue");
+//
 //
 //
 //
@@ -43054,7 +43056,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".login .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}", ""]);
+exports.push([module.i, ".login .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}\n.login__content {\n  margin-top: 300px;\n}", ""]);
 
 // exports
 
@@ -43114,7 +43116,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".register .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}", ""]);
+exports.push([module.i, ".register .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}\n.register__content {\n  margin-top: 300px;\n}", ""]);
 
 // exports
 
@@ -68625,8 +68627,12 @@ var render = function() {
               _c(
                 "b-navbar-nav",
                 [
-                  _c("b-nav-item", [_vm._v("Iniciar sesión")]),
-                  _c("b-nav-item", [_vm._v("Registrarse")])
+                  _c("b-nav-item", { attrs: { href: "/login" } }, [
+                    _vm._v("Iniciar sesión")
+                  ]),
+                  _c("b-nav-item", { attrs: { href: "/registro" } }, [
+                    _vm._v("Registrarse")
+                  ])
                 ],
                 1
               )
@@ -69498,7 +69504,12 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "login" },
-    [_c("Nav", { staticClass: "bg-header" }), _vm._m(0), _c("Footer")],
+    [
+      _c("Header"),
+      _c("Nav", { staticClass: "bg-header" }),
+      _vm._m(0),
+      _c("Footer")
+    ],
     1
   )
 }
@@ -69509,9 +69520,12 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "login__content" }, [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("h1", [_vm._v("Inicia sesión")]),
-        _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-4" }, [
+        _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+          _c("span"),
+          _vm._v(" Inicia sesión")
+        ]),
+        _c("div", { staticClass: "row justify-content-center p-4" }, [
+          _c("div", { staticClass: "col-4 my-5" }, [
             _c("form", [
               _c("div", { staticClass: "form-group" }, [
                 _c("input", {
@@ -70064,7 +70078,12 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "register" },
-    [_c("Nav", { staticClass: "bg-header" }), _vm._m(0), _c("Footer")],
+    [
+      _c("Header"),
+      _c("Nav", { staticClass: "bg-header" }),
+      _vm._m(0),
+      _c("Footer")
+    ],
     1
   )
 }
@@ -70075,15 +70094,18 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "register__content" }, [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("h1", [_vm._v("Registro")]),
+        _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+          _c("span"),
+          _vm._v(" Registro")
+        ]),
         _c("div", { staticClass: "row justify-content-center" }, [
           _c("div", { staticClass: "col-5" }, [
-            _c("h3", [
+            _c("h3", { staticClass: "my-4" }, [
               _vm._v(
                 "Registrate para conocer nuestra ruta de compra de energía renovable"
               )
             ]),
-            _c("form", [
+            _c("form", { staticClass: "my-4" }, [
               _c("div", { staticClass: "form-group" }, [
                 _c("input", {
                   staticClass: "form-control",
@@ -70135,7 +70157,7 @@ var staticRenderFns = [
                   attrs: { type: "text", placeholder: "Sector" }
                 })
               ]),
-              _c("h3", [
+              _c("h3", { staticClass: "my-4" }, [
                 _vm._v(
                   "¿Cuál es tu interés principal al visitar nuestro sitio?"
                 )
@@ -70202,7 +70224,7 @@ var staticRenderFns = [
                   _vm._v("Otro")
                 ])
               ]),
-              _c("h3", [
+              _c("h3", { staticClass: "my-4" }, [
                 _vm._v("¿Conoces el consumo eléctrico de tu empresa?")
               ]),
               _c("div", { staticClass: "form-group form-check-inline" }, [
@@ -70232,9 +70254,11 @@ var staticRenderFns = [
                   _vm._v("Sí, mayor a 20GWh")
                 ])
               ]),
-              _c("button", { staticClass: "btn btn-primary btn-lg" }, [
-                _vm._v("Crear cuenta")
-              ])
+              _c(
+                "button",
+                { staticClass: "btn btn-primary btn-lg my-4 mx-auto d-block" },
+                [_vm._v("Crear cuenta")]
+              )
             ])
           ])
         ])
