@@ -6,6 +6,7 @@
     h3{
         @include fluid-type($min-vw,$max-vw,45px,50px);
         text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
+        color:$blanco;
     }
     
 }

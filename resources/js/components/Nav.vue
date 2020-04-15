@@ -1,5 +1,5 @@
 <template lang="pug">
-    div
+    div.navbar-top
         b-navbar
             b-navbar-brand(href="/")
                 img.img-fluid.w-50(src="../../images/logo.png")
@@ -31,3 +31,11 @@
                         b-form-input(placeholder="Buscar...")
                         b-button.my-2.my-sm-0(variant="outline-light",type="submit") Buscar
 </template>
+<style lang="scss" scoped>
+    .navbar-top{
+        position: absolute;
+        z-index: 10;
+        margin-top: 60px;
+        background: transparent;
+    }
+</style>

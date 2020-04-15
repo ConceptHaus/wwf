@@ -1,4 +1,12 @@
+h1 span{
+    border-left: solid 5px #26a9e1;
+    color: #26a9e1;
+    padding: 0 16px;
+}
 .home{
+    &__h1{
+        @include fluid-type($min-vw,$max-vw,42px,50px)
+    }
     &__recursos{
         background-color: #eff7e6;
         background-image: -ms-linear-gradient(top left, #e3f3fb 0, #eff7e6 100%);
@@ -9,6 +17,9 @@
     }
     &__estrategia{
         background: #f4f4f4;
+    }
+    &__quees{
+        background: $blanco;
     }
     
 }

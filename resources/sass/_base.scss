@@ -4,18 +4,9 @@ body{
     font-family: 'Roboto', sans-serif;
     color:$gris;
 }
-
-.header{
-    &__background{
-        background-color: #eff7e6;
-    }
-    &__p{
-        font-size: 18px;
-    }
-    &__a{
-        color:$link;
-        :hover{
-            color: #8dc63f;
-        }
-    }
+h1,h2,h3,h4,h5,h6{
+    color:$negro;
+}
+p{
+    @include fluid-type($min-vw,$max-vw,15px,18px)
 }
