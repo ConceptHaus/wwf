@@ -18,14 +18,14 @@
                         b-dropdown-item(href="#") Acerca de WWF
                         b-dropdown-item(href="#") Nuestro equipo
                         b-dropdown-item(href="#") Nuestros socios
-                    b-nav-item.mx-3 Estrategía de compra
+                    b-nav-item.mx-3(href="/ruta-de-compra") Estrategía de compra
                     b-nav-item-dropdown.mx-3(text="El mercado eléctrico mayorista")
-                        b-dropdown-item(href="#") El MEM y la energía renovable
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista") El MEM y la energía renovable
                         b-dropdown-item(href="#") Tendencias en la compra corporativa de electricidad
                         b-dropdown-item(href="#") Usuarios finales
                         b-dropdown-item(href="#") Opciones de compra de energía
-                    b-nav-item.mx-3 Recursos
-                    b-nav-item.mx-3 Noticias
+                    b-nav-item.mx-3(href="/recursos") Recursos
+                    b-nav-item.mx-3(href="/noticias") Noticias
                     b-nav-form.mx-3
                         b-nav-form
                         b-form-input(placeholder="Buscar...")

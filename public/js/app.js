@@ -68678,9 +68678,11 @@ var render = function() {
                     ],
                     1
                   ),
-                  _c("b-nav-item", { staticClass: "mx-3" }, [
-                    _vm._v("Estrategía de compra")
-                  ]),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "mx-3", attrs: { href: "/ruta-de-compra" } },
+                    [_vm._v("Estrategía de compra")]
+                  ),
                   _c(
                     "b-nav-item-dropdown",
                     {
@@ -68688,9 +68690,11 @@ var render = function() {
                       attrs: { text: "El mercado eléctrico mayorista" }
                     },
                     [
-                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
-                        _vm._v("El MEM y la energía renovable")
-                      ]),
+                      _c(
+                        "b-dropdown-item",
+                        { attrs: { href: "/el-mercado-electrico-mayorista" } },
+                        [_vm._v("El MEM y la energía renovable")]
+                      ),
                       _c("b-dropdown-item", { attrs: { href: "#" } }, [
                         _vm._v(
                           "Tendencias en la compra corporativa de electricidad"
@@ -68705,12 +68709,16 @@ var render = function() {
                     ],
                     1
                   ),
-                  _c("b-nav-item", { staticClass: "mx-3" }, [
-                    _vm._v("Recursos")
-                  ]),
-                  _c("b-nav-item", { staticClass: "mx-3" }, [
-                    _vm._v("Noticias")
-                  ]),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "mx-3", attrs: { href: "/recursos" } },
+                    [_vm._v("Recursos")]
+                  ),
+                  _c(
+                    "b-nav-item",
+                    { staticClass: "mx-3", attrs: { href: "/noticias" } },
+                    [_vm._v("Noticias")]
+                  ),
                   _c(
                     "b-nav-form",
                     { staticClass: "mx-3" },
