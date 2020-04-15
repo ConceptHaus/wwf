@@ -1,0 +1,5 @@
+.recursos{
+    p{
+        @include fluid-type($min-vw,$max-vw,12px,15px)
+    }
+}

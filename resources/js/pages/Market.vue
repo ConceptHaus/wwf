@@ -1,6 +1,7 @@
 <template lang="pug">
     div.market
         Header
+        Nav
         Hero(ImgSrc="banner.jpg")
         section.mem
             div.continer-fluid.p-5

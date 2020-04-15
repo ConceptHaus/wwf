@@ -11025,3 +11025,19 @@ h1 span {
   background-color: #eeeeee;
 }
 
+.recursos p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 360px) {
+  .recursos p {
+    font-size: calc(12px + 3 * ((100vw - 360px) / 1080));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .recursos p {
+    font-size: 15px;
+  }
+}
+

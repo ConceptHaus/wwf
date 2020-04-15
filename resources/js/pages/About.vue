@@ -1,6 +1,7 @@
 <template lang="pug">
     div.about
         Header
+        Nav
         Hero(ImgSrc="banner.jpg")
         section.que-hacemos
             div.container-fluid.p-5

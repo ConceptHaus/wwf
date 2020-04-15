@@ -3302,6 +3302,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3530,6 +3531,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3619,6 +3621,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Nav */ "./resources/js/components/Nav.vue");
+//
 //
 //
 //
@@ -43027,7 +43030,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".navbar-top[data-v-7cd4f788] {\n  position: absolute;\n  z-index: 10;\n  margin-top: 60px;\n  background: transparent;\n}", ""]);
+exports.push([module.i, ".navbar-top[data-v-7cd4f788] {\n  position: absolute;\n  z-index: 10;\n  margin-top: 60px;\n  background: transparent;\n  top: 0;\n  width: 100%;\n}", ""]);
 
 // exports
 
@@ -43087,7 +43090,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".recursos .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}", ""]);
+exports.push([module.i, ".recursos .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}\n.recursos__content {\n  margin-top: 300px;\n}", ""]);
 
 // exports
 
@@ -68881,6 +68884,7 @@ var render = function() {
     { staticClass: "about" },
     [
       _c("Header"),
+      _c("Nav"),
       _c("Hero", { attrs: { ImgSrc: "banner.jpg" } }),
       _vm._m(0),
       _vm._m(1),
@@ -69559,6 +69563,7 @@ var render = function() {
     { staticClass: "market" },
     [
       _c("Header"),
+      _c("Nav"),
       _c("Hero", { attrs: { ImgSrc: "banner.jpg" } }),
       _vm._m(0),
       _vm._m(1),
@@ -69981,7 +69986,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "recursos" },
-    [_c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
+    [_c("Header"), _c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
     1
   )
 }
@@ -69992,14 +69997,17 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "recursos__content" }, [
       _c("div", { staticClass: "container-fluid" }),
-      _c("h1", [_vm._v("Recursos")]),
-      _c("div", { staticClass: "row" }, [
+      _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+        _c("span"),
+        _vm._v(" Recursos")
+      ]),
+      _c("div", { staticClass: "row p-4" }, [
         _c("div", { staticClass: "col-3" }, [
           _c("img", { attrs: { src: "" } }),
-          _c("h5", [
+          _c("h5", { staticClass: "my-5" }, [
             _vm._v("Soluciones para la Compra de Energía Renovable 2019")
           ]),
-          _c("p", [
+          _c("p", { staticClass: "my-5" }, [
             _vm._v(
               "Con el objetivo de conectar directamente a los usuarios con los oferentes de energía renovable, presentamos información sobre los servicios y trayectoria de proveedores de energía renovable en las modalidades de generación distribuida,generación en sitio, generación a gran escala y suministro calificado. Además de información sobre empresas enfocadas en la asesoría en compra de energía..."
             )

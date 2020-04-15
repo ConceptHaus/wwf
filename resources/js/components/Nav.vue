@@ -37,5 +37,7 @@
         z-index: 10;
         margin-top: 60px;
         background: transparent;
+        top: 0;
+        width: 100%;
     }
 </style>
