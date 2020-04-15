@@ -3848,10 +3848,236 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      checked: true,
+      name: '',
+      email: '',
+      phone: '',
+      password: '',
+      password_confirm: '',
+      company: '',
+      puesto: '',
+      sector: '',
+      error: false,
+      errors: {},
+      validador: {
+        name: {
+          error: '',
+          message: ''
+        },
+        email: {
+          error: '',
+          message: ''
+        },
+        phone: {
+          error: '',
+          message: ''
+        },
+        password: {
+          error: '',
+          message: ''
+        },
+        password_confirm: {
+          error: '',
+          message: ''
+        },
+        company: {
+          error: '',
+          message: ''
+        },
+        puesto: {
+          error: '',
+          message: ''
+        },
+        sector: {
+          error: '',
+          message: ''
+        }
+      },
+      success: false
+    };
+  },
+  methods: {
+    validator: function validator(tipo) {
+      var app = this;
+      var regexp = new RegExp("^-?[0-9]*$");
+
+      switch (tipo) {
+        case 'name':
+          if (app.name.length < 1) {
+            app.validador.name.error = 'error';
+            app.validador.name.message = 'Este campo es necesario';
+          } else {
+            if (app.name.length < 2) {
+              app.validador.name.error = 'error';
+              app.validador.name.message = 'El nombre es demasiado corto';
+            } else {
+              app.validador.name.error = 'success';
+              app.validador.name.message = '';
+            }
+          }
+
+          break;
+
+        case 'email':
+          if (app.email.length < 1) {
+            app.validador.email.error = 'error';
+            app.validador.email.message = 'Este campo es necesario';
+          } else {
+            if (!app.email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) {
+              app.validador.email.error = 'error';
+              app.validador.email.message = 'Ingresa un correo electrónico válido';
+            } else {
+              app.validador.email.error = 'success';
+              app.validador.email.message = '';
+            }
+          }
+
+          break;
+
+        case 'password':
+          if (app.password.length < 1) {
+            app.validador.password.error = 'error';
+            app.validador.password.message = 'Este campo es necesario';
+          } else {
+            if (app.password.length < 6 || app.password.length > 10) {
+              app.validador.password.error = 'error';
+              app.validador.password.message = 'La contraseña debe tener entre 6 y 10 caracteres';
+            } else {
+              app.validador.password.error = 'success';
+              app.validador.password.message = '';
+            }
+          }
+
+          break;
+
+        case 'password_confirm':
+          if (app.password_confirm.length < 1) {
+            app.validador.password_confirm.error = 'error';
+            app.validador.password_confirm.message = 'Este campo es necesario';
+          } else {
+            if (app.password_confirm.length < 6 || app.password_confirm.length > 10) {
+              app.validador.password_confirm.error = 'error';
+              app.validador.password_confirm.message = 'La contraseña debe tener entre 6 y 10 caracteres';
+            } else {
+              app.validador.password_confirm.error = 'success';
+              app.validador.password_confirm.message = '';
+            }
+          }
+
+          break;
+
+        case 'phone':
+          if (app.phone.length < 1) {
+            app.validador.phone.error = 'error';
+            app.validador.phone.message = 'Este campo es necesario';
+          } else {
+            if (!regexp.test(app.phone) || app.phone.length > 12) {
+              app.validador.phone.error = 'error';
+              app.validador.phone.message = 'Ingresa un número telefónico válido';
+            } else {
+              app.validador.phone.error = 'success';
+              app.validador.phone.message = '';
+            }
+          }
+
+          break;
+
+        case 'company':
+          if (app.company.length < 1) {
+            app.validador.company.error = 'error';
+            app.validador.company.message = 'Este campo es necesario';
+          } else {
+            app.validador.company.error = 'success';
+            app.validador.company.message = '';
+          }
+
+          break;
+
+        case 'sector':
+          if (app.name.length < 1) {
+            app.validador.sector.error = 'error';
+            app.validador.sector.message = 'Este campo es necesario';
+          } else {
+            app.validador.sector.error = 'success';
+            app.validador.sector.message = '';
+          }
+
+          break;
+
+        case 'puesto':
+          if (app.puesto.length < 1) {
+            app.validador.puesto.error = 'error';
+            app.validador.puesto.message = 'Este campo es necesario';
+          } else {
+            app.validador.puesto.error = 'success';
+            app.validador.puesto.message = '';
+          }
+
+          break;
+      }
+    },
+    register: function register() {
+      this.$swal({
+        title: '<h1>Espera...</h1>',
+        html: '<p>Estamos creando tu cuenta.</p>',
+        showConfirmButon: false
+      });
+      var app = this;
+      this.$auth.register({
+        data: {
+          name: app.name,
+          email: app.email.toLowerCase(),
+          phone: app.phone,
+          password: app.password,
+          password_confirm: app.password_confirm,
+          company: app.company,
+          sector: app.sector,
+          puesto: app.puesto
+        },
+        success: function success() {
+          this.$swal().close();
+          app.sucess = true;
+        },
+        error: function error(res) {
+          var _this = this;
+
+          app.error = true;
+          app.errors = res;
+
+          if (res.response.status === 422) {
+            errores.forEach(function (element) {
+              _this.$swal({
+                title: '<h1>Ocurrió un error</h1>',
+                html: "<p>".concat(res.response.data.errors[element][0], "</p>")
+              });
+            });
+          } else {
+            this.$swal({
+              title: '<h1>Ocurrió un error</h1>',
+              html: '<p>Algo salió mal. Contacta al administrador</p>'
+            });
+          }
+        },
+        autoLogin: true,
+        rememberMe: true,
+        redirect: '/ruta'
+      });
+    }
+  },
   components: {
     Header: _components_Header__WEBPACK_IMPORTED_MODULE_0__["default"],
     Footer: _components_Footer__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -70438,7 +70664,149 @@ var render = function() {
     [
       _c("Header"),
       _c("Nav", { staticClass: "bg-header" }),
-      _vm._m(0),
+      _c("section", { staticClass: "register__content" }, [
+        _c("div", { staticClass: "container-fluid" }, [
+          _vm._m(0),
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _c("div", { staticClass: "col-5" }, [
+              _c("h3", { staticClass: "my-4" }, [
+                _vm._v(
+                  "Registrate para conocer nuestra ruta de compra de energía renovable"
+                )
+              ]),
+              _c(
+                "form",
+                {
+                  staticClass: "my-4",
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.register($event)
+                    }
+                  }
+                },
+                [
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.name.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.name.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Nombre Completo" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.email.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.email.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "email", placeholder: "E-mail" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.password.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.password.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "password", placeholder: "Contraseña" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.password_confirm.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.password_confirm.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "password",
+                        placeholder: "Confirmar contraseña"
+                      }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-grou" }, [
+                    _vm.validador.phone.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.phone.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "phone", placeholder: "Teléfono" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.company.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.company.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Empresa" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.puesto.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.puesto.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Puesto" }
+                    })
+                  ]),
+                  _c("div", { staticClass: "form-group" }, [
+                    _vm.validador.sector.error === "error"
+                      ? _c("label", { staticClass: "form-error" }, [
+                          _vm._v(_vm._s(_vm.validador.sector.message))
+                        ])
+                      : _vm._e(),
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Sector" }
+                    })
+                  ]),
+                  _c("h3", { staticClass: "my-4" }, [
+                    _vm._v(
+                      "¿Cuál es tu interés principal al visitar nuestro sitio?"
+                    )
+                  ]),
+                  _vm._m(1),
+                  _vm._m(2),
+                  _vm._m(3),
+                  _vm._m(4),
+                  _vm._m(5),
+                  _vm._m(6),
+                  _c("h3", { staticClass: "my-4" }, [
+                    _vm._v("¿Conoces el consumo eléctrico de tu empresa?")
+                  ]),
+                  _vm._m(7),
+                  _vm._m(8),
+                  _vm._m(9),
+                  _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-primary btn-lg my-4 mx-auto d-block"
+                    },
+                    [_vm._v("Crear cuenta")]
+                  )
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
       _c("Footer")
     ],
     1
@@ -70449,176 +70817,140 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "register__content" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
-          _c("span"),
-          _vm._v(" Registro")
-        ]),
-        _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-5" }, [
-            _c("h3", { staticClass: "my-4" }, [
-              _vm._v(
-                "Registrate para conocer nuestra ruta de compra de energía renovable"
-              )
-            ]),
-            _c("form", { staticClass: "my-4" }, [
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Nombre Completo" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "email", placeholder: "E-mail" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "password", placeholder: "Contraseña" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "password",
-                    placeholder: "Confirmar contraseña"
-                  }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "phone", placeholder: "Teléfono" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Empresa" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Puesto" }
-                })
-              ]),
-              _c("div", { staticClass: "form-group" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: { type: "text", placeholder: "Sector" }
-                })
-              ]),
-              _c("h3", { staticClass: "my-4" }, [
-                _vm._v(
-                  "¿Cuál es tu interés principal al visitar nuestro sitio?"
-                )
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v("Analizar mi historial de consumo eléctrico")
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v(
-                    "Conocer las opciones disponibles para comprar electricidad renovable"
-                  )
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v(
-                    "Comenzar un proceso de suministro de electricidad renovable"
-                  )
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v(
-                    "Identificar potenciales suministradores de electricidad renovable"
-                  )
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v(
-                    "Obtener más información sobre la estructura y negociación de contratos bilaterales de suministro"
-                  )
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "checkbox" }
-                  }),
-                  _vm._v("Otro")
-                ])
-              ]),
-              _c("h3", { staticClass: "my-4" }, [
-                _vm._v("¿Conoces el consumo eléctrico de tu empresa?")
-              ]),
-              _c("div", { staticClass: "form-group form-check-inline" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "radio" }
-                  }),
-                  _vm._v("No")
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check-inline" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "radio" }
-                  }),
-                  _vm._v("Sí, entre 5 y 15 GWh")
-                ])
-              ]),
-              _c("div", { staticClass: "form-group form-check-inline" }, [
-                _c("label", { staticClass: "form-check-label" }, [
-                  _c("input", {
-                    staticClass: "form-check-input",
-                    attrs: { type: "radio" }
-                  }),
-                  _vm._v("Sí, mayor a 20GWh")
-                ])
-              ]),
-              _c(
-                "button",
-                { staticClass: "btn btn-primary btn-lg my-4 mx-auto d-block" },
-                [_vm._v("Crear cuenta")]
-              )
-            ])
-          ])
-        ])
+    return _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+      _c("span"),
+      _vm._v(" Registro")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v("Analizar mi historial de consumo eléctrico")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v(
+          "Conocer las opciones disponibles para comprar electricidad renovable"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v("Comenzar un proceso de suministro de electricidad renovable")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v(
+          "Identificar potenciales suministradores de electricidad renovable"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v(
+          "Obtener más información sobre la estructura y negociación de contratos bilaterales de suministro"
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "checkbox" }
+        }),
+        _vm._v("Otro")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check-inline" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "radio" }
+        }),
+        _vm._v("No")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check-inline" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "radio" }
+        }),
+        _vm._v("Sí, entre 5 y 15 GWh")
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "form-group form-check-inline" }, [
+      _c("label", { staticClass: "form-check-label" }, [
+        _c("input", {
+          staticClass: "form-check-input",
+          attrs: { type: "radio" }
+        }),
+        _vm._v("Sí, mayor a 20GWh")
       ])
     ])
   }
