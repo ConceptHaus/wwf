@@ -21,7 +21,7 @@
                             div.form-group
                                 label.form-error(v-if="validador.password_confirm.error === 'error'") {{validador.password_confirm.message}}
                                 input.form-control(type="password", placeholder="Confirmar contraseña")
-                            div.form-grou
+                            div.form-group
                                 label.form-error(v-if="validador.phone.error === 'error'") {{validador.phone.message}}
                                 input.form-control(type="phone", placeholder="Teléfono")
                             div.form-group
