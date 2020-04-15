@@ -25,8 +25,8 @@ require('moment/locale/es');
 
 
 const optionsAlert = {
-    confirmButtonColor: '#006fb9',
-    cancelButtonColor: '#de213f',
+    confirmButtonColor: '#26a9e1',
+    cancelButtonColor: '#5d5d5d',
 };
 
 Vue.use(VueRouter);

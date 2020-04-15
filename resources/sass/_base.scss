@@ -10,3 +10,19 @@ h1,h2,h3,h4,h5,h6{
 p{
     @include fluid-type($min-vw,$max-vw,15px,18px)
 }
+.input-group{
+    .input-group-prepend{
+        cursor: pointer;
+        .input-group-text{
+            background-color: transparent !important;
+            i{
+                color:$primary;
+            }
+        }
+    }
+}
+.form-error {
+    color: $red;
+    font-size: .75rem;
+    margin-left: .25rem;
+}

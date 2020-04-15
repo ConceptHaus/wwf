@@ -10962,6 +10962,24 @@ p {
   }
 }
 
+.input-group .input-group-prepend {
+  cursor: pointer;
+}
+
+.input-group .input-group-prepend .input-group-text {
+  background-color: transparent !important;
+}
+
+.input-group .input-group-prepend .input-group-text i {
+  color: #26a9e1;
+}
+
+.form-error {
+  color: #e3342f;
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
 h1 span {
   border-left: solid 5px #26a9e1;
   color: #26a9e1;
