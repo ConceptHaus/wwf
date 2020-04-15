@@ -3597,6 +3597,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3755,6 +3756,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Header */ "./resources/js/components/Header.vue");
 /* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Footer */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Nav */ "./resources/js/components/Nav.vue");
+//
+//
 //
 //
 //
@@ -43131,7 +43134,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".ruta .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}", ""]);
+exports.push([module.i, ".ruta .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}\n.ruta__content {\n  margin-top: 300px;\n}", ""]);
 
 // exports
 
@@ -69863,7 +69866,12 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "noticias" },
-    [_c("Header"), _c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
+    [
+      _c("Header"),
+      _c("Nav", { staticClass: "bg-header" }),
+      _vm._m(0),
+      _c("Footer")
+    ],
     1
   )
 }
@@ -70250,7 +70258,12 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "ruta" },
-    [_c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
+    [
+      _c("Header"),
+      _c("Nav", { staticClass: "bg-header" }),
+      _vm._m(0),
+      _c("Footer")
+    ],
     1
   )
 }
@@ -70261,17 +70274,20 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "ruta__content" }, [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12" }, [
-            _c("h1", [_vm._v("Estrategia de compra")]),
-            _c("p", [
+        _c("div", { staticClass: "row p-4" }, [
+          _c("div", { staticClass: "col-8" }, [
+            _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+              _c("span"),
+              _vm._v(" Estrategia de compra")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Siguiendo la Estrategia de Compra podrás definir en tan sólo ocho pasos una estrategia de abastecimiento de energía renovable para tu empresa. Ésta te facilitará la toma de decisiones sobre modalidades de suministro, diseño de licitaciones, evaluación de ofertas y elección de proveedores."
               )
             ])
           ])
         ]),
-        _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "row py-4" }, [
           _c("div", { staticClass: "col-3" }, [
             _c("img", {
               staticClass: "img-fluid w-75",
@@ -70297,7 +70313,7 @@ var staticRenderFns = [
             })
           ])
         ]),
-        _c("div", { staticClass: "row mt-4" }, [
+        _c("div", { staticClass: "row mt-4 py-5" }, [
           _c("div", { staticClass: "col-3" }, [
             _c("img", {
               staticClass: "img-fluid w-75",

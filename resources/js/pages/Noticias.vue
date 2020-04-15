@@ -35,6 +35,7 @@
                             a.page-link(href="#") 4
                         li.page-item
                             a.page-link(href="#") Next
+        Footer
 </template>
 <script>
 import Header from '../components/Header'
