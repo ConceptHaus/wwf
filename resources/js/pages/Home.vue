@@ -14,7 +14,7 @@
                     div.col-6
                         img.img-fluid(src="../../images/home/ren_desk.jpg")
         section.home__estrategia
-            div.container-fluid.py-4
+            div.container-fluid.p-4
                 div.row.py-4
                     div.col-6.my-5
                         img.img-fluid(src="../../images/home/ren_01_desk.jpg")
@@ -24,7 +24,7 @@
                         p.my-4 Siguiendo un proceso de tan sólo ocho pasos, las empresas obtienen acceso a guías y herramientas diseñadas para definir una estrategia de abastecimiento de energía renovable, facilitando la toma de decisiones sobre modalidades de suministro, diseño de licitaciones, evaluación de ofertas y elección de proveedores.
                         button.btn.btn-lg.btn-primary Conoce los 8 pasos
         section.home__recursos
-            div.container-fluid.py-4
+            div.container-fluid.p-4
                 div.row.py-4
                     div.col-6.my-5
                         h1.home__h1.my-4 #[span] Recursos
