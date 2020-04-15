@@ -3596,6 +3596,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -43070,7 +43071,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".noticias .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}", ""]);
+exports.push([module.i, ".noticias .bg-header {\n  background: transparent url(" + escape(__webpack_require__(/*! ../../images/bkg-header.jpg */ "./resources/images/bkg-header.jpg")) + ") 50% 100% no-repeat;\n  background-size: auto 100%;\n  padding: 25px 0 50px 0;\n}\n.noticias__content {\n  margin-top: 300px;\n}", ""]);
 
 // exports
 
@@ -69862,7 +69863,7 @@ var render = function() {
   return _c(
     "div",
     { staticClass: "noticias" },
-    [_c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
+    [_c("Header"), _c("Nav", { staticClass: "bg-header" }), _vm._m(0)],
     1
   )
 }
@@ -69871,10 +69872,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { staticClass: "noticas__content" }, [
+    return _c("section", { staticClass: "noticias__content" }, [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("h1", [_vm._v("Noticias")]),
-        _c("div", { staticClass: "row" }, [
+        _c("h1", { staticClass: "home__h1 my-4 p-4" }, [
+          _c("span"),
+          _vm._v(" Noticias")
+        ]),
+        _c("div", { staticClass: "row p-4" }, [
           _c("div", { staticClass: "col-6" }, [
             _c("div", { staticClass: "row" }, [
               _c("div", { staticClass: "col-6" }, [
@@ -69886,10 +69890,10 @@ var staticRenderFns = [
                 })
               ]),
               _c("div", { staticClass: "col-6" }, [
-                _c("h5", [
+                _c("h5", { staticClass: "my-4" }, [
                   _vm._v("Cemento 100% Renovable, Una realidad en Argentina")
                 ]),
-                _c("p", [
+                _c("p", { staticClass: "my-4" }, [
                   _vm._v(
                     "La cementera Holcim consumirá electricidad de un parque solar en construcción ubicado en la provincia de Buenos Aires (Argentina)."
                   )
