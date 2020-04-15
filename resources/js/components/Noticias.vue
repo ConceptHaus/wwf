@@ -11,4 +11,5 @@
                             img.img-fluid(src="../../images/noticias/noticia-02_desk.jpg")
                         div.col-12.my-3
                             img.img-fluid(src="../../images/noticias/noticia-03_desk.jpg")
+            button.btn.btn-primary.btn-lg.my-4.mx-auto.d-block Leer más noticas
 </template>

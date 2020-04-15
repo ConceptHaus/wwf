@@ -1,0 +1,19 @@
+.sumate,.equipo{
+    background-color: #eff7e6;
+    background-image: -ms-linear-gradient(top left, #e3f3fb 0, #eff7e6 100%);
+    background-image: -webkit-linear-gradient(top, #e3f3fb, #eff7e6);
+    background-image: -moz-linear-gradient(top, #e3f3fb, #eff7e6);
+    background-image: -o-linear-gradient(top, #e3f3fb, #eff7e6);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e3f3fb), to(#eff7e6));
+}
+.wwf{
+    background: #ffffff url(../images/home/bkg-home.jpg) 50% 100% no-repeat;
+    background: cover;
+    color:$blanco;
+    h1,h3{
+        color:$blanco;
+    }
+}
+.socios{
+    background: #fff;
+}

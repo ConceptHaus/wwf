@@ -10998,3 +10998,25 @@ h1 span {
   background: #fff;
 }
 
+.sumate,
+.equipo {
+  background-color: #eff7e6;
+  background-image: -o-linear-gradient(top, #e3f3fb, #eff7e6);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3f3fb), to(#eff7e6));
+}
+
+.wwf {
+  background: #ffffff url(/images/bkg-home.jpg?e05c87faa07df66ddbb391c8902644cb) 50% 100% no-repeat;
+  background: cover;
+  color: #fff;
+}
+
+.wwf h1,
+.wwf h3 {
+  color: #fff;
+}
+
+.socios {
+  background: #fff;
+}
+

@@ -12,7 +12,7 @@
             b-collapse#nav-collapse(is-nav)
                 b-navbar-nav
                     b-nav-item-dropdown.mx-3(text="Acerca de Ren mx", left)
-                        b-dropdown-item(href="#") ¿Qué hacemos?
+                        b-dropdown-item(href="/acerca-de-ren") ¿Qué hacemos?
                         b-dropdown-item(href="#") Súmate a la inciativa
                         b-dropdown-item(href="#") Beneficios del suministro renovable
                         b-dropdown-item(href="#") Acerca de WWF

@@ -68646,9 +68646,11 @@ var render = function() {
                       attrs: { text: "Acerca de Ren mx", left: "" }
                     },
                     [
-                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
-                        _vm._v("¿Qué hacemos?")
-                      ]),
+                      _c(
+                        "b-dropdown-item",
+                        { attrs: { href: "/acerca-de-ren" } },
+                        [_vm._v("¿Qué hacemos?")]
+                      ),
                       _c("b-dropdown-item", { attrs: { href: "#" } }, [
                         _vm._v("Súmate a la inciativa")
                       ]),
@@ -68793,7 +68795,12 @@ var staticRenderFns = [
               ])
             ])
           ])
-        ])
+        ]),
+        _c(
+          "button",
+          { staticClass: "btn btn-primary btn-lg my-4 mx-auto d-block" },
+          [_vm._v("Leer más noticas")]
+        )
       ])
     ])
   }
@@ -68890,16 +68897,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "que-hacemos" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-6" }, [
-            _c("h1", [_vm._v("¿Qué hacemos?")]),
-            _c("h3", [
+      _c("div", { staticClass: "container-fluid p-5" }, [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-6 my-5" }, [
+            _c("h1", { staticClass: "home__h1 my-4" }, [
+              _c("span"),
+              _vm._v(" ¿Qué hacemos?")
+            ]),
+            _c("h4", { staticClass: "my-4" }, [
               _vm._v(
                 "La iniciativa Ren mx tiene como objetivo acelerar y facilitar el acceso a energía renovable a usuarios industriales y comerciales en México."
               )
             ]),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Ayudamos al sector empresarial mexicano a ser más competitivo a través del consumo de energía renovable, descarbonizando sus operaciones y aumentando la aportación de las fuentes renovables a la red eléctrica de México."
               )
@@ -68980,10 +68990,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "sumate" }, [
       _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-8" }, [
-            _c("h1", [_vm._v("Súmate a la iniciativa")]),
-            _c("p", [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-8 my-5" }, [
+            _c("h1", { staticClass: "home__h1 my-4" }, [
+              _c("span"),
+              _vm._v(" Súmate a la iniciativa")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Invitamos a todas las empresas que operan en México a tomar medidas ambiciosas y rápidas para aumentar su productividad por medio del suministro de energía renovable, la eficiencia energética y el establecimiento de objetivos de reducción de emisiones."
               )
@@ -69041,19 +69054,19 @@ var staticRenderFns = [
             ])
           ])
         ]),
-        _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-6 text-center" }, [
-            _c("p", [
+        _c("div", { staticClass: "row justify-content-center py-5" }, [
+          _c("div", { staticClass: "col-8 text-center" }, [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Además, podrás participar en nuestras sesiones de entrenamiento virtual y presencial donde obtendrás acompañamiento en la utilización de nuestras guías y herramientas para elaborar una estrategia de compra de energía renovable."
               )
             ]),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "¿Quieres ser parte de la transición hacia un México más competitivo y renovable? Regístrate aquí:"
               )
             ]),
-            _c("button", { staticClass: "btn btn-primary btn-lg" }, [
+            _c("button", { staticClass: "btn btn-primary btn-lg mb-4" }, [
               _vm._v("Registrarse")
             ])
           ])
@@ -69066,16 +69079,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "beneficios" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-6" }, [
-            _c("h1", [_vm._v("Beneficios del Suministro Renovable")]),
-            _c("p", [
+      _c("div", { staticClass: "container-fluid p-5" }, [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-6 my-5" }, [
+            _c("h1", { staticClass: "home__h1 my-4" }, [
+              _c("span"),
+              _vm._v(" Beneficios del Suministro Renovable")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "El nuevo mercado energético ofrece a los usuarios comerciales e industriales libertad para elegir entre diferentes opciones de suministro de electricidad que ofrezcan precios competitivos y les permitan acceder a energías renovables."
               )
             ]),
-            _c("h3", [
+            _c("h3", { staticClass: "my-4" }, [
               _vm._v(
                 "La elección de un proveedor privado de energía renovable ofrece ventajas considerables como:"
               )
@@ -69125,21 +69141,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "wwf" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-6" }, [
-            _c("h1", [_vm._v("Acerca de WWF")]),
-            _c("p", [
+      _c("div", { staticClass: "container-fluid p-5" }, [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-6 my-5" }, [
+            _c("h1", { staticClass: "home__h1 my-4" }, [
+              _c("span"),
+              _vm._v(" Acerca de WWF")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "El Fondo Mundial para la Naturaleza es la organización de conservación líder en el mundo. Nacida en Suiza en 1961, es conocida por el logo del panda y tiene presencia en más de 100 países."
               )
             ]),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Bajo el nombre de World Wildlife Fund (WWF), surgió como un pequeño grupo de naturalistas preocupados y comprometidos con la conservación del planeta y ha crecido hasta convertirse en una de las organizaciones independientes más grandes y respetadas del mundo, apoyada por unos cinco millones de personas. Con los años, el objetivo de WWF ha evolucionado hacia una ambiciosa estrategia para preservar la biodiversidad y alcanzar el desarrollo sostenible en todo el planeta."
               )
             ]),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "En México trabajamos para conservar las riquezas naturales, impulsar políticas públicas innovadoras y asegurar la transformación del mercado hacia un modelo más justo y sostenible. Nuestro trabajo en el área de clima y energía se enfoca en catalizar la acción climática por parte de los actores no estatales para cumplir las metas planteadas en la política nacional e internacional y para acelerar la transición del país hacia una economía baja en carbono."
               )
@@ -69183,17 +69202,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "equipo" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-4" }, [
+      _c("div", { staticClass: "container-fluid p-4" }, [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-4 my-5" }, [
             _c("img", {
               attrs: { src: __webpack_require__(/*! ../../images/home/luli-pequeira.png */ "./resources/images/home/luli-pequeira.png") }
             })
           ]),
           _c("div", { staticClass: "col-8" }, [
-            _c("h3", [_vm._v("Luli Pesqueira")]),
-            _c("p", [_vm._v("Coordinadora de Relaciones Corporativas")]),
-            _c("p", [
+            _c("h3", { staticClass: "my-4" }, [_vm._v("Luli Pesqueira")]),
+            _c("p", { staticClass: "my-4" }, [
+              _vm._v("Coordinadora de Relaciones Corporativas")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Es especialista en nuevos modelos de acción colectiva, sobre todo en alianzas entre el sector privado y organismos no gubernamentales (ONG) para la creación de estándares de producción sustentable y certificación, así como para asegurar la transición a una economía baja en carbono. Tiene experiencia de trabajo en áreas comerciales, tanto en el sector privado, como en ONG y sector público, así como en áreas de investigación y enseñanza. Luli es doctora y maestra en Desarrollo Sostenible por la Universidad de Utrecht en los Países Bajos y licenciada en Comunicación por la Universidad Iberoamericana en la Ciudad de México."
               )
@@ -69207,9 +69228,11 @@ var staticRenderFns = [
             })
           ]),
           _c("div", { staticClass: "col-8" }, [
-            _c("h3", [_vm._v("Luis Romero")]),
-            _c("p", [_vm._v("Oficial de energías renovables")]),
-            _c("p", [
+            _c("h3", { staticClass: "my-4" }, [_vm._v("Luis Romero")]),
+            _c("p", { staticClass: "my-4" }, [
+              _vm._v("Oficial de energías renovables")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Es especialista en mercados eléctricos y política energética con experiencia en planeación del sector y mecanismos de mitigación de gases de efecto invernadero. Su trabajo está enfocado en el desarrollo de herramientas para la compra de electricidad proveniente de fuentes renovables para usuarios finales del sector industrial y comercial en México. Es ingeniero ambiental y cuenta con una maestría en Ingeniería en Energía por la Universidad Nacional Autónoma de México (UNAM)."
               )
@@ -69223,9 +69246,11 @@ var staticRenderFns = [
             })
           ]),
           _c("div", { staticClass: "col-8" }, [
-            _c("h3", [_vm._v("Ninel Escobar")]),
-            _c("p", [_vm._v("Coordinadora de Cambio Climático y Energía")]),
-            _c("p", [
+            _c("h3", { staticClass: "my-4" }, [_vm._v("Ninel Escobar")]),
+            _c("p", { staticClass: "my-4" }, [
+              _vm._v("Coordinadora de Cambio Climático y Energía")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Es especialista en adaptación al cambio climático. Su trabajo se enfoca en la planeación estratégica de WWF en cambio climático y energía; coordinar la implementación de proyectos y brindar apoyo técnico al resto de la organización en materia de mitigación y adaptación. Ha coordinado las contribuciones de WWF en instrumentos de política como la Estrategia Nacional de Cambio Climático, el Programa Especial de Cambio Climático y la Estrategia de Cambio Climático desde las Área Naturales Protegidas. Ninel cuenta con una maestría en Economía Ambiental y Recursos Naturales de la Universidad de Concepción en Chile y una licenciatura en Economía por el Centro de Investigación y Docencia Económicas (CIDE)."
               )
@@ -69240,16 +69265,19 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("section", { staticClass: "socios" }, [
-      _c("div", { staticClass: "container-fluid" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-8" }, [
-            _c("h1", [_vm._v("Nuestro socios")]),
-            _c("p", [
+      _c("div", { staticClass: "container-fluid p-4" }, [
+        _c("div", { staticClass: "row py-4" }, [
+          _c("div", { staticClass: "col-8 my-5" }, [
+            _c("h1", { staticClass: "home__h1 my-4" }, [
+              _c("span"),
+              _vm._v(" Nuestro socios")
+            ]),
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Trabajamos e invertimos en conjunto con una red de socios con el fin de emplear estrategias efectivas y compartir conocimiento."
               )
             ]),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "En México, colaboramos con organizaciones que comparten nuestra visión de transformación para el sector eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales."
               )
@@ -69274,7 +69302,7 @@ var staticRenderFns = [
                 src: __webpack_require__(/*! ../../images/acercade/socios/gizlogo.jpg */ "./resources/images/acercade/socios/gizlogo.jpg")
               }
             }),
-            _c("p", [
+            _c("p", { staticClass: "my-4" }, [
               _vm._v(
                 "Además, colaboramos con otras organizaciones de la sociedad civil y con otras oficinas de WWF que promueven la compra corporativa de energía renovable en países como Australia, China, Corea, Estados Unidos e India."
               )
