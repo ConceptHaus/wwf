@@ -26,5 +26,25 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    public function reset(Request $request) {
+        $token = $request->token;
+        $email = DB::table('password_resets')->where('token',$token)->first();
+        if($email){
+            $user = User::where('email',$email->email)->first();
+            $user->password = Hash::make($request->password);
+
+            $user->save();
+
+            return response([
+                "status"=>"success",
+                "data"=>$user
+            ],201);
+        }
+
+        return response([
+            "status"=>"error",
+            "data"=>"Código inválido"
+        ],401);
+        
+    }
 }

@@ -11,65 +11,65 @@
                         form.my-4(@submit.prevent="register")
                             div.form-group
                                 label.form-error(v-if="validador.name.error === 'error'") {{validador.name.message}}
-                                input.form-control(type="text", placeholder="Nombre Completo")
+                                input.form-control(type="text",v-model="name", placeholder="Nombre Completo")
                             div.form-group
                                 label.form-error(v-if="validador.email.error === 'error'") {{validador.email.message}}
-                                input.form-control(type="email", placeholder="E-mail")
+                                input.form-control(type="email",v-model="email", placeholder="E-mail")
                             div.form-group
                                 label.form-error(v-if="validador.password.error === 'error'") {{validador.password.message}}
-                                input.form-control(type="password", placeholder="Contraseña")
+                                input.form-control(type="password",v-model="password", placeholder="Contraseña")
                             div.form-group
                                 label.form-error(v-if="validador.password_confirm.error === 'error'") {{validador.password_confirm.message}}
-                                input.form-control(type="password", placeholder="Confirmar contraseña")
+                                input.form-control(type="password", v-model="password_confirm", placeholder="Confirmar contraseña")
                             div.form-group
                                 label.form-error(v-if="validador.phone.error === 'error'") {{validador.phone.message}}
-                                input.form-control(type="phone", placeholder="Teléfono")
+                                input.form-control(type="phone", v-model="phone", placeholder="Teléfono")
                             div.form-group
                                 label.form-error(v-if="validador.company.error === 'error'") {{validador.company.message}}
-                                input.form-control(type="text", placeholder="Empresa")
+                                input.form-control(type="text", v-model="company", placeholder="Empresa")
                             div.form-group
                                 label.form-error(v-if="validador.puesto.error === 'error'") {{validador.puesto.message}}
-                                input.form-control(type="text", placeholder="Puesto")
+                                input.form-control(type="text", v-model="puesto", placeholder="Puesto")
                             div.form-group
                                 label.form-error(v-if="validador.sector.error === 'error'") {{validador.sector.message}}
-                                input.form-control(type="text", placeholder="Sector")
+                                input.form-control(type="text",v-model="sector", placeholder="Sector")
                             h3.my-4 ¿Cuál es tu interés principal al visitar nuestro sitio?
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="1", v-model="intereses")
                                     | Analizar mi historial de consumo eléctrico
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="2",v-model="intereses")
                                     | Conocer las opciones disponibles para comprar electricidad renovable
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="3",v-model="intereses")
                                     | Comenzar un proceso de suministro de electricidad renovable
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="4",v-model="intereses")
                                     | Identificar potenciales suministradores de electricidad renovable
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="5",v-model="intereses")
                                     | Obtener más información sobre la estructura y negociación de contratos bilaterales de suministro
                             div.form-group.form-check
                                 label.form-check-label
-                                    input.form-check-input(type="checkbox")
+                                    input.form-check-input(type="checkbox",value="6",v-model="intereses")
                                     | Otro
                             h3.my-4 ¿Conoces el consumo eléctrico de tu empresa?
                             div.form-group.form-check-inline
                                 label.form-check-label
-                                    input.form-check-input(type="radio")
+                                    input.form-check-input(type="radio",value="No",v-model="consumo")
                                     | No
                             div.form-group.form-check-inline
                                 label.form-check-label
-                                    input.form-check-input(type="radio")
+                                    input.form-check-input(type="radio",value="Sí, entre 5 y 15GWh",v-model="consumo")
                                     | Sí, entre 5 y 15 GWh
                             div.form-group.form-check-inline
                                 label.form-check-label
-                                    input.form-check-input(type="radio")
+                                    input.form-check-input(type="radio",value="Sí, mayor a 20GWh",v-model="consumo")
                                     | Sí, mayor a 20GWh
                             button.btn.btn-primary.btn-lg.my-4.mx-auto.d-block Crear cuenta
         Footer
@@ -93,6 +93,8 @@ export default {
             company:'',
             puesto:'',
             sector:'',
+            intereses:[],
+            consumo:'',
             error:false,
             errors:{},
             validador:{
@@ -247,7 +249,7 @@ export default {
                 html:'<p>Estamos creando tu cuenta.</p>',
                 showConfirmButon:false
             });
-            var app = this;   
+            var app = this;
             this.$auth.register({
                 data:{
                     name:app.name,
@@ -257,7 +259,9 @@ export default {
                     password_confirm:app.password_confirm,
                     company:app.company,
                     sector:app.sector,
-                    puesto:app.puesto
+                    puesto:app.puesto,
+                    intereses:app.intereses,
+                    consumo:app.consumo
                 },
                 success:function(){
                     this.$swal().close();
@@ -282,7 +286,7 @@ export default {
                 },
                 autoLogin:true,
                 rememberMe:true,
-                redirect:'/ruta'
+                redirect:'/'
             }); 
         }
     },

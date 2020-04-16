@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use Illuminate\Http\Request;
 use App\User;
+use App\UserDetail;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use DB;
 
 class RegisterController extends Controller
 {
@@ -50,7 +53,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(Request $data)
     {
         try{
             DB::beginTransaction();
@@ -60,10 +63,12 @@ class RegisterController extends Controller
             $user->phone = $data['phone'];
             $user->password = Hash::make($data['password']);
 
-            $detail_user = new User_detail;
-            $detail_user->zip_code = $data['zip_code'];
-            $detail_user->state = $data['state']; 
-            $detail_user->city = $data['city'];
+            $detail_user = new UserDetail;
+            $detail_user->empresa = $data['company'];
+            $detail_user->sector = $data['sector']; 
+            $detail_user->puesto = $data['puesto'];
+            $detail_user->interes = implode(",",$data['intereses']);
+            $detail_user->consumo_electrico = $data['consumo'];
             $user->save();
             $user->detail()->save($detail_user);
 

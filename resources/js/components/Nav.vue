@@ -4,9 +4,13 @@
             b-navbar-brand(href="/")
                 img.img-fluid.w-50(src="../../images/logo.png")
             b-collapse.justify-content-end(is-nav)
-                b-navbar-nav
+                b-navbar-nav(v-if="!$auth.check()")
                     b-nav-item(href="/login") Iniciar sesión
                     b-nav-item(href="/registro") Registrarse
+                b-navbar-nav(v-else)
+                    b-nav-item-dropdown.mr-5(text="Mi cuenta")
+                        b-dropdown-item(href="/edit") Editar mi perfil
+                        b-dropdown-item(href="#" @click="$auth.logout()") Cerrar sesión
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
             b-collapse#nav-collapse(is-nav)

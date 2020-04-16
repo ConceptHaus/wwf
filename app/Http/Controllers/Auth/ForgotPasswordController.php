@@ -19,4 +19,12 @@ class ForgotPasswordController extends Controller
     */
 
     use SendsPasswordResetEmails;
+
+    public function forgot(Request $request){
+        $token = Str::random(15);
+        DB::table('password_resets')->insert(
+            ['email'=>$request->email, 'token'=>$token]
+        );
+        Mail::to($request->email)->send(new ForgotPassword($token));
+    }
 }

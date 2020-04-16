@@ -14,7 +14,7 @@ class CreateUserDetailsTable extends Migration
     public function up()
     {
         Schema::create('user_details', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->uuid('id_user');
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('empresa');
