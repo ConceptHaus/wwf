@@ -118,7 +118,7 @@ export default {
                     if(redirect){
                         redirectTo = redirect.from.name;
                     }else{
-                        redirectTo = this.$auth.user().is_admin === 0 ? 'ticket' : 'admin.dashboard';
+                        redirectTo = this.$auth.user().is_admin === 0 ? 'home' : 'admin.dashboard';
                     }
                     this.$router.push({name:redirectTo});
                 },

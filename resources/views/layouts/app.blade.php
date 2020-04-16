@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- IE -->
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
     <!-- other browsers -->
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

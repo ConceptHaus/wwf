@@ -13,7 +13,7 @@
                     img(src="../../images/ico-logo.png")
                 div.col
                 div.col
-                    button.btn.btn-light Contáctanos
+                    a(href="/contacto").btn.btn-light Contáctanos
                 div.col
                     a(href="#") Aviso de privacidad | REN MX 2019.
             

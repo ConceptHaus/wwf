@@ -9,7 +9,8 @@
                     b-nav-item(href="/registro") Registrarse
                 b-navbar-nav(v-else)
                     b-nav-item-dropdown.mr-5(text="Mi cuenta")
-                        b-dropdown-item(href="/edit") Editar mi perfil
+                        b-dropdown-item(href="/edit/profile") Editar mi perfil
+                        b-dropdown-item(href="/edit/password") Cambiar contraseña
                         b-dropdown-item(href="#" @click="$auth.logout()") Cerrar sesión
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
@@ -43,5 +44,8 @@
         background: transparent;
         top: 0;
         width: 100%;
+    }
+    .dropdown-item{
+        font-size: 12px;
     }
 </style>

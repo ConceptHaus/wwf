@@ -18,6 +18,8 @@ import Register from './pages/Register';
 import Recursos from './pages/Recursos';
 import Noticias from './pages/Noticias';
 import Contacto from './pages/Contacto';
+import Profile from './pages/Profile';
+import Password from './pages/Password';
 
 
 const moment = require('moment');
@@ -82,15 +84,43 @@ const router = new VueRouter({
             component:Noticias
         },
         {
+            path:'/contacto',
+            name:'contacto',
+            component:Contacto
+        },
+        {
             path:'/login',
             name:'login',
-            component:Login
+            component:Login,
+            meta:{
+                auth:false
+            }
         },
         {
             path:'/registro',
             name:'registro',
-            component:Register
+            component:Register,
+            meta:{
+                auth:false
+            }
+        },
+        {
+            path:'/edit/profile',
+            name:'perfil',
+            component:Profile,
+            meta:{
+                auth:true
+            }
+        },
+        {
+            path:'/edit/password',
+            name:'password',
+            component:Password,
+            meta:{
+                auth:true
+            }
         }
+
     ]
 })
 
