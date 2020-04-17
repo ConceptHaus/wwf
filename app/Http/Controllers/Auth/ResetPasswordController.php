@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use App\User;
 
 class ResetPasswordController extends Controller
 {
@@ -46,5 +50,15 @@ class ResetPasswordController extends Controller
             "data"=>"Código inválido"
         ],401);
         
+    }
+    public function resetManual(Request $request){
+        $user = Auth::guard()->user();
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        return response([
+            "status"=>"sucess",
+            "message"=>"Contraseña reestablecida"
+        ],201);
     }
 }

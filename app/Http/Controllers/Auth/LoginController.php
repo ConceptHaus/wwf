@@ -59,7 +59,7 @@ class LoginController extends Controller
     public function user(){
         $user = $this->guard()->user();
         return response()->json([
-            'data'=>$user
+            'data'=>$user::with('detail')->first()
         ]);
     }
     

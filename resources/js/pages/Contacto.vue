@@ -16,6 +16,8 @@
                             div.form-group
                                 input.form-control(type="phone",placeholder="Teléfono",v-model="phone")
                             div.form-group
+                                input.form-control(type="text",placeholder="Asunto",v-model="subject")
+                            div.form-group
                                 textarea.form-control(type="text",placeholder="Mensaje", v-model="message")
                             button.btn.btn-primary.btn-lg.btn-block(type="submit") Enviar
         Footer
@@ -32,7 +34,37 @@ export default {
             name:'',
             email:'',
             phone:'',
+            subject:'',
             message:''
+        }
+    },
+    methods:{
+        async contacto(){
+            this.$swal({
+                title:'<h1>Espera...</h1>',
+                html:'<p>Estamos enviando tu mensaje</p>'
+            })
+             await this.axios.post('/contacto',{
+                            name:this.name,
+                            email:this.email,
+                            phone:this.phone,
+                            subject:this.subject,
+                            message:this.message
+                        })
+                        .then(res=>{
+                            this.$swal({
+                                title:'<h1>¡Mensaje recibido!</h1>',
+                                html:'<p>Pronto te contáctaremos.</p>',
+                                icon:'success'
+                            })
+                        },error=>{
+                            this.$swal({
+                                title:'<h1>Error</h1>',
+                                html:'<p>Algo salió mal.</p>',
+                                icon:'error'
+                            })
+                        })
+
         }
     },
     components:{

@@ -8,6 +8,7 @@
                 div.row.justify-content-center
                     div.col-5.mb-5
                         form(@submit.prevent="editPassword")
+                            label.form-error(v-if="error.length > 0") {{error}}
                             div.form-group
                                 input.form-control(type="password",placeholder="Nueva contraseña",v-model="password")
                             div.form-group
@@ -21,6 +22,36 @@ import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 export default {
+    data(){
+        return{
+            password:'',
+            password_confirm:'',
+            error:''
+        }
+    },
+    methods:{
+        async editPassword(){
+            if(this.password === this.password_confirm){
+                await this.axios.post('auth/password/manual',{password:this.password})
+                    .then(res=>{
+                        this.$swal({
+                            title:'<h1>Todo bien</h1>',
+                            html:'<p>Tu contraseá se ha reestablecido</p>',
+                            icon:'success'
+                        })
+                    },err=>{
+                        this.$swal({
+                            title:'<h1>Ocurrió un error</h1>',
+                            html:'<p>Algo salió mal</p>',
+                            icon:'error'
+                        })
+                    })
+            }else{
+                this.error = 'Tu contraseña no coincide'
+            }
+            
+        }
+    },
     components:{
         Header,
         Hero,

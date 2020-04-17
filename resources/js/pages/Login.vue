@@ -125,7 +125,8 @@ export default {
                 error: function(){
                     this.$swal({
                         title:'<h1>Ocurrió un error</h1>',
-                        html:'<p>Tu e-mail o password son incorrectos.</p>'
+                        html:'<p>Tu e-mail o password son incorrectos.</p>',
+                        icon:'error'
                     })
                 },
                 rememberMe:true,

@@ -274,13 +274,15 @@ export default {
                         errores.forEach(element =>{
                             this.$swal({
                                 title:'<h1>Ocurrió un error</h1>',
-                                html:`<p>${res.response.data.errors[element][0]}</p>`
+                                html:`<p>${res.response.data.errors[element][0]}</p>`,
+                                icon:'error'
                             });
                         })
                     }else{
                         this.$swal({
                             title:'<h1>Ocurrió un error</h1>',
-                            html:'<p>Algo salió mal. Contacta al administrador</p>'
+                            html:'<p>Algo salió mal. Contacta al administrador</p>',
+                            icon:'error'
                         })
                     }
                 },
