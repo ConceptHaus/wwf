@@ -32,7 +32,6 @@
                         button.btn.btn-lg.btn-primary Conoce los recursos
                     div.col-6
                         img.img-fluid(src="../../images/home/ren_02_desk.jpg")
-        Noticias
         Footer
         
 </template>

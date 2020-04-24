@@ -4,7 +4,7 @@
         Nav.bg-header
         section.noticias__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Noticias
+                h1.home__h1.my-4.p-4 #[span] Catálogo de soluciones
                 div.row.p-4
                     div.col-6
                         div.row
@@ -22,19 +22,6 @@
                                 h5 Cemento 100% Renovable, Una realidad en Argentina
                                 p Para Toyota la generación en sitio es la solución más apropiada para ahorrar y combatir su huella de carbono. ¿Cuál es tu solución?.
                                 a.text-right(href="#") Leer completo
-                ul.pagination.pagination-sm
-                        li.page-item
-                            a.page-link(href="#") Previous
-                        li.page-item
-                            a.page-link(href="#") 1
-                        li.page-item
-                            a.page-link(href="#") 2
-                        li.page-item
-                            a.page-link(href="#") 3
-                        li.page-item
-                            a.page-link(href="#") 4
-                        li.page-item
-                            a.page-link(href="#") Next
         Footer
 </template>
 <script>

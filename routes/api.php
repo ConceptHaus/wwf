@@ -27,3 +27,5 @@ Route::group(['middleware'=>'jwt.refresh'], function(){
 
 Route::post('/contacto','GeneralController@contacto');
 Route::post('/newsletter','GeneralController@newsletter');
+Route::post('/catalogo','Admin\AdminController@addCatalogo');
+Route::get('/catalogo','Admin\AdminController@getCatalogo');

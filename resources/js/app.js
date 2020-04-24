@@ -1,7 +1,7 @@
 
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
-import {CarouselPlugin, NavbarPlugin} from 'bootstrap-vue';
+import {CarouselPlugin, NavbarPlugin, ModalPlugin} from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
@@ -20,6 +20,8 @@ import Noticias from './pages/Noticias';
 import Contacto from './pages/Contacto';
 import Profile from './pages/Profile';
 import Password from './pages/Password';
+import Catalogo from './pages/admin/Catalogo';
+import UserCatalogo from './pages/UserCatalogo';
 
 
 const moment = require('moment');
@@ -35,6 +37,7 @@ Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(NavbarPlugin);
 Vue.use(CarouselPlugin);
+Vue.use(ModalPlugin);
 Vue.use(VueAxios, axios);
 Vue.use(VueSweetalert2, optionsAlert);
 Vue.use(require('vue-moment'),{
@@ -79,6 +82,11 @@ const router = new VueRouter({
             component:Recursos
         },
         {
+            path:'/catalogo',
+            name:'catalogo',
+            component:UserCatalogo
+        },
+        {
             path:'/noticias',
             name:'noticias',
             component:Noticias
@@ -119,8 +127,13 @@ const router = new VueRouter({
             meta:{
                 auth:true
             }
+        },
+        {
+            path:'/admin/catalogo',
+            name:'admin.catalogo',
+            component:Catalogo
         }
-
+    
     ]
 })
 

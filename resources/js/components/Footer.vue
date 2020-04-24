@@ -47,3 +47,12 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+footer{
+    background: #fff url(../../images/bkg-footer.jpg) 50% 100% no-repeat;
+    background-size: 100% auto;
+    a{
+        color:#fff;
+    }
+}
+</style>
