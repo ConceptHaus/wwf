@@ -1,5 +1,5 @@
 <template lang="pug">
-    div.fixed-top
+    div.fixed-top(v-if="!$auth.check()")
         .contaniner-fluid.header__background
             .row
                 .col-12.text-center

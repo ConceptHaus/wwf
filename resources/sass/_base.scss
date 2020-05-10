@@ -10,6 +10,11 @@ h1,h2,h3,h4,h5,h6{
 p{
     @include fluid-type($min-vw,$max-vw,15px,18px)
 }
+.bg-header{
+    background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat;
+    background-size: auto 100%;
+    padding: 25px 0 50px 0;
+}
 .input-group{
     .input-group-prepend{
         cursor: pointer;

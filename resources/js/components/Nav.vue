@@ -1,5 +1,5 @@
 <template lang="pug">
-    div.navbar-top
+    div.navbar-top(:class="[$auth.check() ? 'navbar-top--noheader' : '']")
         b-navbar
             b-navbar-brand(href="/")
                 img.img-fluid.w-50(src="../../images/logo.png")
@@ -11,6 +11,9 @@
                     b-nav-item-dropdown.mr-5(text="Mi cuenta")
                         b-dropdown-item(href="/edit/profile") Editar mi perfil
                         b-dropdown-item(href="/edit/password") Cambiar contraseña
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/catalogo") Casos de estudios
+                        b-dropdown-item(href="/edit/profile") Newsletter
+                        b-dropdown-item(href="/edit/profile") Usuarios
                         b-dropdown-item(href="#" @click="$auth.logout()") Cerrar sesión
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
@@ -24,21 +27,20 @@
                         b-dropdown-item(href="#") Nuestro equipo
                         b-dropdown-item(href="#") Nuestros socios
                     b-nav-item.mx-2(href="/ruta-de-compra") Estrategía de compra
+                    b-nav-item.mx-2(v-if="$auth.check()" href="/catalogo") Catálogo de soluciones
+                    b-nav-item.mx-2(href="/noticias") Casos de estudios y reportes
                     b-nav-item-dropdown.mx-2(text="El mercado eléctrico mayorista")
                         b-dropdown-item(href="/el-mercado-electrico-mayorista") El MEM y la energía renovable
                         b-dropdown-item(href="#") Tendencias en la compra corporativa de electricidad
                         b-dropdown-item(href="#") Usuarios finales
                         b-dropdown-item(href="#") Opciones de compra de energía
-                    b-nav-item.mx-2(href="/recursos") Recursos
-                    b-nav-item.mx-2(href="/catalogo") Catálogo de soluciones
-                    b-nav-item.mx-2(href="/noticias") Casos de estudios y reportes
-                    //- b-nav-form.mx-3
-                    //-     b-nav-form
-                    //-     b-form-input(placeholder="Buscar...")
-                    //-     b-button.my-2.my-sm-0(variant="outline-light",type="submit") Buscar
+                    b-nav-item.mx-2(href="/recursos") Recursos externos
 </template>
 <style lang="scss" scoped>
     .navbar-top{
+        &--noheader{
+          margin-top: 0px;
+        }
         position: absolute;
         z-index: 10;
         margin-top: 60px;

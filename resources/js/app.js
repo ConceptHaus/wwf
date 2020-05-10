@@ -22,7 +22,14 @@ import Profile from './pages/Profile';
 import Password from './pages/Password';
 import Catalogo from './pages/admin/Catalogo';
 import UserCatalogo from './pages/UserCatalogo';
-
+import RutaUno from './pages/RutaUno';
+import RutaDos from './pages/RutaDos';
+import RutaTres from './pages/RutaTres';
+import RutaCuatro from './pages/RutaCuatro';
+import RutaCinco from './pages/RutaCinco';
+import RutaSeis from './pages/RutaSeis';
+import RutaSiete from './pages/RutaSiete';
+import RutaOcho from './pages/RutaOcho';
 
 const moment = require('moment');
 require('moment/locale/es');
@@ -51,7 +58,7 @@ const router = new VueRouter({
     scrollBehavior(to, from, savedPosition){
         if (savedPosition) {
             return savedPosition
-        } 
+        }
         return { x: 0, y: 0 }
     },
     routes: [
@@ -59,7 +66,7 @@ const router = new VueRouter({
             path:'/',
             name:'home',
             component:Home,
-            
+
         },
         {
             path:'/acerca-de-ren',
@@ -75,6 +82,46 @@ const router = new VueRouter({
             path:'/ruta-de-compra',
             name:'ruta',
             component:Ruta
+        },
+        {
+            path:'/ruta-de-compra/1',
+            name:'ruta-uno',
+            component:RutaUno
+        },
+        {
+            path:'/ruta-de-compra/2',
+            name:'ruta-dos',
+            component:RutaDos
+        },
+        {
+            path:'/ruta-de-compra/3',
+            name:'ruta-tres',
+            component:RutaTres
+        },
+        {
+            path:'/ruta-de-compra/4',
+            name:'ruta-cuatro',
+            component:RutaCuatro
+        },
+        {
+            path:'/ruta-de-compra/5',
+            name:'ruta-cinco',
+            component:RutaCinco
+        },
+        {
+            path:'/ruta-de-compra/6',
+            name:'ruta-seis',
+            component:RutaSeis
+        },
+        {
+            path:'/ruta-de-compra/7',
+            name:'ruta-siete',
+            component:RutaSiete
+        },
+        {
+            path:'/ruta-de-compra/8',
+            name:'ruta-ocho',
+            component:RutaOcho
         },
         {
             path:'/recursos',
@@ -133,7 +180,7 @@ const router = new VueRouter({
             name:'admin.catalogo',
             component:Catalogo
         }
-    
+
     ]
 })
 
@@ -145,7 +192,7 @@ Vue.use(require('@websanova/vue-auth'),{
     router: require('@websanova/vue-auth/drivers/router/vue-router.2.x.js'),
     authRedirect:{path:'/login'},
     notFoundRedirect:{path:'/'},
-    loginData:{redirect:''},
+    loginData:{redirect:'/'},
     rolesVar:'is_admin'
 });
 

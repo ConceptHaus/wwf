@@ -22,7 +22,7 @@ export default {
         Header,
         Footer,
         Nav
-    }    
+    }
 }
 </script>
 
@@ -36,6 +36,6 @@ export default {
         &__content{
             margin-top:300px;
         }
-        
+
     }
 </style>
