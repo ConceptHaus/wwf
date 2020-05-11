@@ -19,13 +19,13 @@
                                 p Investiga los procedimientos y requerimientos específicos de cada alternativa de suministro de electricidad renovable.
                                 .row
                                     .col-6.my-2
-                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Generación Local y Abasto Aisaldo
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/generacion_local.jpg" target="_blank") #[i.las.la-cloud-download-alt] Generación Local y Abasto Aisaldo
                                     .col-6.my-2
-                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Subastas de Mediano y Largo Plazo
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/subasta.jpg" target="_blank") #[i.las.la-cloud-download-alt] Subastas de Mediano y Largo Plazo
                                     .col-6.my-2
-                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Contratos Bilaterales
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/contratos_bilaterales.jpg" target="_blank") #[i.las.la-cloud-download-alt] Contratos Bilaterales
                                     .col-6.my-2
-                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Generación Distribuida
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="#") #[i.las.la-cloud-download-alt] Generación Distribuida
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4

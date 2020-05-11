@@ -17,14 +17,14 @@
                                 h1.ruta_inner__number 1
                             .col-6.my-4
                                 p.ruta_inner__p Analiza la información histórica de todos puntos de consumo (centros de carga) de la empresa. Utiliza la herramienta Análisis de Consumo Eléctrico para registrar las mediciones históricas del consumo de energía (en kWh o MWh) y el tipo de tarifas en el que actualmente está contratada la empresa, según lo indicado en los recibos de CFE. Para obtener un panorama completo, registra el consumo de los últimos 12 meses de cada centro de carga.
-                                button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Análisis de consumo eléctrico
+                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Analisis_de_consumo_electrico.xlsm" target="_blank") #[i.las.la-cloud-download-alt] Análisis de consumo eléctrico
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4
                                 h1.ruta_inner__number 2
                             .col-6.my-4
                                 p.ruta_inner__p A partir de la información obtenida en el punto anterior, determina qué centros de carga pueden registrarse como usuario calificado y cuáles deberán de permanecer como usuario básico. Recuerda que los usuarios básicos también tienen opciones para obtener energía renovable.
-                                button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Clasificación de centros de carga
+                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/paso1.2.jpg" target="_blank") #[i.las.la-cloud-download-alt] Clasificación de centros de carga
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4

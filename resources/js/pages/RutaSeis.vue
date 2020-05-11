@@ -17,7 +17,7 @@
                                 h1.ruta_inner__number 1
                             .col-6.my-4
                                 p.ruta_inner__p Comienza por revisar la guía Elaboración de contratos de compra de energía eléctrica (PPA)
-                                button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Guía de Elaboración de contratos de compra de energía. PPA
+                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Guia.Elaboracion_de_contratos_de_compra_de_energia.-PPA.pdf" target="_blank") #[i.las.la-cloud-download-alt] Guía de Elaboración de contratos de compra de energía. PPA
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4

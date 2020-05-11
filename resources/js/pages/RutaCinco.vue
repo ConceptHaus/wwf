@@ -23,14 +23,14 @@
                                 h1.ruta_inner__number 2
                             .col-6.my-4
                                 p.ruta_inner__p Utiliza la herramienta Solicitud de Propuesta para preparar tu licitación y agregar la información requerida (utiliza la información que obtuviste en el Paso 1 y en la actividad anterior para saber con precisión los volúmenes de energía y productos que necesitas contratar). Como parte del proceso de licitación, tendrás que organizar sesiones de preguntas y respuestas para aclarar las dudas de los proveedores que estén interesados en participar, también deberás proveer más información sobre el consumo de cada centro de carga.
-                                button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Solicitud de propuesta (RFP). PPA
+                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Solicitud-de-Propuesta-(RFP).-PPA.docx" target="_blank") #[i.las.la-cloud-download-alt] Solicitud de propuesta (RFP). PPA
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4
                                 h1.ruta_inner__number 3
                             .col-6.my-4
                                 p.ruta_inner__p Una vez recibidas las ofertas de los suministradores, compáralas utilizando los mismos términos y condiciones con la ayuda de la herramienta Comparativo de Ofertas de Suministro. Si tienes dudas sobre las propuestas, puedes solicitar apoyo del equipo de Ren mx.
-                                button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Comparativo de propuestas. PPA
+                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Comparativo-de-propuestas.-PPA.xlsx" target="_blank") #[i.las.la-cloud-download-alt] Comparativo de propuestas. PPA
                     .col-12
                         .row.justify-content-center
                             .col-1.my-4
