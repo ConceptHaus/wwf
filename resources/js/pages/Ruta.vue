@@ -72,7 +72,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     .ruta{
         .bg-header{
             background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat;
@@ -89,22 +89,28 @@ export default {
                top: 50%;
                width: 75%;
                transform: translate(-50%, -50%);
-               color:#fff;
+               color:#000;
+               &:hover{
+                   color:#fff;
+               }
                display: block;
             }
             &--more{
                 position: absolute;
                 bottom: 10%;
-                color:#fff;
+                color:#000;
+                &:hover{
+                    color: #fff;
+                }
                 font-weight: bold;
                 display: block;
                 left: 10%;
             }
             &--img{
                 max-width: 90%;
-                filter: grayscale(80%);
+                opacity: .3;
                 &:hover{
-                    filter: grayscale(0);
+                    opacity:1;
                 }
             }
         }

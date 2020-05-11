@@ -13756,18 +13756,18 @@ h6 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 360px) {
   p {
-    font-size: calc(15px + 3 * ((100vw - 360px) / 1080));
+    font-size: calc(14px + 2 * ((100vw - 360px) / 1080));
   }
 }
 
 @media screen and (min-width: 1440px) {
   p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -13875,5 +13875,45 @@ h1 span {
   .noticias p {
     font-size: 15px;
   }
+}
+
+.ruta_inner .bg-header {
+  background: transparent url(/images/bkg-header.jpg?a73022f4139b06f0e7b5123dd2bf435c) 50% 100% no-repeat !important;
+  background-size: auto 100% !important;
+  padding: 25px 0 50px 0;
+}
+
+.ruta_inner__content {
+  margin-top: 300px;
+}
+
+.ruta_inner__number {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.ruta_inner__button {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 360px) {
+  .ruta_inner__button {
+    font-size: calc(13px + 2 * ((100vw - 360px) / 1080));
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ruta_inner__button {
+    font-size: 15px;
+  }
+}
+
+.ruta_inner__p {
+  color: #5d5d5d;
+  background: #efefef;
+  padding: 10px;
 }
 

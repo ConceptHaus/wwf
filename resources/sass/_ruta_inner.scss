@@ -1,0 +1,25 @@
+.ruta_inner{
+    .bg-header{
+        background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat !important;
+        background-size: auto 100% !important;
+        padding: 25px 0 50px 0;
+    }
+    &__content{
+        margin-top: 300px;
+    }
+    &__number{
+        background: $black;
+        color: $white;
+        text-align: center;
+        border-radius: 50%;
+        padding: 15px;
+    }
+    &__button{
+        @include fluid-type($min-vw,$max-vw,13px,15px)
+    }
+    &__p{
+        color:$gris;
+        background: $grisbg;
+        padding: 10px;
+    }
+}

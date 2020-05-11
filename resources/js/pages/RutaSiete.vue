@@ -1,8 +1,8 @@
 <template lang="pug">
-    div.ruta
+    div.ruta_inner
         Header
         Nav.bg-header
-        section.ruta__content
+        section.ruta_inner__content
             div.container-fluid
                 .row
                     .col-8
@@ -13,28 +13,28 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 1
-                            .col-6
-                                p Registra como usuario calificado a los centros de carga que apliquen, revisa el paso 1.
+                            .col-1.my-4
+                                h1.ruta_inner__number 1
+                            .col-6.my-4
+                                p.ruta_inner__p Registra como usuario calificado a los centros de carga que apliquen, revisa el paso 1.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 2
-                            .col-6
-                                p Procede a instalar los medidores o el hardware necesario para cumplir con los requerimiento técnicos.
+                            .col-1.my-4
+                                h1.ruta_inner__number 2
+                            .col-6.my-4
+                                p.ruta_inner__p Procede a instalar los medidores o el hardware necesario para cumplir con los requerimiento técnicos.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 3
-                            .col-6
-                                p Firma los contratos con CFE Distribución o Transmisión según el voltaje de línea al que requiera conectarse cada centro de carga.
+                            .col-1.my-4
+                                h1.ruta_inner__number 3
+                            .col-6.my-4
+                                p.ruta_inner__p Firma los contratos con CFE Distribución o Transmisión según el voltaje de línea al que requiera conectarse cada centro de carga.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 4
-                            .col-6
-                                p Diseña el proceso de pronóstico de consumo de energía, involucra al área de operaciones. Al mismo tiempo diseña un mecanismo para otorgarle esta información a tu nuevo suministrador de energía.
+                            .col-1.my-4
+                                h1.ruta_inner__number 4
+                            .col-6.my-4
+                                p.ruta_inner__p Diseña el proceso de pronóstico de consumo de energía, involucra al área de operaciones. Al mismo tiempo diseña un mecanismo para otorgarle esta información a tu nuevo suministrador de energía.
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4 #[span] Otros materiales

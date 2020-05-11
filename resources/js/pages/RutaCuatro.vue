@@ -1,8 +1,8 @@
 <template lang="pug">
-    div.ruta
+    div.ruta_inner
         Header
         Nav.bg-header
-        section.ruta__content
+        section.ruta_inner__content
             div.container-fluid
                 .row
                     .col-8
@@ -13,28 +13,28 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 1
-                            .col-6
-                                p Asegura el involucramiento temprano de la Dirección y las áreas involucradas
+                            .col-1.my-4
+                                h1.ruta_inner__number 1
+                            .col-6.my-4
+                                p.ruta_inner__p Asegura el involucramiento temprano de la Dirección y las áreas involucradas
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 2
-                            .col-6
-                                p Comunica de forma clara y efectiva los beneficios y riesgos de la(s) modalidad(es) de compra de electricidad renovable seleccionada
+                            .col-1.my-4
+                                h1.ruta_inner__number 2
+                            .col-6.my-4
+                                p.ruta_inner__p Comunica de forma clara y efectiva los beneficios y riesgos de la(s) modalidad(es) de compra de electricidad renovable seleccionada
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 3
-                            .col-6
-                                p Planea una campaña de comunicación interna y externa que resalte el hecho de que sus productos o servicios están hechos con energía renovable.
+                            .col-1.my-4
+                                h1.ruta_inner__number 3
+                            .col-6.my-4
+                                p.ruta_inner__p Planea una campaña de comunicación interna y externa que resalte el hecho de que sus productos o servicios están hechos con energía renovable.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 4
-                            .col-6
-                                p Confirma que el reporte de sostenibilidad, el sitio web de la empresa, los comunicados a inversionistas y otros medios clave de la empresa incluirá información sobre su consumo de energía renovable.
+                            .col-1.my-4
+                                h1.ruta_inner__number 4
+                            .col-6.my-4
+                                p.ruta_inner__p Confirma que el reporte de sostenibilidad, el sitio web de la empresa, los comunicados a inversionistas y otros medios clave de la empresa incluirá información sobre su consumo de energía renovable.
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4 #[span] Otros materiales

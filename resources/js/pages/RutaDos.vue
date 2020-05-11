@@ -1,8 +1,8 @@
 <template lang="pug">
-    div.ruta
+    div.ruta_inner
         Header
         Nav.bg-header
-        section.ruta__content
+        section.ruta_inner__content
             div.container-fluid
                 .row
                     .col-8
@@ -13,37 +13,37 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 1
-                            .col-6
+                            .col-1.my-4
+                                h1.ruta_inner__number 1
+                            .col-6.my-4
                                 p Investiga los procedimientos y requerimientos específicos de cada alternativa de suministro de electricidad renovable.
                                 .row
-                                    .col-6
-                                        button.m-3.btn.btn-primary.btn-lg.btn-block Generación Local y Abasto Aisaldo
-                                    .col-6
-                                        button.m-3.btn.btn-primary.btn-lg.btn-block Subastas de Mediano y Largo Plazo
-                                    .col-6
-                                        button.m-3.btn.btn-primary.btn-lg.btn-block Contratos Bilaterales
-                                    .col-6
-                                        button.m-3.btn.btn-primary.btn-lg.btn-block Generación Distribuida
+                                    .col-6.my-2
+                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Generación Local y Abasto Aisaldo
+                                    .col-6.my-2
+                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Subastas de Mediano y Largo Plazo
+                                    .col-6.my-2
+                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Contratos Bilaterales
+                                    .col-6.my-2
+                                        button.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block #[i.las.la-cloud-download-alt] Generación Distribuida
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 2
-                            .col-6
-                                p Compara las ventajas y desventajas de cada modalidad.
+                            .col-1.my-4
+                                h1.ruta_inner__number 2
+                            .col-6.my-4
+                                p.ruta_inner__p Compara las ventajas y desventajas de cada modalidad.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 3
-                            .col-6
-                                p Elige la(s) alternativa(s) que se mejor se adapten a las necesidades y restricciones de tu empresa, así como al porcentaje de energía renovable que asignaste.
+                            .col-1.my-4
+                                h1.ruta_inner__number 3
+                            .col-6.my-4
+                                p.ruta_inner__p Elige la(s) alternativa(s) que se mejor se adapten a las necesidades y restricciones de tu empresa, así como al porcentaje de energía renovable que asignaste.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 4
-                            .col-6
-                                p Comienza a identificar a posibles proveedores.
+                            .col-1.my-4
+                                h1.ruta_inner__number 4
+                            .col-6.my-4
+                                p.ruta_inner__p Comienza a identificar a posibles proveedores.
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4 #[span] Otros materiales

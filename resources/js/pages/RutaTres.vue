@@ -1,8 +1,8 @@
 <template lang="pug">
-    div.ruta
+    div.ruta_inner
         Header
         Nav.bg-header
-        section.ruta__content
+        section.ruta_inner__content
             div.container-fluid
                 .row
                     .col-8
@@ -13,34 +13,34 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 1
-                            .col-6
-                                p Define a un responsable(s) de gestionar el suministro de energía renovable. Puedes utilizar el capital humano de áreas ya establecidas (e.j. compras o mantenimiento) ó crear una nueva área o comité designado a la gestión energética.
+                            .col-1.my-4
+                                h1.ruta_inner__number 1
+                            .col-6.my-4
+                                p.ruta_inner__p Define a un responsable(s) de gestionar el suministro de energía renovable. Puedes utilizar el capital humano de áreas ya establecidas (e.j. compras o mantenimiento) ó crear una nueva área o comité designado a la gestión energética.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 2
-                            .col-6
-                                p Identifica, en conjunto con otras áreas relevantes (finanzas, compras, Dirección), las restricciones y requerimientos de contrataciones/abastecimiento de tu empresa. Algunos ejemplos son: tipo de moneda, periodo de contratación, políticas de pago, beneficios fiscales, políticas de inversión de capital (CAPEX), etc.
+                            .col-1.my-4
+                                h1.ruta_inner__number 2
+                            .col-6.my-4
+                                p.ruta_inner__p Identifica, en conjunto con otras áreas relevantes (finanzas, compras, Dirección), las restricciones y requerimientos de contrataciones/abastecimiento de tu empresa. Algunos ejemplos son: tipo de moneda, periodo de contratación, políticas de pago, beneficios fiscales, políticas de inversión de capital (CAPEX), etc.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 3
-                            .col-6
-                                p Diseña del proceso de adquisición de energía, incluyendo la licitación del suministro(s) de energía elegido(s) y la identificación de proveedores potenciales.
+                            .col-1.my-4
+                                h1.ruta_inner__number 3
+                            .col-6.my-4
+                                p.ruta_inner__p Diseña del proceso de adquisición de energía, incluyendo la licitación del suministro(s) de energía elegido(s) y la identificación de proveedores potenciales.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 4
-                            .col-6
-                                p Con base en la estrategia de la compañía, diseña los indicadores clave para medir el desempeño del suministro eléctrico con el fin de poder monitorear y medir los resultados obtenidos.
+                            .col-1.my-4
+                                h1.ruta_inner__number 4
+                            .col-6.my-4
+                                p.ruta_inner__p Con base en la estrategia de la compañía, diseña los indicadores clave para medir el desempeño del suministro eléctrico con el fin de poder monitorear y medir los resultados obtenidos.
                     .col-12
                         .row.justify-content-center
-                            .col-1
-                                h1 5
-                            .col-6
-                                p Establece los mecanismos y responsables de la medición del desempeño del suministro y los procedimientos derivados para mantener un control de calidad.
+                            .col-1.my-4
+                                h1.ruta_inner__number 5
+                            .col-6.my-4
+                                p.ruta_inner__p Establece los mecanismos y responsables de la medición del desempeño del suministro y los procedimientos derivados para mantener un control de calidad.
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4 #[span] Otros materiales
