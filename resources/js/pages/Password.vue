@@ -6,7 +6,7 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Cambiar contraseña
                 div.row.justify-content-center
-                    div.col-5.mb-5
+                    div.col-md-5.col-12.mb-5
                         form(@submit.prevent="editPassword")
                             label.form-error(v-if="error.length > 0") {{error}}
                             div.form-group
@@ -49,7 +49,7 @@ export default {
             }else{
                 this.error = 'Tu contraseña no coincide'
             }
-            
+
         }
     },
     components:{

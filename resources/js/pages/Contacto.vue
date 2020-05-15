@@ -6,7 +6,7 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Contáctanos
                 div.row.justify-content-center
-                    div.col-5.mb-5
+                    div.col-md-5.col-12.mb-5
                         h3 Escríbenos y en breve nos comunicaremos.
                         form(@submit.prevent="contacto")
                             div.form-group
@@ -84,6 +84,6 @@ export default {
         }
         &__content{
             margin-top: 300px;
-        } 
+        }
     }
 </style>

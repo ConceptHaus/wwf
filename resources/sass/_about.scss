@@ -8,7 +8,7 @@
 }
 .wwf{
     background: $blanco url(../images/home/bkg-home.jpg) 50% 100% no-repeat;
-    background: cover;
+    background-size: cover;
     color:$blanco;
     h1,h3{
         color:$blanco;
@@ -19,4 +19,7 @@
 }
 .opciones-compra{
     background-color: #eeeeee;
+}
+.avatar{
+    max-width: 140px;
 }

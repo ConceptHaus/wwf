@@ -15,6 +15,13 @@ class CreateRecursosRutaComprasTable extends Migration
     {
         Schema::create('recursos_ruta_compras', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('ruta');
+            $table->string('titulo');
+            $table->string('descripcion')->nullable();
+            $table->string('url')->nullable();
+            $table->string('file');
+            $table->string('ext');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

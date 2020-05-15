@@ -35,9 +35,12 @@
                                 h1.ruta_inner__number 4
                             .col-6.my-4
                                 p.ruta_inner__p Diseña el proceso de pronóstico de consumo de energía, involucra al área de operaciones. Al mismo tiempo diseña un mecanismo para otorgarle esta información a tu nuevo suministrador de energía.
+                                AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4 #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        .material(v-for="recurso in recursos", :key="recurso.id")
+                            p {{recurso.titulo}}
         Pasos
         Footer
 </template>
@@ -46,12 +49,33 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import Pasos from '../components/Pasos'
+import AddMaterial from '../components/AddMaterial'
 export default {
+    data(){
+        return{
+            ruta:7,
+            recursos:[]
+        }
+    },
+    async mounted(){
+        await this.axios.get(`/recursos/rutas/${this.ruta}`)
+        .then(res=>{
+            this.recursos = res.data.recursos;
+            console.log(this.recursos);
+        })
+    },
+    methods:{
+        updateRecursos(e){
+            this.recursos.push(e);
+            console.log('emit',e)
+        }
+    },
     components:{
         Header,
         Footer,
         Nav,
-        Pasos
+        Pasos,
+        AddMaterial
     }
 }
 </script>

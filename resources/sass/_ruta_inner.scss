@@ -21,5 +21,19 @@
         color:$gris;
         background: $grisbg;
         padding: 10px;
+        &--nobg{
+            background: inherit;
+            color:$gris;
+
+        }
+    }
+    &__material{
+        margin: 2rem 2rem 4rem;
+    }
+    &__icon{
+        width: 60px;
+    }
+    a:hover{
+        text-decoration: none;
     }
 }

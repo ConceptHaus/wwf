@@ -6,7 +6,7 @@
             div.container-fluid
             h1.home__h1.my-4.p-4 #[span] Recursos
             div.row.p-4
-                div.col-3
+                div.col-md-3.col-12
                     img(src="")
                     h5.my-5 Soluciones para la Compra de Energía Renovable 2019
                     p.my-5 Con el objetivo de conectar directamente a los usuarios con los oferentes de energía renovable, presentamos información sobre los servicios y trayectoria de proveedores de energía renovable en las modalidades de generación distribuida,generación en sitio, generación a gran escala y suministro calificado. Además de información sobre empresas enfocadas en la asesoría en compra de energía...

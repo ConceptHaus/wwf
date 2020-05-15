@@ -7,7 +7,7 @@
                 h1.home__h1.my-4.p-4 #[span] Recursos
                     div.row.p-4
                         div.col-12.my-5
-                            button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar noticia
+                            button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar material
                         div.col-12.my-4
                             table.table.table-striped
                                 thead.thead-dark.table-bordered
@@ -17,28 +17,28 @@
                                         th Descripción
                                         th Acciones
                                 tbody(v-for="catalogo in catalogos", :key="catalogo.id")
-                                    tr 
+                                    tr
                                         td {{ catalogo.id }}
                                         td {{ catalogo.titulo }}
                                         td {{ catalogo.descripcion }}
-                                        td 
+                                        td
                                             div.btn-group(role="group")
-                                                button.btn.btn-primary.btn-sm.d-inline-block 
+                                                button.btn.btn-primary.btn-sm.d-inline-block
                                                     i.las.la-edit
                                                 button.btn.btn-danger.btn-sm.d-inline-block
                                                     i.las.la-ban
-                            
+
             b-modal(id="addCatalog", title="Agregar catálogo", hide-footer)
                 form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
                     div.form-group
                         input.form-control(v-model="titulo",type="text", placeholder="Título")
                     div.form-group
                         input.form-control(v-model="link",type="text", placeholder="Link")
-                    div.form-group  
+                    div.form-group
                         textarea.form-control(v-model="descripcion", placeholder="Descripción")
                     div.form-group
                         vue-dropzone(ref="recursosDropzone", id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
-                    button.btn.btn-primary.btn-lg.btn-block(type="submit") Agregar datos 
+                    button.btn.btn-primary.btn-lg.btn-block(type="submit") Agregar datos
 
 </template>
 
@@ -80,10 +80,10 @@ export default {
         Nav
     },
     async mounted(){
-        await this.axios.get('/catalogo')
+        await this.axios.get('/recursos')
             .then(res=>{
-                this.catalogos = res.data.catalogos;
-                console.log(this.catalogos);
+                this.recursos = res.data.catalogos;
+                console.log(this.recursos);
             })
     },
     methods:{
@@ -118,7 +118,7 @@ export default {
         errorServer(file, message, xhr){
             this.$swal({
                 title:'<h1>¡OH, NO!</h1>',
-                html:'<p>Algo salió mal. Inténtalo más tarde.</p>' 
+                html:'<p>Algo salió mal. Inténtalo más tarde.</p>'
             });
             this.$refs.recursosDropzone.removeAllFiles();
             this.titulo = '';
@@ -137,7 +137,7 @@ export default {
             padding: 25px 0 50px 0;
         }
         &__content{
-           margin-top:300px; 
+           margin-top:300px;
         }
         th{
             font-size: 16px;
@@ -146,5 +146,5 @@ export default {
             font-size: 14px;
             font-weight: 400;
         }
-    }   
+    }
 </style>

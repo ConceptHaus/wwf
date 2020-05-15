@@ -6,7 +6,7 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Editar mis datos
                 div.row.justify-content-center
-                    div.col-5.mb-5
+                    div.col-md-5.col-12.mb-5
                         form(@submit.prevent="edit")
                             div.form-group
                                 input.form-control(type="email", placeholder="E-mail", v-model="email")
@@ -41,7 +41,7 @@ export default {
     },
     mounted(){
         console.log(this.$auth.user().status)
-        
+
     },
     methods:{
         async edit(){
@@ -65,7 +65,7 @@ export default {
                     html:'<p>Algo salió mal</p>',
                     icon:'error'
                 })
-                
+
 
             })
         }

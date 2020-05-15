@@ -6,7 +6,7 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Registro
                 div.row.justify-content-center
-                    div.col-5
+                    div.col-md-5.col-12
                         h3.my-4 Registrate para conocer nuestra ruta de compra de energía renovable
                         form.my-4(@submit.prevent="register")
                             div.form-group
@@ -73,7 +73,7 @@
                                     | Sí, mayor a 20GWh
                             button.btn.btn-primary.btn-lg.my-4.mx-auto.d-block Crear cuenta
         Footer
-                                
+
 
 </template>
 <script>
@@ -134,7 +134,7 @@ export default {
             success:false
 
         }
-    },  
+    },
     methods:{
         validator(tipo){
             var app = this;
@@ -215,7 +215,7 @@ export default {
                         app.validador.company.error = 'error';
                         app.validador.company.message = 'Este campo es necesario';
                     }else{
-                        
+
                             app.validador.company.error = 'success';
                             app.validador.company.message = ''
                     }
@@ -225,7 +225,7 @@ export default {
                         app.validador.sector.error = 'error';
                         app.validador.sector.message = 'Este campo es necesario';
                     }else{
-                        
+
                             app.validador.sector.error = 'success';
                             app.validador.sector.message = ''
                     }
@@ -235,7 +235,7 @@ export default {
                         app.validador.puesto.error = 'error';
                         app.validador.puesto.message = 'Este campo es necesario';
                     }else{
-                        
+
                             app.validador.puesto.error = 'success';
                             app.validador.puesto.message = ''
                     }
@@ -289,7 +289,7 @@ export default {
                 autoLogin:true,
                 rememberMe:true,
                 redirect:'/'
-            }); 
+            });
         }
     },
     components:{

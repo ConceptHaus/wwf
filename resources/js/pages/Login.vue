@@ -6,7 +6,7 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Inicia sesión
                 div.row.justify-content-center
-                    div.col-4.mb-5
+                    div.col-md-4.col-12.mb-5
                         form(@submit.prevent="login")
                             div.form-group
                                 label.form-error.text-left.d-block(v-if="validador.email.error === 'error'",for="email") {{validador.email.message}}
@@ -25,8 +25,8 @@
                                     | Recuerdame
                             button.btn.btn-primary.btn-lg.btn-block(type="submit") Entrar
         Footer
-                            
-        
+
+
 </template>
 
 <script>
@@ -96,7 +96,7 @@ export default {
                     }
                     break;
                 default:
-                    break; 
+                    break;
             }
         },
         login(){

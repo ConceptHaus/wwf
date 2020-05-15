@@ -37,9 +37,21 @@
                                 h1.ruta_inner__number 4
                             .col-6.my-4
                                 p.ruta_inner__p Registra a los centros de carga que fueron identificados como usuario calificado. Hacer esto ahora, te ahorrará tiempo más adelante.
+                                AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4 #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                .row
+                    .col-12
+                        .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")
+                            a(:href="recurso.file",target="_blank")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/img.svg", v-if="recurso.ext == 'png' || recurso.ext == 'jpg'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/pdf.svg", v-if="recurso.ext == 'pdf'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/word.svg", v-if="recurso.ext == 'doc' || recurso.ext == 'docx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/excel.svg", v-if="recurso.ext == 'xls' || recurso.ext == 'csv' || recurso.ext == 'xlsx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/power.svg", v-if="recurso.ext == 'ppt' || recurso.ext == 'pptx'")
+                                p.ruta_inner__p--nobg.my-2.text-center.small {{recurso.titulo}}
+
         Pasos
         Footer
 </template>
@@ -48,12 +60,33 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import Pasos from '../components/Pasos'
+import AddMaterial from '../components/AddMaterial'
 export default {
+    data(){
+        return{
+            ruta:1,
+            recursos:[]
+        }
+    },
+    async mounted(){
+        await this.axios.get(`/recursos/rutas/${this.ruta}`)
+        .then(res=>{
+            this.recursos = res.data.recursos;
+            console.log(this.recursos);
+        })
+    },
+    methods:{
+        updateRecursos(e){
+            this.recursos.push(e);
+            console.log('emit',e)
+        }
+    },
     components:{
         Header,
         Footer,
         Nav,
-        Pasos
+        Pasos,
+        AddMaterial
     }
 }
 </script>
