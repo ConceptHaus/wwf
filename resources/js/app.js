@@ -7,6 +7,7 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
+import VueScrollTo from 'vue-scrollto';
 
 import App from './App.vue';
 import Home from './pages/Home';
@@ -21,6 +22,8 @@ import Contacto from './pages/Contacto';
 import Profile from './pages/Profile';
 import Password from './pages/Password';
 import Catalogo from './pages/admin/Catalogo';
+import Newsletter from './pages/admin/Newsletter';
+import Users from './pages/admin/Users';
 import UserCatalogo from './pages/UserCatalogo';
 import RutaUno from './pages/RutaUno';
 import RutaDos from './pages/RutaDos';
@@ -47,6 +50,7 @@ Vue.use(CarouselPlugin);
 Vue.use(ModalPlugin);
 Vue.use(VueAxios, axios);
 Vue.use(VueSweetalert2, optionsAlert);
+Vue.use(VueScrollTo);
 Vue.use(require('vue-moment'),{
     moment
 });
@@ -86,42 +90,66 @@ const router = new VueRouter({
         {
             path:'/ruta-de-compra/1',
             name:'ruta-uno',
-            component:RutaUno
+            component:RutaUno,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/2',
             name:'ruta-dos',
-            component:RutaDos
+            component:RutaDos,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/3',
             name:'ruta-tres',
-            component:RutaTres
+            component:RutaTres,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/4',
             name:'ruta-cuatro',
-            component:RutaCuatro
+            component:RutaCuatro,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/5',
             name:'ruta-cinco',
-            component:RutaCinco
+            component:RutaCinco,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/6',
             name:'ruta-seis',
-            component:RutaSeis
+            component:RutaSeis,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/7',
             name:'ruta-siete',
-            component:RutaSiete
+            component:RutaSiete,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/ruta-de-compra/8',
             name:'ruta-ocho',
-            component:RutaOcho
+            component:RutaOcho,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/recursos',
@@ -131,7 +159,10 @@ const router = new VueRouter({
         {
             path:'/catalogo',
             name:'catalogo',
-            component:UserCatalogo
+            component:UserCatalogo,
+            meta:{
+                auth:true
+            }
         },
         {
             path:'/noticias',
@@ -178,7 +209,26 @@ const router = new VueRouter({
         {
             path:'/admin/catalogo',
             name:'admin.catalogo',
-            component:Catalogo
+            component:Catalogo,
+            meta:{
+                auth:true
+            }
+        },
+        {
+            path:'/admin/newsletter',
+            name:'admin.newsletter',
+            component:Newsletter,
+            meta:{
+                auth:true
+            }
+        },
+        {
+            path:'/admin/users',
+            name:'admin.users',
+            component:Users,
+            meta:{
+                auth:true
+            }
         }
 
     ]

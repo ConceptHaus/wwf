@@ -1,5 +1,5 @@
 <template lang="pug">
-    .addMaterial
+    .addMaterial(v-if="$auth.user().is_admin")
         button.btn.btn-lg.btn-primary.my-0.mx-auto.d-block(v-b-modal.addCatalog) Agregar material
 
         b-modal(id="addCatalog", title="Agregar material", hide-footer)

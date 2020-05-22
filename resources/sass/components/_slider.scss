@@ -1,12 +1,21 @@
+.carousel{
+    @include down-screen(mobile-big){
+        margin-top: 220px;
+    }
+}
 .carousel-caption{
     right: 5%;
     left: inherit;
     width: 600px;
     bottom: 20%;
+    @include down-screen(mobile-big){
+        width: auto;
+        right: 10%;
+    }
     h3{
-        @include fluid-type($min-vw,$max-vw,45px,50px);
+        @include fluid-type($min-vw,$max-vw,20px,50px);
         text-shadow: 1px 2px 3px rgba(0,0,0,0.4);
         color:$blanco;
     }
-    
+
 }

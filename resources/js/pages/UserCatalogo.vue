@@ -36,6 +36,10 @@ export default {
             background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat;
             background-size: auto 100%;
             padding: 25px 0 50px 0;
+            @include down-screen(mobile-big){
+                background: none;
+                padding: 0;
+            }
         }
         &__content{
             margin-top:300px;

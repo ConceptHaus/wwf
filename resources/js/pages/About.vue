@@ -38,7 +38,7 @@
                                 h4 Conectamos a usuarios y suministradores
                             div.col-md-4.col-12
                                 p Fomentamos interacción entre compradores potenciales y suministradores y generadores de energía renovable para promover transacciones bilaterales beneficiosas.
-        section.sumate
+        section.sumate#sumate
             div.container-fluid
                 div.row.py-4
                     div.col-md-8.col-12.my-5
@@ -50,20 +50,23 @@
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/sumate-02.png")
                     div.col-md-6.col-12
-                        h3 Al registrar a tu empresa en la iniciativa Ren mx, obtendrás acceso a nuestras herramientas y guías exclusivas, incluyendo:
+                        h3 Al participar en la iniciativa Ren mx, obtendrás acceso a nuestros eventos, herramientas y guías exclusivas, incluyendo:
                         ul
-                            li La Estrategia de Compra, que indica los principales pasos e hitos para abastecer tu empresa con energía renovable
-                            li Análisis de consumo y demanda energética para saber cuánta electricidad necesitas contratar
-                            li Guía sobre la estructura y negociación de un PPA para asegurar las mejores condiciones de contratación para tu empresa
-                            li Formularios para elaborar y lanzar licitaciones listos para ser llenados con la información de tu empresa
-                            li Formulario comparativo de propuestas para que puedas comparar y hagas la mejor contratación de suministro
-                            li Recomendaciones legales para que entiendas las letras chiquitas del contrato
+                            li Sesiones de diálogo exclusivas para usuarios finales de energía renovable para compartir experiencias y mejores prácticas
+                            li Guía en línea para desarrollar una Estrategia de Compra, que indica los principales pasos e hitos para abastecer tu empresa con energía renovable
+                            li Programa de acompañamiento personalizado para identificar oportunidades específicas de suministro de energía para tu empresa
+                            li Plantillas y guías para:
+                                ul
+                                    li Analizar el consumo y demanda energética de tu empresa para conocer cuánta electricidad necesitas contratar
+                                    li Conocer las diferentes opciones de suministro y sus implicaciones
+                                    li Negociar un PPA o contrato de suministro, asegurando las mejores condiciones de contratación
+                                    li Recomendaciones para diseñar y publicar licitaciones
+                                    li Sugerencias para formar un equipo multidisciplinario que  gestione la compra de electricidad en tu empresa
                 div.row.justify-content-center.py-5
                     div.col-md-8.col-12.text-center
-                        p.my-4 Además, podrás participar en nuestras sesiones de entrenamiento virtual y presencial donde obtendrás acompañamiento en la utilización de nuestras guías y herramientas para elaborar una estrategia de compra de energía renovable.
-                        p.my-4 ¿Quieres ser parte de la transición hacia un México más competitivo y renovable? Regístrate aquí:
-                        button.btn.btn-primary.btn-lg.mb-4 Registrarse
-        section.beneficios
+                        p.my-4 ¿Quieres participar en nuestros eventos y conocer más nuestros servicios?
+                        button.btn.btn-primary.btn-lg.mb-4 Contáctanos aqui
+        section.beneficios#beneficios
             div.container-fluid.p-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
@@ -81,7 +84,7 @@
                         p Además, tu empresa estaría contribuyendo a impulsar a México hacia una economía sostenible, mejorando su reputación y anticipándose a nuevas regulaciones sobre emisiones.
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/img-beneficios.jpg")
-        section.wwf
+        section.wwf#wwf
             div.container-fluid.p-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
@@ -98,7 +101,7 @@
                         a(href="www.wwf.org.mx", target="_blank") www.wwf.org.mx
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/ren_03_desk.jpg")
-        section.equipo
+        section.equipo#equipo
             div.container-fluid.p-4
                 div.row.py-4
                     div.col-md-4.col-12.my-5
@@ -109,7 +112,7 @@
                         p.my-4 Es especialista en nuevos modelos de acción colectiva, sobre todo en alianzas entre el sector privado y organismos no gubernamentales (ONG) para la creación de estándares de producción sustentable y certificación, así como para asegurar la transición a una economía baja en carbono. Tiene experiencia de trabajo en áreas comerciales, tanto en el sector privado, como en ONG y sector público, así como en áreas de investigación y enseñanza. Luli es doctora y maestra en Desarrollo Sostenible por la Universidad de Utrecht en los Países Bajos y licenciada en Comunicación por la Universidad Iberoamericana en la Ciudad de México.
                 div.row
                     div.col-md-4.col-12
-                        img.img-fluid.avatar(src="../../images/home/guillermo.jpeg")
+                        img.img-fluid.avatar(src="../../images/home/guillermo.png")
                     div.col-md-8.col-12
                         h3.my-4 Guillermo Punzo
                         p.my-4 Oficial Jr de Mercados de Energía Renovable
@@ -125,14 +128,14 @@
             div.container-fluid.p-4
                 div.row.py-4
                     div.col-md-8.col-12.my-5
-                        h1.home__h1.my-4 #[span] Nuestro socios
-                        p.my-4 Trabajamos e invertimos en conjunto con una red de socios con el fin de emplear estrategias efectivas y compartir conocimiento.
-                        p.my-4 En México, colaboramos con organizaciones que comparten nuestra visión de transformación para el sector eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
+                        h1.home__h1.my-4 #[span] Empresas que participan
+                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100ya tienen un suministro renovable o están buscando conseguirlo.
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/zumma.jpg")
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/WRI-Mexico.jpg")
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/antuko.jpg")
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/gizlogo.jpg")
-                        p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil y con otras oficinas de WWF que promueven la compra corporativa de energía renovable en países como Australia, China, Corea, Estados Unidos e India.
+                        p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil, gobiernos locales y asociaciones industriales que comparten nuestra visión de transformación para  el sector  eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
+                        p.my-4 Ren mx es parte de una red global de iniciativas de WWF que promueven la adopción de energía renovable en Australia, China, Corea, Estados Unidos, India y Vietnam.
         Footer
 </template>
 

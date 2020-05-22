@@ -4,7 +4,7 @@
         Nav
         Slider
         section.home__quees
-            div.container-fluid.p-5
+            div.container-fluid.p-md-5
                 div.row.py-4
                     div.col-12.col-md-6.my-5
                         h1.home__h1.my-4 #[span] ¿Qué es Ren mx?

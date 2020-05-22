@@ -5,7 +5,7 @@
         section.ruta_inner__content
             div.container-fluid
                 .row
-                    .col-8
+                    .col-md-8.col-12
                         h1.home__h1.my-4.p-4 #[span] 3 Revisa las políticas de compras, financieras y contables de tu empresa
                 .row
                     .col-12
@@ -13,40 +13,48 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Define a un responsable(s) de gestionar el suministro de energía renovable. Puedes utilizar el capital humano de áreas ya establecidas (e.j. compras o mantenimiento) ó crear una nueva área o comité designado a la gestión energética.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Identifica, en conjunto con otras áreas relevantes (finanzas, compras, Dirección), las restricciones y requerimientos de contrataciones/abastecimiento de tu empresa. Algunos ejemplos son: tipo de moneda, periodo de contratación, políticas de pago, beneficios fiscales, políticas de inversión de capital (CAPEX), etc.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Diseña del proceso de adquisición de energía, incluyendo la licitación del suministro(s) de energía elegido(s) y la identificación de proveedores potenciales.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Con base en la estrategia de la compañía, diseña los indicadores clave para medir el desempeño del suministro eléctrico con el fin de poder monitorear y medir los resultados obtenidos.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 5
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Establece los mecanismos y responsables de la medición del desempeño del suministro y los procedimientos derivados para mantener un control de calidad.
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
-                        .material(v-for="recurso in recursos", :key="recurso.id")
-                            p {{recurso.titulo}}
+                .row
+                    .col-12
+                        .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")
+                            a(:href="recurso.file",target="_blank")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/img.svg", v-if="recurso.ext == 'png' || recurso.ext == 'jpg'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/pdf.svg", v-if="recurso.ext == 'pdf'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/word.svg", v-if="recurso.ext == 'doc' || recurso.ext == 'docx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/excel.svg", v-if="recurso.ext == 'xls' || recurso.ext == 'csv' || recurso.ext == 'xlsx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/power.svg", v-if="recurso.ext == 'ppt' || recurso.ext == 'pptx'")
+                                p.ruta_inner__p--nobg.my-2.text-center.small {{recurso.titulo}}
         Pasos
         Footer
 </template>

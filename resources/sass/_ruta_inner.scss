@@ -3,9 +3,16 @@
         background: transparent url(../../images/bkg-header.jpg) 50% 100% no-repeat !important;
         background-size: auto 100% !important;
         padding: 25px 0 50px 0;
+        @include down-screen(mobile-big){
+            background: none;
+            padding: 0;
+        }
     }
     &__content{
         margin-top: 300px;
+        @include down-screen(mobile-big){
+            margin-top: 250px;
+        }
     }
     &__number{
         background: $black;

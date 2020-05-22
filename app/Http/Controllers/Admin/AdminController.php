@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use App\User;
 use App\Noticias;
 use App\RecursosRutaCompra;
+use App\Newsletter;
 use DB;
 
 class AdminController extends Controller
@@ -68,6 +69,15 @@ class AdminController extends Controller
         return response([
             'status'=>'success',
             'catalogos'=>$catalogo
+        ],200);
+    }
+
+    public function getNewsletter(){
+        $newsletter = Newsletter::all();
+
+        return response([
+            'status'=>'success',
+            'newsletter'=>$newsletter
         ],200);
     }
 }

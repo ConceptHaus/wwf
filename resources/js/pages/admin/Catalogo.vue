@@ -9,7 +9,7 @@
                         div.col-12.my-5
                             button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar caso de estudio
                         div.col-12.my-4
-                            table.table.table-striped
+                            table.table.table-striped(v-if="catalogos && catalogos.length > 0")
                                 thead.thead-dark.table-bordered
                                     tr
                                         th #
@@ -27,7 +27,8 @@
                                                     i.las.la-edit
                                                 button.btn.btn-danger.btn-sm.d-inline-block
                                                     i.las.la-ban
-
+                            h2.text-center(v-else) No hay registros 😔
+            Footer
             b-modal(id="addCatalog", title="Agregar catálogo", hide-footer)
                 form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
                     div.form-group
@@ -133,6 +134,10 @@ export default {
             background: transparent url(../../../images/bkg-header.jpg) 50% 100% no-repeat;
             background-size: auto 100%;
             padding: 25px 0 50px 0;
+            @include down-screen(mobile-big){
+                background: none;
+                padding: 0;
+            }
         }
         &__content{
            margin-top:300px;

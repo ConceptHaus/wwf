@@ -11,9 +11,9 @@
                     b-nav-item-dropdown.mr-5(text="Mi cuenta")
                         b-dropdown-item(href="/edit/profile") Editar mi perfil
                         b-dropdown-item(href="/edit/password") Cambiar contraseña
-                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/catalogo") Casos de estudios
-                        b-dropdown-item(href="/edit/profile") Newsletter
-                        b-dropdown-item(href="/edit/profile") Usuarios
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/catalogo") Casos de estudios y reportes
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/newsletter") Newsletter
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/users") Usuarios
                         b-dropdown-item(href="#" @click="$auth.logout()") Cerrar sesión
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
@@ -21,22 +21,27 @@
                 b-navbar-nav
                     b-nav-item-dropdown.mx-2(text="Acerca de Ren mx", left)
                         b-dropdown-item(href="/acerca-de-ren") ¿Qué hacemos?
-                        b-dropdown-item(href="#") Súmate a la inciativa
-                        b-dropdown-item(href="#") Beneficios del suministro renovable
-                        b-dropdown-item(href="#") Acerca de WWF
-                        b-dropdown-item(href="#") Nuestro equipo
-                        b-dropdown-item(href="#") Nuestros socios
+                        b-dropdown-item(href="/acerca-de-ren#sumate") Súmate a la inciativa
+                        b-dropdown-item(href="/acerca-de-ren#benefecios") Beneficios del suministro renovable
+                        b-dropdown-item(href="/acerca-de-ren#empresas") Empresas que participan
+                        b-dropdown-item(href="/acerca-de-ren#wwf") Acerca de WWF
+                        b-dropdown-item(href="/acerca-de-ren#equipo") Nuestro equipo
                     b-nav-item.mx-2(href="/ruta-de-compra") Estrategía de compra
-                    b-nav-item.mx-2(v-if="$auth.check()" href="/catalogo") Catálogo de soluciones
+                    b-nav-item.mx-2(href="/catalogo") Catálogo de soluciones
                     b-nav-item.mx-2(href="/noticias") Casos de estudio y reportes
                     b-nav-item-dropdown.mx-2(text="El mercado eléctrico mayorista")
                         b-dropdown-item(href="/el-mercado-electrico-mayorista") El MEM y la energía renovable
-                        b-dropdown-item(href="#") Tendencias en la compra corporativa de electricidad
-                        b-dropdown-item(href="#") Usuarios finales
-                        b-dropdown-item(href="#") Opciones de compra de energía
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#tendencias") Tendencias en la compra corporativa de electricidad
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#usuarios") Usuarios finales
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#opciones") Opciones de compra de energía
                     b-nav-item.mx-2(href="/recursos") Recursos externos
 </template>
 <style lang="scss" scoped>
+    .navbar{
+        @include down-screen(mobile-big){
+             background: #26a9e1;
+        }
+    }
     .navbar-top{
         &--noheader{
           margin-top: 0px;
@@ -47,6 +52,9 @@
         background: transparent;
         top: 0;
         width: 100%;
+        @include down-screen(mobile-big){
+            margin-top: 90px;
+        }
     }
     .dropdown-item{
         font-size: 12px;

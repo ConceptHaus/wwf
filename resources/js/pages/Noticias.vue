@@ -6,19 +6,19 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
                 div.row.p-4
-                    div.col-6
+                    div.col-md-6.col-12
                         div.row
-                            div.col-6
+                            div.col-md-6.col-12
                                 img.img-fluid(src="../../images/noticias/noticia-01_desk.jpg")
-                            div.col-6
+                            div.col-md-6.col-12
                                 h5.my-4 Cemento 100% Renovable, Una realidad en Argentina
                                 p.my-4 La cementera Holcim consumirá electricidad de un parque solar en construcción ubicado en la provincia de Buenos Aires (Argentina).
                                 a.text-right(href="#") Leer completo
-                    div.col-6
+                    div.col-md-6.col-12
                         div.row
-                            div.col-6
+                            div.col-md-6.col-12
                                 img.img-fluid(src="../../images/noticias/noticia-02_desk.jpg")
-                            div.col-6
+                            div.col-md-6.col-12
                                 h5 Cemento 100% Renovable, Una realidad en Argentina
                                 p Para Toyota la generación en sitio es la solución más apropiada para ahorrar y combatir su huella de carbono. ¿Cuál es tu solución?.
                                 a.text-right(href="#") Leer completo

@@ -5,7 +5,7 @@
         section.ruta_inner__content
             div.container-fluid
                 .row
-                    .col-8
+                    .col-md-8.col-12
                         h1.home__h1.my-4.p-4 #[span] 2 Compara las alternativas de suministro de energía renovable
                 .row
                     .col-12
@@ -13,9 +13,9 @@
                         h1.home__h1.my-4.p-4 #[span] Actividades
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p Investiga los procedimientos y requerimientos específicos de cada alternativa de suministro de electricidad renovable.
                                 .row
                                     .col-6.my-2
@@ -28,28 +28,36 @@
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="#") #[i.las.la-cloud-download-alt] Generación Distribuida
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Compara las ventajas y desventajas de cada modalidad.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Elige la(s) alternativa(s) que se mejor se adapten a las necesidades y restricciones de tu empresa, así como al porcentaje de energía renovable que asignaste.
                     .col-12
                         .row.justify-content-center
-                            .col-1.my-4
+                            .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
-                            .col-6.my-4
+                            .col-md-6.col-12.my-4
                                 p.ruta_inner__p Comienza a identificar a posibles proveedores.
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
                         h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
-                        .material(v-for="recurso in recursos", :key="recurso.id")
-                            p {{recurso.titulo}}
+                .row
+                    .col-12
+                        .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")
+                            a(:href="recurso.file",target="_blank")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/img.svg", v-if="recurso.ext == 'png' || recurso.ext == 'jpg'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/pdf.svg", v-if="recurso.ext == 'pdf'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/word.svg", v-if="recurso.ext == 'doc' || recurso.ext == 'docx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/excel.svg", v-if="recurso.ext == 'xls' || recurso.ext == 'csv' || recurso.ext == 'xlsx'")
+                                img.img-fluid.ruta_inner__icon(src="../../images/icons/power.svg", v-if="recurso.ext == 'ppt' || recurso.ext == 'pptx'")
+                                p.ruta_inner__p--nobg.my-2.text-center.small {{recurso.titulo}}
         Pasos
         Footer
 </template>
