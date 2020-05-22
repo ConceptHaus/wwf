@@ -39,7 +39,7 @@
                             div.col-md-4.col-12
                                 p Fomentamos interacción entre compradores potenciales y suministradores y generadores de energía renovable para promover transacciones bilaterales beneficiosas.
         section.sumate#sumate
-            div.container-fluid
+            div.container-fluid.px-5
                 div.row.py-4
                     div.col-md-8.col-12.my-5
                         h1.home__h1.my-4 #[span] Súmate a la iniciativa
@@ -65,7 +65,7 @@
                 div.row.justify-content-center.py-5
                     div.col-md-8.col-12.text-center
                         p.my-4 ¿Quieres participar en nuestros eventos y conocer más nuestros servicios?
-                        button.btn.btn-primary.btn-lg.mb-4 Contáctanos aqui
+                        router-link.btn.btn-primary.btn-lg.mb-4(tag="button", to="contacto") Contáctanos aqui
         section.beneficios#beneficios
             div.container-fluid.p-5
                 div.row.py-4
@@ -129,7 +129,7 @@
                 div.row.py-4
                     div.col-md-8.col-12.my-5
                         h1.home__h1.my-4 #[span] Empresas que participan
-                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100ya tienen un suministro renovable o están buscando conseguirlo.
+                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100 ya tienen un suministro renovable o están buscando conseguirlo
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/zumma.jpg")
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/WRI-Mexico.jpg")
                         img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/antuko.jpg")

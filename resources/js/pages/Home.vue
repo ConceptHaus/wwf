@@ -29,7 +29,7 @@
                     div.col-12.col-md-6.my-5
                         h1.home__h1.my-4 #[span] Recursos
                         p.my-4 Ponemos a tu dispocisión una compilación de materiales relevantes que ayudarán a tu empresa a alcanzar un suministro de energía renovable de manera eficiente y confiable.
-                        button.btn.btn-lg.btn-primary Conoce los recursos
+                        router-link.btn.btn-lg.btn-primary(tag="button", to="recursos") Conoce los recursos
                     div.col-12.col-md-6
                         img.img-fluid(src="../../images/home/ren_02_desk.jpg")
         Footer

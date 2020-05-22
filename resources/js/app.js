@@ -22,6 +22,7 @@ import Contacto from './pages/Contacto';
 import Profile from './pages/Profile';
 import Password from './pages/Password';
 import Catalogo from './pages/admin/Catalogo';
+import Aviso from './pages/Aviso';
 import Newsletter from './pages/admin/Newsletter';
 import Users from './pages/admin/Users';
 import UserCatalogo from './pages/UserCatalogo';
@@ -173,6 +174,11 @@ const router = new VueRouter({
             path:'/contacto',
             name:'contacto',
             component:Contacto
+        },
+        {
+            path:'/aviso',
+            name:'aviso',
+            component:Aviso
         },
         {
             path:'/login',
