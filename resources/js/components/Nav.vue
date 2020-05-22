@@ -49,7 +49,7 @@
         position: absolute;
         z-index: 10;
         margin-top: 60px;
-        background: transparent;
+        //background: transparent;
         top: 0;
         width: 100%;
         @include down-screen(mobile-big){
