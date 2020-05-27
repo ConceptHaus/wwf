@@ -1,7 +1,7 @@
 <template lang="pug">
-    .addMaterial(v-if="$auth.user().is_admin")
-        button.btn.btn-lg.btn-primary.my-0.mx-auto.d-block(v-b-modal.addCatalog) Agregar material
-
+    .addMaterial
+        button.btn.btn-lg.btn-primary.my-0.mx-auto.d-block(v-b-modal.addCatalog v-if="$auth.user().is_admin") Agregar material
+        a.my-0.mx-auto.d-block.text-center.my-4(:href="(ruta+1)" v-if="ruta < 8") Siguiente
         b-modal(id="addCatalog", title="Agregar material", hide-footer)
                 form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
                     .form-group

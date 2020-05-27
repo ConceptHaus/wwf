@@ -109,6 +109,9 @@ export default {
                    width: 50%;
                    left: 45%;
                }
+               @include down-screen(mobile-big){
+                   left: 50%;
+               }
                display: block;
             }
             &--more{
@@ -118,6 +121,10 @@ export default {
                  @include down-screen(landscape){
                    bottom: 2%;
                 }
+                @include down-screen(mobile-big){
+                    left: 40%;
+                    bottom: 5%;
+                }
                 font-weight: bold;
                 display: block;
                 left: 10%;
@@ -125,6 +132,10 @@ export default {
             &--img{
                 max-width: 90%;
                 opacity: .3;
+                @include down-screen(mobile-big){
+                    display: block;
+                    margin: 0 auto;
+                }
             }
         }
         i{
@@ -133,6 +144,9 @@ export default {
             top: 50%;
             font-size: 2.5rem;
             color: #26a9e1;
+            @include down-screen(mobile-big){
+                    display: none;
+            }
         }
     }
 </style>

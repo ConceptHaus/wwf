@@ -8,10 +8,19 @@
                     .col-md-8.col-12
                         h1.home__h1.my-4.p-4 #[span] 2 Compara las alternativas de suministro de energía renovable
                 .row
-                    .col-12
+                    .col-md-8.col-12
                         p En este paso podrás comparar y elegir una o varias modalidades de suministro de electricidad renovable. La selección de una u otra opción dependerá del tipo de usuario (básico o calificado), así como de los objetivos económicos y de energía renovable que haya fijado la empresa.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                .row.justify-content-center
+                    .col-md-4.col-12.my-4
+                        a.btn.btn-lg.btn-primary.my-5(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/opciones-01.jpg" target="_blank") #[i.las.la-cloud-download-alt] Modalidad de suministro eléctrico
+                    .col-md-6.col-12.p-md-5#collapse
+                        p Dado que los usuarios básicos no participan en el mercado eléctrico mayorista (MEM), éstos obtienen su electricidad a través de un suministrador de servicios básicos (SSB). Y, como opciones complementarias, pueden obtener un porcentaje de su electricidad de fuentes renovables a partir de la compra voluntaria de certificados de energía limpia (CEL) o de la generación en sitio, ya sea en la modalidad de generación distribuida (GD) o abasto aislado (AA).
+                        b-collapse(id="collapse-1")
+                            p En el extremo opuesto, los usuarios calificados participantes del mercado (UCPM) pueden acceder a todas las modalidades de suministro pero tienen que gestionar su consumo y participación en el MEM con un escritorio que opere 24/7.
+                            p Una de las opciones de suministro de energía más atractiva para la mayoría de las empresas en México es el suministro calificado. En esta modalidad, la compra de energía se hace a través de un contrato bilateral, PPA (power purchase agreement) por sus siglas en inglés, con un suministrador de servicios calificados (SSC) que representa al usuario final ante el MEM y le provee electricidad renovable.
+                        a.text-right.d-block(href="#collapse" v-b-toggle.collapse-1) Leer más
                     .col-12
+                        h1.home__h1.my-4.p-4 #[span] Actividades
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
@@ -96,3 +105,8 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+    #collapse{
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#e3f3fb), to(#eff7e6));
+    }
+</style>

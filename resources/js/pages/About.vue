@@ -3,7 +3,7 @@
         Header
         Nav
         Hero(ImgSrc="banner.jpg")
-        section.que-hacemos
+        section.que-hacemos#quehacemos
             div.container-fluid.p-5
                 div.row.py-4
                     div.col-12.col-md-6.my-5
@@ -45,10 +45,10 @@
                         h1.home__h1.my-4 #[span] Súmate a la iniciativa
                         p.my-4 Invitamos a todas las empresas que operan en México a tomar medidas ambiciosas y rápidas para aumentar su productividad por medio del suministro de energía renovable, la eficiencia energética y el establecimiento de objetivos de reducción de emisiones.
                     div.col-md-4.col-12
-                        img.img-fluid(src="../../images/home/sumate-01.png")
-                div.row
-                    div.col-md-6.col-12
-                        img.img-fluid(src="../../images/home/sumate-02.png")
+                        img.img-fluid.w-75.my-0.mx-auto.p-5.d-none.d-sm-block(src="../../images/home/sumate-01.png")
+                div.row.justify-content-center
+                    div.col-md-4.col-12
+                        img.img-fluid.w-75.p-3.d-none.d-sm-block(src="../../images/home/sumate-02.png")
                     div.col-md-6.col-12
                         h3 Al participar en la iniciativa Ren mx, obtendrás acceso a nuestros eventos, herramientas y guías exclusivas, incluyendo:
                         ul
@@ -84,6 +84,57 @@
                         p Además, tu empresa estaría contribuyendo a impulsar a México hacia una economía sostenible, mejorando su reputación y anticipándose a nuevas regulaciones sobre emisiones.
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/img-beneficios.jpg")
+        section.socios#empresas
+            div.container-fluid.p-4
+                div.row.py-4
+                    div.col-md-8.col-12.my-5
+                        h1.home__h1.my-4 #[span] Empresas que participan
+                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100 ya tienen un suministro renovable o están buscando conseguirlo
+                        slick(ref="slick" :options="slickOptions")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Tetrapak.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Soriana.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Samsung.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Royal_Holiday.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Puma.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Nestle.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Liverpool.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/HSBC.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Herdez.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Grupo Modelo.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Gerdau Corsa.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/FUNO.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Faurecia.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/CyA.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Cuprum.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Cmr.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Cemex.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Citibanamex.png")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Baker McKenzie.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Autozone.jpg")
+                            a(href="#")
+                                img.img-fluid.w-50(src="../../images/acercade/socios/Audi.jpg")
+                        p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil, gobiernos locales y asociaciones industriales que comparten nuestra visión de transformación para  el sector  eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
+                        p.my-4 Ren mx es parte de una red global de iniciativas de WWF que promueven la adopción de energía renovable en Australia, China, Corea, Estados Unidos, India y Vietnam.
         section.wwf#wwf
             div.container-fluid.p-5
                 div.row.py-4
@@ -124,18 +175,6 @@
                         h3.my-4 Ninel Escobar
                         p.my-4 Coordinadora de Cambio Climático y Energía
                         p.my-4 Es especialista en adaptación al cambio climático. Su trabajo se enfoca en la planeación estratégica de WWF en cambio climático y energía; coordinar la implementación de proyectos y brindar apoyo técnico al resto de la organización en materia de mitigación y adaptación. Ha coordinado las contribuciones de WWF en instrumentos de política como la Estrategia Nacional de Cambio Climático, el Programa Especial de Cambio Climático y la Estrategia de Cambio Climático desde las Área Naturales Protegidas. Ninel cuenta con una maestría en Economía Ambiental y Recursos Naturales de la Universidad de Concepción en Chile y una licenciatura en Economía por el Centro de Investigación y Docencia Económicas (CIDE).
-        section.socios
-            div.container-fluid.p-4
-                div.row.py-4
-                    div.col-md-8.col-12.my-5
-                        h1.home__h1.my-4 #[span] Empresas que participan
-                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100 ya tienen un suministro renovable o están buscando conseguirlo
-                        img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/zumma.jpg")
-                        img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/WRI-Mexico.jpg")
-                        img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/antuko.jpg")
-                        img.img-fluid.d-inline-block.w-25(src="../../images/acercade/socios/gizlogo.jpg")
-                        p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil, gobiernos locales y asociaciones industriales que comparten nuestra visión de transformación para  el sector  eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
-                        p.my-4 Ren mx es parte de una red global de iniciativas de WWF que promueven la adopción de energía renovable en Australia, China, Corea, Estados Unidos, India y Vietnam.
         Footer
 </template>
 
@@ -144,13 +183,28 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-
+import Slick from 'vue-slick';
 export default {
+    data(){
+        return {
+            slickOptions:{
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    },
     components:{
         Header,
         Hero,
+        Slick,
         Nav,
         Footer
     }
 }
 </script>
+<style lang="scss" scoped>
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+</style>

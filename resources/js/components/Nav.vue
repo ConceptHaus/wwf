@@ -20,7 +20,7 @@
             b-collapse#nav-collapse(is-nav)
                 b-navbar-nav
                     b-nav-item-dropdown.mx-2(text="Acerca de Ren mx", left)
-                        b-dropdown-item(href="/acerca-de-ren") ¿Qué hacemos?
+                        b-dropdown-item(href="/acerca-de-ren#quehacemos") ¿Qué hacemos?
                         b-dropdown-item(href="/acerca-de-ren#sumate") Súmate a la inciativa
                         b-dropdown-item(href="/acerca-de-ren#benefecios") Beneficios del suministro renovable
                         b-dropdown-item(href="/acerca-de-ren#empresas") Empresas que participan

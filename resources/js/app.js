@@ -1,7 +1,7 @@
 
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
-import {CarouselPlugin, NavbarPlugin, ModalPlugin} from 'bootstrap-vue';
+import {CarouselPlugin, NavbarPlugin, ModalPlugin, CollapsePlugin} from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
@@ -49,6 +49,7 @@ Vue.use(BootstrapVue);
 Vue.use(NavbarPlugin);
 Vue.use(CarouselPlugin);
 Vue.use(ModalPlugin);
+Vue.use(CollapsePlugin)
 Vue.use(VueAxios, axios);
 Vue.use(VueSweetalert2, optionsAlert);
 Vue.use(VueScrollTo);

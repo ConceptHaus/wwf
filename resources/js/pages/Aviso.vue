@@ -3,7 +3,7 @@
         Header
         Nav.bg-header
         section.contacto__content
-            div.container-fluid
+            div.container
                 h1.home__h1.my-4.p-4 #[span] Aviso de privacidad
                 p Le solicitamos que lea atentamente los términos contenidos en el presente Aviso de Privacidad Integral para la protección de datos personales:
                 p World Wildlife Fund, Inc. con domicilio en Av. México 51, Col. Hipódromo, Delegación Cuauhtémoc, D.F. CP 06100 (en adelante “WWF México”, “nosotros”), es responsable del tratamiento y protección de sus datos personales, los cuales son tratados de forma estrictamente confidencial, de conformidad con lo dispuesto en la Ley Federal de la Protección de Datos Personales en Posesión de los Particulares (la “Ley de Datos Personales”).
@@ -24,6 +24,20 @@
 
         Footer
 </template>
+<script>
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+export default {
+    components:{
+        Header,
+        Hero,
+        Nav,
+        Footer
+    }
+}
+</script>
 <style lang="scss">
     .contacto{
        .bg-header{

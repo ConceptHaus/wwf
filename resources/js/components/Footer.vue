@@ -12,10 +12,19 @@
                     img.img-fluid(src="../../images/wwf.png")
                     img.img-fluid(src="../../images/ico-logo.png")
                 div.col-md-3.col-12
+                    ul.m-3
+                        a(href="https://www.facebook.com/WWF.Mexico/" target="_blank")
+                            li.m-2.lab.la-facebook-f
+                        a(href="https://twitter.com/WWF_Mexico" target="_blank")
+                            li.m-2.lab.la-twitter
+                        a(href="https://www.instagram.com/wwf_mexico/?hl=es" target="_blank")
+                            li.m-2.lab.la-instagram
+                        a(href="https://www.youtube.com/channel/UCnxxMFJOd4OKLz7xnpWh6CQ" target="_blank")
+                            li.m-2.lab.la-youtube
                 div.col-md-3.col-12.mt-2
                     a(href="/contacto").btn.btn-light.btn-lg.my-0.mx-auto.d-block Contáctanos
                 div.col-md-3.col-12.mt-2
-                    a.white(href="#").my-0.mx-auto.d-block Aviso de privacidad | REN MX 2019.
+                    router-link.white(to="aviso").my-0.mx-auto.d-block Aviso de privacidad | REN MX 2019.
 
 
 </template>
@@ -59,6 +68,16 @@ footer{
     }
     @include down-screen(mobile-big){
         background-size: cover;
+    }
+    li{
+        color:#fff;
+        display: inline;
+        font-size: 33px;
+    }
+    a{
+        &:hover{
+            text-decoration: none;
+        }
     }
 }
 </style>
