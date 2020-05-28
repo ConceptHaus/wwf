@@ -27,12 +27,14 @@ Route::group(['middleware'=>'jwt.refresh'], function(){
 
 Route::post('/contacto','GeneralController@contacto');
 Route::post('/newsletter','GeneralController@newsletter');
-Route::post('/recursos','Admin\AdminController@addCatalogo');
-Route::post('/recursos/rutas','Admin\AdminController@addRecurso');
+Route::post('/recursos','Admin\AdminController@addRecurso');
+Route::post('/casos','Admin\AdminController@addCaso');
+Route::post('/recursos/rutas','Admin\AdminController@addRecursoRuta');
 Route::get('/download/users','Admin\AdminController@downloadUsers');
 Route::get('/download/mensajes','Admin\AdminController@downloadMensajes');
 Route::get('/users','Admin\AdminController@getUsers');
 Route::get('/mensajes','Admin\AdminController@getMensajes');
 Route::get('/newsletter','Admin\AdminController@getNewsletter');
-Route::get('/recursos','Admin\AdminController@getCatalogo');
+Route::get('/recursos','Admin\AdminController@getRecursos');
+Route::get('/casos','Admin\AdminController@getCasos');
 Route::get('/recursos/rutas/{ruta}','Admin\AdminController@getRecursosRutas');

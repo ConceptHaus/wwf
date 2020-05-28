@@ -11,6 +11,7 @@ use App\Contacto;
 use App\Noticias;
 use App\RecursosRutaCompra;
 use App\Newsletter;
+use App\Recursos;
 use App\Exports\UserExport;
 use App\Exports\MensajesExport;
 use Carbon\Carbon;
@@ -19,21 +20,33 @@ use Excel;
 
 class AdminController extends Controller
 {
-    public function addCatalogo(Request $request){
-        $catalogo = new Noticias;
-        $catalogo->titulo = $request->titulo;
-        $catalogo->descripcion = $request->descripcion;
-        $catalogo->url = $request->link;
-        $catalogo->img = $this->uploadTicketS3($request->file('file'));
-        $catalogo->save();
+    public function addCaso(Request $request){
+        $caso = new Noticias;
+        $caso->titulo = $request->titulo;
+        $caso->descripcion = $request->descripcion;
+        $caso->url = $request->link;
+        $caso->img = $this->uploadTicketS3($request->file('file'));
+        $caso->save();
 
         return response([
             'status'=>'success',
-            'catalogo'=>$catalogo
+            'caso'=>$caso
+        ],201);
+    }
+    public function addRecurso(Request $request){
+        $recurso = new Recurso;
+        $recurso->titulo = $request->titulo;
+        $recurso->descripcion = $request->descripcion;
+        $recurso->url = $request->link;
+        $recurso->img = $this->uploadTicketS3($request->file('file'));
+        $recurso->save();
+        return response([
+            'status'=>'success',
+            'recurso'=>$recurso
         ],201);
     }
 
-    public function addRecurso(Request $request){
+    public function addRecursoRuta(Request $request){
         $recurso = new RecursosRutaCompra;
         $recurso->ruta = $request->ruta;
         $recurso->titulo = $request->titulo;
@@ -68,12 +81,20 @@ class AdminController extends Controller
         ],200);
     }
 
-    public function getCatalogo(Request $request){
-        $catalogo = Noticias::all();
+    public function getCasos(Request $request){
+        $caso = Noticias::all();
 
         return response([
             'status'=>'success',
-            'catalogos'=>$catalogo
+            'caso'=>$caso
+        ],200);
+    }
+    public function getRecursos(Request $request){
+        $recursos = Recursos::all();
+
+        return response([
+            'status'=>'success',
+            'recursos'=>$recursos
         ],200);
     }
     public function getUsers(){

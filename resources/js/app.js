@@ -21,7 +21,8 @@ import Noticias from './pages/Noticias';
 import Contacto from './pages/Contacto';
 import Profile from './pages/Profile';
 import Password from './pages/Password';
-import Catalogo from './pages/admin/Catalogo';
+import Casos from './pages/admin/Casos';
+import AdminRecursos from './pages/admin/Recursos';
 import Aviso from './pages/Aviso';
 import Newsletter from './pages/admin/Newsletter';
 import Users from './pages/admin/Users';
@@ -215,9 +216,17 @@ const router = new VueRouter({
             }
         },
         {
-            path:'/admin/catalogo',
-            name:'admin.catalogo',
-            component:Catalogo,
+            path:'/admin/recursos',
+            name:'admin.recursos',
+            component:AdminRecursos,
+            meta:{
+                auth:true
+            }
+        },
+        {
+            path:'/admin/casos',
+            name:'admin.casos',
+            component:Casos,
             meta:{
                 auth:true
             }

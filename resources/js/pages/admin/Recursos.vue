@@ -4,41 +4,42 @@
         Nav.bg-header
         section.catalogo__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Recursos
+                h1.home__h1.my-4.p-4 #[span] Recursos externos
                     div.row.p-4
                         div.col-12.my-5
-                            button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar material
+                            button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar recurso externo
                         div.col-12.my-4
-                            table.table.table-striped
+                            table.table.table-striped(v-if="recursos && recursos.length > 0")
                                 thead.thead-dark.table-bordered
                                     tr
                                         th #
                                         th Título
                                         th Descripción
                                         th Acciones
-                                tbody(v-for="catalogo in catalogos", :key="catalogo.id")
+                                tbody(v-for="recurso in recursos", :key="recurso.id")
                                     tr
-                                        td {{ catalogo.id }}
-                                        td {{ catalogo.titulo }}
-                                        td {{ catalogo.descripcion }}
+                                        td {{ recurso.id }}
+                                        td {{ recurso.titulo }}
+                                        td {{ recurso.descripcion }}
                                         td
                                             div.btn-group(role="group")
                                                 button.btn.btn-primary.btn-sm.d-inline-block
                                                     i.las.la-edit
                                                 button.btn.btn-danger.btn-sm.d-inline-block
                                                     i.las.la-ban
-
-            b-modal(id="addCatalog", title="Agregar catálogo", hide-footer)
-                form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
-                    div.form-group
-                        input.form-control(v-model="titulo",type="text", placeholder="Título")
-                    div.form-group
-                        input.form-control(v-model="link",type="text", placeholder="Link")
-                    div.form-group
-                        textarea.form-control(v-model="descripcion", placeholder="Descripción")
-                    div.form-group
-                        vue-dropzone(ref="recursosDropzone", id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
-                    button.btn.btn-primary.btn-lg.btn-block(type="submit") Agregar datos
+                            h2.text-center(v-else) No hay recursos registrados 😔
+        Footer
+        b-modal(id="addCatalog", title="Agregar recurso", hide-footer)
+            form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
+                div.form-group
+                    input.form-control(v-model="titulo",type="text", placeholder="Título")
+                div.form-group
+                    input.form-control(v-model="link",type="text", placeholder="Link")
+                div.form-group
+                    textarea.form-control(v-model="descripcion", placeholder="Descripción")
+                div.form-group
+                    vue-dropzone(ref="recursosDropzone", id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
+                button.btn.btn-primary.btn-lg.btn-block(type="submit") Agregar datos
 
 </template>
 
@@ -52,7 +53,6 @@ import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 export default {
     data(){
         return{
-
             recursos:'',
             titulo:'',
             link:'',
@@ -82,7 +82,7 @@ export default {
     async mounted(){
         await this.axios.get('/recursos')
             .then(res=>{
-                this.recursos = res.data.catalogos;
+                this.recursos = res.data.recursos;
                 console.log(this.recursos);
             })
     },
@@ -105,7 +105,7 @@ export default {
         successServer(file,response){
             this.$swal({
                 title:'<h1>¡Todo bien!</h1>',
-                html:'<p>Tu catálogo se ha subido con éxito.</p>'
+                html:'<p>Tu recurso se ha subido con éxito.</p>'
             }).then(result=>{
                 if(result.value){
                     this.$refs.recursosDropzone.removeAllFiles();

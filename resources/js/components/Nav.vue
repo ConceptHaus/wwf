@@ -11,7 +11,8 @@
                     b-nav-item-dropdown.mr-5.drop-down-user(text="Mi cuenta")
                         b-dropdown-item(href="/edit/profile") Editar mi perfil
                         b-dropdown-item(href="/edit/password") Cambiar contraseña
-                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/catalogo") Casos de estudios y reportes
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/casos") Casos de estudios y reportes
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/recursos") Recursos externos
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/newsletter") Newsletter
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/users") Usuarios
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/mensajes") Mensajes
