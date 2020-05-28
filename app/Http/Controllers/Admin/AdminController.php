@@ -12,6 +12,7 @@ use App\Noticias;
 use App\RecursosRutaCompra;
 use App\Newsletter;
 use App\Exports\UserExport;
+use App\Exports\MensajesExport;
 use Carbon\Carbon;
 use DB;
 use Excel;
@@ -111,5 +112,9 @@ class AdminController extends Controller
             'Fecha de registro'
         ];
         return Excel::download(new UserExport($headings), "{$date}_users.xlsx");
+    }
+    public function downloadMensajes(){
+        $date = Carbon::now();
+        return Excel::download(new MensajesExport, "{$date}_mensajes.xlsx");
     }
 }

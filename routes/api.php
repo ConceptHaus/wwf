@@ -30,6 +30,7 @@ Route::post('/newsletter','GeneralController@newsletter');
 Route::post('/recursos','Admin\AdminController@addCatalogo');
 Route::post('/recursos/rutas','Admin\AdminController@addRecurso');
 Route::get('/download/users','Admin\AdminController@downloadUsers');
+Route::get('/download/mensajes','Admin\AdminController@downloadMensajes');
 Route::get('/users','Admin\AdminController@getUsers');
 Route::get('/mensajes','Admin\AdminController@getMensajes');
 Route::get('/newsletter','Admin\AdminController@getNewsletter');
