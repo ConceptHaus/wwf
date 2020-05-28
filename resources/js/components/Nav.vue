@@ -30,7 +30,7 @@
                         b-dropdown-item(href="/acerca-de-ren#equipo") Nuestro equipo
                     b-nav-item.mx-2(href="/ruta-de-compra") Estrategía de compra
                     b-nav-item.mx-2(href="/catalogo") Catálogo de soluciones
-                    b-nav-item.mx-2(href="/noticias") Casos de estudio y reportes
+                    b-nav-item.mx-2(href="/casos") Casos de estudio y reportes
                     b-nav-item-dropdown.mx-2(text="El mercado eléctrico mayorista")
                         b-dropdown-item(href="/el-mercado-electrico-mayorista") El MEM y la energía renovable
                         b-dropdown-item(href="/el-mercado-electrico-mayorista#tendencias") Tendencias en la compra corporativa de electricidad

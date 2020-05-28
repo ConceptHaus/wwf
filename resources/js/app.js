@@ -169,8 +169,8 @@ const router = new VueRouter({
             }
         },
         {
-            path:'/noticias',
-            name:'noticias',
+            path:'/casos',
+            name:'casos',
             component:Noticias
         },
         {

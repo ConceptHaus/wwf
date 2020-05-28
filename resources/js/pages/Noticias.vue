@@ -6,35 +6,15 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
                 div.row.p-4
-                    div.col-md-6.col-12
-                        div.row
+                    div.col-md-6.col-12(v-if="casos && casos.length > 0")
+                        div.row(v-for="caso in casos" :key="casos.id")
                             div.col-md-6.col-12
-                                img.img-fluid(src="../../images/noticias/noticia-01_desk.jpg")
+                                img.img-fluid(:src="caso.img")
                             div.col-md-6.col-12
-                                h5.my-4 Cemento 100% Renovable, Una realidad en Argentina
-                                p.my-4 La cementera Holcim consumirá electricidad de un parque solar en construcción ubicado en la provincia de Buenos Aires (Argentina).
-                                a.text-right(href="#") Leer completo
-                    div.col-md-6.col-12
-                        div.row
-                            div.col-md-6.col-12
-                                img.img-fluid(src="../../images/noticias/noticia-02_desk.jpg")
-                            div.col-md-6.col-12
-                                h5 Cemento 100% Renovable, Una realidad en Argentina
-                                p Para Toyota la generación en sitio es la solución más apropiada para ahorrar y combatir su huella de carbono. ¿Cuál es tu solución?.
-                                a.text-right(href="#") Leer completo
-                ul.pagination.pagination-sm
-                        li.page-item
-                            a.page-link(href="#") Previous
-                        li.page-item
-                            a.page-link(href="#") 1
-                        li.page-item
-                            a.page-link(href="#") 2
-                        li.page-item
-                            a.page-link(href="#") 3
-                        li.page-item
-                            a.page-link(href="#") 4
-                        li.page-item
-                            a.page-link(href="#") Next
+                                h5.my-4 {{caso.titulo}}
+                                p.my-4 {{caso.descripcion}}
+                                a.text-right(:href="caso.url") Leer completo
+                    h2.text-center(v-else) No hay material disponible.
         Footer
 </template>
 <script>
@@ -43,10 +23,22 @@ import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 
 export default {
+    data(){
+        return{
+            casos:''
+        }
+    },
     components:{
         Header,
         Footer,
         Nav
+    },
+    async mounted(){
+        await this.axios.get('/casos')
+            .then(res=>{
+                this.casos = res.data.casos;
+                console.log(this.casos)
+            })
     }
 }
 </script>
