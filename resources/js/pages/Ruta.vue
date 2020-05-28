@@ -2,7 +2,7 @@
     div.ruta
         Header
         Nav.bg-header
-        section.ruta__content
+        section.ruta__content(:class="[$auth.check() ? 'ruta__content--auth':' ']")
             div.container-fluid
                 div.row.p-4
                     div.col-md-8.col-12
@@ -85,6 +85,15 @@ export default {
         }
         &__content{
             margin-top:300px;
+            @include down-screen(mobile-big){
+                margin-top: 200px;
+            }
+           &--auth{
+                @include down-screen(mobile-big){
+                    margin-top: 100px;
+                }
+            }
+
         }
         &__paso{
             &:hover{

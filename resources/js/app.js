@@ -25,6 +25,7 @@ import Catalogo from './pages/admin/Catalogo';
 import Aviso from './pages/Aviso';
 import Newsletter from './pages/admin/Newsletter';
 import Users from './pages/admin/Users';
+import Mensajes from './pages/admin/Mensajes';
 import UserCatalogo from './pages/UserCatalogo';
 import RutaUno from './pages/RutaUno';
 import RutaDos from './pages/RutaDos';
@@ -233,6 +234,14 @@ const router = new VueRouter({
             path:'/admin/users',
             name:'admin.users',
             component:Users,
+            meta:{
+                auth:true
+            }
+        },
+        {
+            path:'/admin/mensajes',
+            name:'admin.mensajes',
+            component:Mensajes,
             meta:{
                 auth:true
             }

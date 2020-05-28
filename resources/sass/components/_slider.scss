@@ -1,7 +1,15 @@
 .carousel{
-    @include down-screen(mobile-big){
-        margin-top: 220px;
+    &__container{
+        @include down-screen(mobile-big){
+            margin-top: 220px;
+        }
+        &--auth{
+            @include down-screen(mobile-big){
+                margin-top: 100px !important;
+            }
+        }
     }
+
 }
 .carousel-caption{
     right: 5%;

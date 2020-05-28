@@ -14,6 +14,7 @@
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/catalogo") Casos de estudios y reportes
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/newsletter") Newsletter
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/users") Usuarios
+                        b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/mensajes") Mensajes
                         b-dropdown-item(href="#" @click="$auth.logout()") Cerrar sesión
         b-navbar(type="light", toggleable="lg")
             b-navbar-toggle(target="nav-collapse")
@@ -45,6 +46,9 @@
     .navbar-top{
         &--noheader{
           margin-top: 0px;
+          @include down-screen(mobile-big){
+              margin-top: 0px !important;
+          }
         }
         position: absolute;
         z-index: 10;

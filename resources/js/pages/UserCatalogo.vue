@@ -2,7 +2,7 @@
     div.noticias
         Header
         Nav.bg-header
-        section.noticias__content
+        section.noticias__content(:class="[$auth.check() ? 'noticias__content--auth':' ']")
             div.container-fluid
                 h1.home__h1.my-md-4.my-lg-4.p-4 #[span] Catálogo de soluciones
                 div.row.p-4.justify-content-center
@@ -43,6 +43,15 @@ export default {
         }
         &__content{
             margin-top:300px;
+            @include down-screen(mobile-big){
+                margin-top: 200px;
+            }
+            &--auth{
+                    @include down-screen(mobile-big){
+                        margin-top: 120px;
+                    }
+                }
+
         }
         //a{color:white}
     }

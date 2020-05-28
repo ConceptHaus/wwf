@@ -1,5 +1,5 @@
 <template lang="pug">
-    div.hero
+    div.hero(:class="[$auth.check() ? 'hero--auth':' ']")
         img.img-fluid(:src="require(`../../images/acercade/desktop/${ImgSrc}`)")
         div.icon-scroll
 </template>
@@ -13,5 +13,11 @@ export default {
 </script>
 
 <style lang="scss">
-    
+    .hero{
+        &--auth{
+            @include down-screen(mobile-big){
+                margin-top: 100px;
+            }
+        }
+    }
 </style>

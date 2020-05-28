@@ -7,10 +7,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\User;
+use App\Contacto;
 use App\Noticias;
 use App\RecursosRutaCompra;
 use App\Newsletter;
+use App\Exports\UserExport;
+use Carbon\Carbon;
 use DB;
+use Excel;
 
 class AdminController extends Controller
 {
@@ -71,7 +75,20 @@ class AdminController extends Controller
             'catalogos'=>$catalogo
         ],200);
     }
-
+    public function getUsers(){
+        $users = User::all();
+        return response([
+            'status'=>'success',
+            'users'=>$users
+        ],200);
+    }
+    public function getMensajes(){
+        $mensajes = Contacto::all();
+        return response([
+            'status'=>'success',
+            'mensajes'=>$mensajes
+        ],200);
+    }
     public function getNewsletter(){
         $newsletter = Newsletter::all();
 
@@ -79,5 +96,20 @@ class AdminController extends Controller
             'status'=>'success',
             'newsletter'=>$newsletter
         ],200);
+    }
+    public function downloadUsers(){
+        $date = Carbon::now();
+        $headings = [
+            'Nombre',
+            'E-mail',
+            'Teléfono',
+            'Empresa',
+            'Puesto',
+            'Sector',
+            'Interés',
+            'Consumo eléctrico',
+            'Fecha de registro'
+        ];
+        return Excel::download(new UserExport($headings), "{$date}_users.xlsx");
     }
 }

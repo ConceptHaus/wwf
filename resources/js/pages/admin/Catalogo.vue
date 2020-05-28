@@ -28,7 +28,7 @@
                                                 button.btn.btn-danger.btn-sm.d-inline-block
                                                     i.las.la-ban
                             h2.text-center(v-else) No hay registros 😔
-            Footer
+        Footer
             b-modal(id="addCatalog", title="Agregar catálogo", hide-footer)
                 form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
                     div.form-group
@@ -57,7 +57,7 @@ export default {
             link:'',
             descripcion:'',
             dropzoneOptions: {
-                url:'/api/catalogo',
+                url:'/api/recursos',
                 headers: {
                     Authorization:`Bearer ${this.$auth.token()}`,
                 },
@@ -79,7 +79,7 @@ export default {
         Nav
     },
     async mounted(){
-        await this.axios.get('/catalogo')
+        await this.axios.get('/recursos')
             .then(res=>{
                 this.catalogos = res.data.catalogos;
                 console.log(this.catalogos);

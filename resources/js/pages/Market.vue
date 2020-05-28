@@ -4,7 +4,7 @@
         Nav
         Hero(ImgSrc="banner.jpg")
         section.mem
-            div.continer-fluid.p-5
+            div.continer-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
                         h1.home__h1.my-4 #[span] El MEM y la energía renovable
@@ -20,7 +20,7 @@
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/mercado/el-mem.jpg")
         section.tendencias#tendencias
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 h1.home__h1.my-4 #[span] Tendencias en la compra corporativa de electricidad
                 div.row.py-4
                     div.col-md-8.col-12
@@ -31,7 +31,7 @@
                     div.col-md-8.col-12
                         img.img-fluid(src="../../images/mercado/grafica-01.png")
         section.usuarios-finales#usuarios
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-8.col-12
                         h1.home__h1.my-4 #[span] Usuarios finales
@@ -56,7 +56,7 @@
                         h3.my-4 Usuarios calificados participantes del mercado
                         p.my-4 Son usuarios responsables de su carga. Se representan a sí mismos en el MEM, sin la necesidad de ningún intermediario. Su demanda debe ser mayor a 5 MW y su consumo de energía de al menos 20 GWh. La principal opción para comprar energía para un Usuario Calificado Participante del Mercado (UCPM) es a través de un PPA directamente con un Generador. También cuenta con las opciones para generación en sitio como GL y GD.
         section.opciones-compra#opciones
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-7.col-12.my-5
                         h1.home__h1.my-4 #[span] Opciones de compra de energía

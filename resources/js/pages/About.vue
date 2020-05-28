@@ -4,7 +4,7 @@
         Nav
         Hero(ImgSrc="banner.jpg")
         section.que-hacemos#quehacemos
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-12.col-md-6.my-5
                         h1.home__h1.my-4 #[span] ¿Qué hacemos?
@@ -67,7 +67,7 @@
                         p.my-4 ¿Quieres participar en nuestros eventos y conocer más nuestros servicios?
                         router-link.btn.btn-primary.btn-lg.mb-4(tag="button", to="contacto") Contáctanos aqui
         section.beneficios#beneficios
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
                         h1.home__h1.my-4 #[span] Beneficios del Suministro Renovable
@@ -85,7 +85,7 @@
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/img-beneficios.jpg")
         section.socios#empresas
-            div.container-fluid.p-4
+            div.container-fluid.p-3.p-md-4
                 div.row.py-4
                     div.col-md-8.col-12.my-5
                         h1.home__h1.my-4 #[span] Empresas que participan
@@ -136,7 +136,7 @@
                         p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil, gobiernos locales y asociaciones industriales que comparten nuestra visión de transformación para  el sector  eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
                         p.my-4 Ren mx es parte de una red global de iniciativas de WWF que promueven la adopción de energía renovable en Australia, China, Corea, Estados Unidos, India y Vietnam.
         section.wwf#wwf
-            div.container-fluid.p-5
+            div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
                         h1.home__h1.my-4 #[span] Acerca de WWF
@@ -153,7 +153,7 @@
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/ren_03_desk.jpg")
         section.equipo#equipo
-            div.container-fluid.p-4
+            div.container-fluid.p-3.p-md-4
                 div.row.py-4
                     div.col-md-4.col-12.my-5
                         img.img-fluid(src="../../images/home/luli-pequeira.png")
