@@ -4,7 +4,7 @@
         Nav.bg-header
         section.recursos__content
             div.container-fluid
-            h1.home__h1.my-4.p-4 #[span] Recursos
+            h1.home__h1.my-4.p-4 #[span] Recursos externos
             div.row.p-4
                 div.col-md-6.col-12(v-if="recursos && recursos.length > 0")
                         div.row(v-for="recurso in recursos", :key="recurso.id")

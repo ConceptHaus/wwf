@@ -17,26 +17,40 @@
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Analiza la información histórica de todos puntos de consumo (centros de carga) de la empresa. Utiliza la herramienta Análisis de Consumo Eléctrico para registrar las mediciones históricas del consumo de energía (en kWh o MWh) y el tipo de tarifas en el que actualmente está contratada la empresa, según lo indicado en los recibos de CFE. Para obtener un panorama completo, registra el consumo de los últimos 12 meses de cada centro de carga.
-                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Analisis_de_consumo_electrico.xlsm" target="_blank") #[i.las.la-cloud-download-alt] Análisis de consumo eléctrico
+                                .row
+                                    .col-6.my-2(v-if="buttons" v-for="item in buttons.paso1", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="1")
                     .col-12
                         .row.justify-content-center
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                              .col-md-6.col-12.my-4
                                 p.ruta_inner__p A partir de la información obtenida en el punto anterior, determina qué centros de carga pueden registrarse como usuario calificado y cuáles deberán de permanecer como usuario básico. Recuerda que los usuarios básicos también tienen opciones para obtener energía renovable.
-                                a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/paso1.2.jpg" target="_blank") #[i.las.la-cloud-download-alt] Clasificación de centros de carga
+                                .row
+                                    .col-6.my-2(v-if="buttons" v-for="item in buttons.paso2", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="2")
                     .col-12
                         .row.justify-content-center
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                              .col-md-6.col-12.my-4
                                 p.ruta_inner__p Fija el porcentaje mínimo deseado de suministro de electricidad renovable a partir de las metas establecidas en la estrategia energética y de sostenibilidad de la empresa. Esto te permitirá diversificar tu portafolio de suministro, dirigir tus esfuerzos y medir el desempeño a mediano/largo plazo e informar a los consumidores sobre las contribuciones ambientales y sociales de tu empresa.
+                                .row
+                                    .col-6.my-2(v-if="buttons" v-for="item in buttons.paso3", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="3")
                     .col-12
                         .row.justify-content-center
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                              .col-md-6.col-12.my-4
                                 p.ruta_inner__p Registra a los centros de carga que fueron identificados como usuario calificado. Hacer esto ahora, te ahorrará tiempo más adelante.
+                                .row
+                                    .col-6.my-2(v-if="buttons" v-for="item in buttons.paso4", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="4")
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
@@ -61,10 +75,12 @@ import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import Pasos from '../components/Pasos'
 import AddMaterial from '../components/AddMaterial'
+import AddButton from '../components/AddButton'
 export default {
     data(){
         return{
             ruta:1,
+            buttons:[],
             recursos:[]
         }
     },
@@ -74,19 +90,39 @@ export default {
             this.recursos = res.data.recursos;
             console.log(this.recursos);
         })
+        await this.axios.get(`/button/${this.ruta}`)
+        .then(res=>{
+            console.log(res.data.buttons)
+            this.buttons = res.data.buttons;
+            this.buttons.paso1 = this.buttons.filter(function(button){
+                return button.innerpaso == 1;
+            })
+            this.buttons.paso2 = this.buttons.filter(function(button){
+                return button.innerpaso == 2;
+            })
+            this.buttons.paso3 = this.buttons.filter(function(button){
+                return button.innerpaso == 3;
+            })
+            this.buttons.paso4 = this.buttons.filter(function(button){
+                return button.innerpaso == 4;
+            })
+            console.log(this.buttons);
+        })
     },
     methods:{
         updateRecursos(e){
             this.recursos.push(e);
             console.log('emit',e)
-        }
+        },
+
     },
     components:{
         Header,
         Footer,
         Nav,
         Pasos,
-        AddMaterial
+        AddMaterial,
+        AddButton
     }
 }
 </script>

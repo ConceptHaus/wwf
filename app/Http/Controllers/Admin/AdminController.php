@@ -12,6 +12,7 @@ use App\Noticias;
 use App\RecursosRutaCompra;
 use App\Newsletter;
 use App\Recursos;
+use App\ButtonPaso;
 use App\Exports\UserExport;
 use App\Exports\MensajesExport;
 use Carbon\Carbon;
@@ -62,6 +63,20 @@ class AdminController extends Controller
         ],201);
     }
 
+    public function addButtonPaso(Request $request){
+        $button = new ButtonPaso;
+        $button->ruta = $request->ruta;
+        $button->innerpaso = $request->innerpaso;
+        $button->titulo = $request->titulo;
+        $button->file = $this->uploadTicketS3($request->file('file'));
+        $button->save();
+
+        return response([
+            'status'=>'success',
+            'button'=>$button
+        ],201);
+    }
+
     public function uploadTicketS3($file){
         //Sube tickets a bucket de Amazon
         $disk = Storage::disk('s3');
@@ -70,6 +85,15 @@ class AdminController extends Controller
         $url = $disk->url($path);
         return $url;
 
+    }
+
+    public function getButtonPaso($ruta){
+        $buttons = ButtonPaso::where('ruta',$ruta)->get();
+
+        return response([
+            'status'=>'success',
+            'buttons'=>$buttons
+        ],200);
     }
 
     public function getRecursosRutas($ruta){
