@@ -34,8 +34,6 @@
                 div.form-group
                     input.form-control(v-model="titulo",type="text", placeholder="Título")
                 div.form-group
-                    input.form-control(v-model="link",type="text", placeholder="Link")
-                div.form-group
                     textarea.form-control(v-model="descripcion", placeholder="Descripción")
                 div.form-group
                     vue-dropzone(ref="catalogoDropzone", id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
@@ -54,7 +52,6 @@ export default {
         return{
             casos:'',
             titulo:'',
-            link:'',
             descripcion:'',
             dropzoneOptions: {
                 url:'/api/casos',
@@ -65,9 +62,11 @@ export default {
                 addRemoveLinks: true,
                 dictRemoveFile:'X',
                 thumbnailMethod:'contain',
-                acceptedFiles:'image/*',
-                maxFiles:1,
+                acceptedFiles:'image/*,.pdf,.xlsx,.csv,.docx',
+                maxFiles:2,
                 autoProcessQueue:false,
+                uploadMultiple: true,
+                parallelUploads: 100,
                 dictDefaultMessage: "<i class='la la-cloud-upload'></i> Arrastra tu archivo o da click aquí para subirlo.",
             }
         }
@@ -98,7 +97,6 @@ export default {
         },
         sendCatalog(file, xhr, formData){
             formData.append('titulo', this.titulo);
-            formData.append('link', this.link);
             formData.append('descripcion', this.descripcion);
         },
         successServer(file,response){
@@ -109,7 +107,6 @@ export default {
                 if(result.value){
                     this.$refs.catalogoDropzone.removeAllFiles();
                     this.titulo = '';
-                    this.link = '';
                     this.descripcion = '';
                 }
             })
@@ -121,7 +118,6 @@ export default {
             });
             this.$refs.catalogoDropzone.removeAllFiles();
             this.titulo = '';
-            this.link='';
             this.descripcion='';
             console.log(message);
         }

@@ -22,11 +22,12 @@ use Excel;
 class AdminController extends Controller
 {
     public function addCaso(Request $request){
+        $file = $request->file('file');
         $caso = new Noticias;
         $caso->titulo = $request->titulo;
         $caso->descripcion = $request->descripcion;
-        $caso->url = $request->link;
-        $caso->img = $this->uploadTicketS3($request->file('file'));
+        $caso->url = $this->uploadTicketS3($file[1]);
+        $caso->img = $this->uploadTicketS3($file[0]);
         $caso->save();
 
         return response([
@@ -80,7 +81,7 @@ class AdminController extends Controller
     public function uploadTicketS3($file){
         //Sube tickets a bucket de Amazon
         $disk = Storage::disk('s3');
-        $path = $file->store('catologo','s3');
+        $path = $file->store('catalogo','s3');
         Storage::setVisibility($path,'public');
         $url = $disk->url($path);
         return $url;
