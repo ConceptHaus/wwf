@@ -8,7 +8,7 @@
                     b-nav-item(href="/login") Iniciar sesión
                     b-nav-item(href="/registro") Registrarse
                 b-navbar-nav(v-else)
-                    b-nav-item-dropdown.mr-5.drop-down-user(text="Mi cuenta")
+                    b-nav-item-dropdown.mr-5.drop-down-user.dropleft(text="Mi cuenta")
                         b-dropdown-item(href="/edit/profile") Editar mi perfil
                         b-dropdown-item(href="/edit/password") Cambiar contraseña
                         b-dropdown-item(v-if="$auth.user().is_admin" href="/admin/casos") Casos de estudios y reportes

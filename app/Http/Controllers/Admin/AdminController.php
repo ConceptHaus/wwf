@@ -13,6 +13,7 @@ use App\RecursosRutaCompra;
 use App\Newsletter;
 use App\Recursos;
 use App\ButtonPaso;
+use App\Catalogo;
 use App\Exports\UserExport;
 use App\Exports\MensajesExport;
 use Carbon\Carbon;
@@ -77,6 +78,17 @@ class AdminController extends Controller
             'button'=>$button
         ],201);
     }
+    public function addCatalogo(Request $request){
+        $files = $request->file('file');
+        $catalogo = new Catalogo;
+        $catalogo->file = $this->uploadTicketS3($files[1]);
+        $catalogo->img = $this->uploadTicketS3($files[0]);
+        $catalogo->save();
+        return response([
+            'status'=>'success',
+            'catalogo'=>$catalogo
+        ],201);
+    }
 
     public function uploadTicketS3($file){
         //Sube tickets a bucket de Amazon
@@ -94,6 +106,13 @@ class AdminController extends Controller
         return response([
             'status'=>'success',
             'buttons'=>$buttons
+        ],200);
+    }
+    public function getCatalogo(){
+        $catalogo = Catalogo::all()->last();
+        return response([
+            'status'=>'success',
+            'catalogo'=>$catalogo
         ],200);
     }
 
