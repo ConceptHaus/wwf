@@ -8,7 +8,8 @@ import VueAxios from 'vue-axios';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueScrollTo from 'vue-scrollto';
-
+import FlagIcon from 'vue-flag-icon';
+import i18n from './plugins/i18n';
 import App from './App.vue';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -55,6 +56,7 @@ Vue.use(CollapsePlugin)
 Vue.use(VueAxios, axios);
 Vue.use(VueSweetalert2, optionsAlert);
 Vue.use(VueScrollTo);
+Vue.use(FlagIcon);
 Vue.use(require('vue-moment'),{
     moment
 });
@@ -274,4 +276,4 @@ Vue.use(require('@websanova/vue-auth'),{
 
 App.router = Vue.router;
 
-new Vue(App).$mount('#app');
+new Vue({i18n,render:h=>h(App)}).$mount('#app');

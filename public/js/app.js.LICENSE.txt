@@ -43,6 +43,12 @@
  * Date: 2019-05-01T21:04Z
  */
 
+/*!
+ * vue-i18n v8.18.2 
+ * (c) 2020 kazuya kawaguchi
+ * Released under the MIT License.
+ */
+
 /*! 
   * portal-vue © Thorsten Lünborg, 2019 
   * 

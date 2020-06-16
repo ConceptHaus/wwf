@@ -4,8 +4,11 @@
             b-navbar-brand(href="/")
                 img.img-fluid.w-50(src="../../images/logo.png")
             b-collapse.justify-content-end(is-nav)
+                b-navbar-nav
+                    b-nav-item(v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)")
+                        flag(:iso="entry.flag" :squared="false") {{entry.title}}
                 b-navbar-nav(v-if="!$auth.check()")
-                    b-nav-item(href="/login") Iniciar sesión
+                    b-nav-item(href="/login") {{$t('nav.login')}}
                     b-nav-item(href="/registro") Registrarse
                 b-navbar-nav(v-else)
                     b-nav-item-dropdown.mr-5.drop-down-user.dropleft(text="Mi cuenta")
@@ -65,3 +68,22 @@
         font-size: 12px;
     }
 </style>
+<script>
+import i18n from '../plugins/i18n';
+export default {
+    data(){
+        return{
+            languages: [
+                    { flag: 'us', language: 'en', title: 'English' },
+                    { flag: 'es', language: 'es', title: 'Español' }
+                ]
+        }
+    },
+    methods:{
+        changeLocale(locale) {
+                i18n.locale = locale;
+                console.log(locale)
+            }
+    }
+}
+</script>
