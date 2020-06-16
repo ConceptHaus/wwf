@@ -87,7 +87,7 @@
         section.socios#empresas
             div.container-fluid.p-3.p-md-4
                 div.row.py-4
-                    div.col-md-8.col-12.my-5
+                    div.col-md-12.col-12.my-5
                         h1.home__h1.my-4 #[span] Empresas que participan
                         p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100 ya tienen un suministro renovable o están buscando conseguirlo
                         slick(ref="slick" :options="slickOptions")
@@ -155,7 +155,7 @@
         section.equipo#equipo
             div.container-fluid.p-3.p-md-4
                 div.row.py-4
-                    div.col-md-4.col-12.my-5
+                    div.col-md-4.col-11.my-5
                         img.img-fluid(src="../../images/home/luli-pequeira.png")
                     div.col-md-8.col-12
                         h3.my-4 Luli Pesqueira
@@ -188,7 +188,7 @@ export default {
     data(){
         return {
             slickOptions:{
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,

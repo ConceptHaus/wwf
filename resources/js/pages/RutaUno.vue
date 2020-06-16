@@ -18,9 +18,9 @@
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Analiza la información histórica de todos puntos de consumo (centros de carga) de la empresa. Utiliza la herramienta Análisis de Consumo Eléctrico para registrar las mediciones históricas del consumo de energía (en kWh o MWh) y el tipo de tarifas en el que actualmente está contratada la empresa, según lo indicado en los recibos de CFE. Para obtener un panorama completo, registra el consumo de los últimos 12 meses de cada centro de carga.
                                 .row
-                                    .col-6.my-2(v-if="buttons" v-for="item in buttons.paso1", :key="item.id")
+                                    .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
-                                AddButton(:ruta="ruta", :paso="1")
+                                AddButton(:ruta="ruta", :paso="1", @update-button="updateButton")
                     .col-12
                         .row.justify-content-center
                              .col-3.col-md-1.my-4
@@ -50,7 +50,7 @@
                                 .row
                                     .col-6.my-2(v-if="buttons" v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
-                                AddButton(:ruta="ruta", :paso="4")
+                                AddButton(:ruta="ruta", :paso="4", @update-button="updateButton")
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
@@ -88,12 +88,25 @@ export default {
         await this.axios.get(`/recursos/rutas/${this.ruta}`)
         .then(res=>{
             this.recursos = res.data.recursos;
-            console.log(this.recursos);
         })
         await this.axios.get(`/button/${this.ruta}`)
         .then(res=>{
-            console.log(res.data.buttons)
             this.buttons = res.data.buttons;
+            this.filterButtons();
+        })
+    },
+    methods:{
+        updateRecursos(e){
+            this.recursos.push(e);
+            console.log('emit',e)
+        },
+        updateButton(e, paso){
+            this.buttons.push(e)
+            this.filterButtons()
+            console.log('Button emit',e, this.buttons)
+
+        },
+        filterButtons(){
             this.buttons.paso1 = this.buttons.filter(function(button){
                 return button.innerpaso == 1;
             })
@@ -106,14 +119,7 @@ export default {
             this.buttons.paso4 = this.buttons.filter(function(button){
                 return button.innerpaso == 4;
             })
-            console.log(this.buttons);
-        })
-    },
-    methods:{
-        updateRecursos(e){
-            this.recursos.push(e);
-            console.log('emit',e)
-        },
+        }
 
     },
     components:{

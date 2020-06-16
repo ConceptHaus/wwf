@@ -17,24 +17,40 @@
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Asegura el involucramiento temprano de la Dirección y las áreas involucradas
+                                .row
+                                    .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="1", @update-button="updateButton")
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Comunica de forma clara y efectiva los beneficios y riesgos de la(s) modalidad(es) de compra de electricidad renovable seleccionada
+                                .row
+                                    .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="2", @update-button="updateButton")
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Planea una campaña de comunicación interna y externa que resalte el hecho de que sus productos o servicios están hechos con energía renovable.
+                                .row
+                                    .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="3", @update-button="updateButton")
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p Confirma que el reporte de sostenibilidad, el sitio web de la empresa, los comunicados a inversionistas y otros medios clave de la empresa incluirá información sobre su consumo de energía renovable.
+                                .row
+                                    .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
+                                        a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
+                                AddButton(:ruta="ruta", :paso="4", @update-button="updateButton")
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
@@ -58,10 +74,12 @@ import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 import Pasos from '../components/Pasos'
 import AddMaterial from '../components/AddMaterial'
+import AddButton from '../components/AddButton'
 export default {
     data(){
         return{
             ruta:4,
+            buttons:[],
             recursos:[]
         }
     },
@@ -71,11 +89,36 @@ export default {
             this.recursos = res.data.recursos;
             console.log(this.recursos);
         })
+        await this.axios.get(`/button/${this.ruta}`)
+        .then(res=>{
+            this.buttons = res.data.buttons;
+            this.filterButtons();
+        })
     },
     methods:{
         updateRecursos(e){
             this.recursos.push(e);
             console.log('emit',e)
+        },
+        updateButton(e, paso){
+            this.buttons.push(e)
+            this.filterButtons()
+            console.log('Button emit',e, this.buttons)
+
+        },
+        filterButtons(){
+            this.buttons.paso1 = this.buttons.filter(function(button){
+                return button.innerpaso == 1;
+            })
+            this.buttons.paso2 = this.buttons.filter(function(button){
+                return button.innerpaso == 2;
+            })
+            this.buttons.paso3 = this.buttons.filter(function(button){
+                return button.innerpaso == 3;
+            })
+            this.buttons.paso4 = this.buttons.filter(function(button){
+                return button.innerpaso == 4;
+            })
         }
     },
     components:{
@@ -83,7 +126,8 @@ export default {
         Footer,
         Nav,
         Pasos,
-        AddMaterial
+        AddMaterial,
+        AddButton
     }
 }
 </script>

@@ -37,6 +37,8 @@
         "pug": "^2.0.4",
         "pug-plain-loader": "^1.0.0",
         "slick-carousel": "^1.8.1",
+        "vue-flag-icon": "^1.0.6",
+        "vue-i18n": "^8.18.2",
         "vue-moment": "^4.1.0",
         "vue-scrollto": "^2.18.1",
         "vue-slick": "^1.1.15",

@@ -55,7 +55,6 @@ export default {
             formData.append('titulo', this.titulo);
             formData.append('ruta', this.ruta);
             formData.append('innerpaso', this.paso);
-            console.log('test');
         },
         successServer(file, response){
             this.$swal({
@@ -65,9 +64,8 @@ export default {
                 if(result.value){
                     this.$refs.buttonDropzone.removeAllFiles();
                     this.titulo = '';
-                    this.$bvModal.hide('addButton');
-                    console.log('response',response.button);
-                    //this.$emit('update-recursos',response.button);
+                    this.$bvModal.hide('addButton-'+this.paso);
+                    this.$emit('update-button',response.button,this.paso);
                 }
             })
         },
