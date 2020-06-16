@@ -81,7 +81,7 @@ export default {
     async mounted(){
         await this.axios.get('/casos')
             .then(res=>{
-                this.casos = res.data.casos;
+                this.casos = res.data.caso;
                 console.log(this.casos);
             })
     },

@@ -6,14 +6,11 @@
             div.container-fluid
                 h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
                 div.row.p-4
-                    div.col-md-6.col-12(v-if="casos && casos.length > 0")
-                        div.row(v-for="caso in casos" :key="casos.id")
-                            div.col-md-6.col-12
-                                img.img-fluid(:src="caso.img")
-                            div.col-md-6.col-12
-                                h5.my-4 {{caso.titulo}}
-                                p.my-4 {{caso.descripcion}}
-                                a.text-right(:href="caso.url") Leer completo
+                    div.col-md-4.col-12(v-for="caso in casos" :key="casos.id" v-if="casos && casos.length > 0")
+                        img.img-fluid(:src="caso.img")
+                        h5.my-4 {{caso.titulo}}
+                        p.my-4 {{caso.descripcion}}
+                        a.text-right(:href="caso.url") Leer completo
                     h2.text-center(v-else) No hay material disponible.
         Footer
 </template>
@@ -36,7 +33,7 @@ export default {
     async mounted(){
         await this.axios.get('/casos')
             .then(res=>{
-                this.casos = res.data.casos;
+                this.casos = res.data.caso;
                 console.log(this.casos)
             })
     }
