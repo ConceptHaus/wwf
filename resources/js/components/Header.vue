@@ -3,7 +3,7 @@
         .contaniner-fluid.header__background
             .row
                 .col-12.text-center
-                    p.header__p.m-0.py-3 Para diseñar una estrategia de compra de energía renovable #[a.header__a(href="/registro") Regístrate]
+                    p.header__p.m-0.py-3 {{$t('nav.banner')}} #[a.header__a(href="/registro") {{$t('nav.link')}}]
 </template>
 <script>
 import Nav from './Nav'

@@ -7,89 +7,89 @@
             div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-12.col-md-6.my-5
-                        h1.home__h1.my-4 #[span] ¿Qué hacemos?
-                        h4.my-4 La iniciativa Ren mx tiene como objetivo acelerar y facilitar el acceso a energía renovable a usuarios industriales y comerciales en México.
-                        p.my-4 Ayudamos al sector empresarial mexicano a ser más competitivo a través del consumo de energía renovable, descarbonizando sus operaciones y aumentando la aportación de las fuentes renovables a la red eléctrica de México.
+                        h1.home__h1.my-4 #[span] {{$t('about.title1')}}
+                        h4.my-4 {{$t('about.p1')}}
+                        p.my-4 {{$t('about.p2')}}
                     div.col-12.col-md-6
                         img.img-fluid(src="../../images/home/img-quehacemos.jpg")
                 div.row
                     div.col-12
-                        h3 Líneas de trabajo
+                        h3 {{$t('about.p3')}}
                 div.row
                     div.col-12
                         div.row
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-01.jpg")
                             div.col-md-4.col-12
-                                h4 Generamos y compartimos conocimiento
+                                h4 {{$t('about.p4')}}
                             div.col-md-4.col-12
-                                p Proporcionamos información relevante y simplificada sobre el mercado eléctrico en México y las opciones para adquirir energía renovable. También, difundimos historias de éxito para promover el aprendizaje colectivo y eliminar barreras existentes.
+                                p {{$t('about.p5')}}
                         div.row
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-02.jpg")
                             div.col-md-4.col-12
-                                h4 Capacitamos a usuarios potenciales
+                                h4 {{$t('about.p6')}}
                             div.col-md-4.col-12
-                                p Capacitamos a empresas en el proceso de adquisición de energía renovable y ponemos a su disposición herramientas para analizar sus necesidades y agilizar la toma de decisiones.
+                                p {{$t('about.p7')}}
                         div.row
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-03.jpg")
                             div.col-md-4.col-12
-                                h4 Conectamos a usuarios y suministradores
+                                h4 {{$t('about.p8')}}
                             div.col-md-4.col-12
-                                p Fomentamos interacción entre compradores potenciales y suministradores y generadores de energía renovable para promover transacciones bilaterales beneficiosas.
+                                p {{$t('about.p9')}}
         section.sumate#sumate
             div.container-fluid.px-5
                 div.row.py-4
                     div.col-md-8.col-12.my-5
-                        h1.home__h1.my-4 #[span] Súmate a la iniciativa
-                        p.my-4 Invitamos a todas las empresas que operan en México a tomar medidas ambiciosas y rápidas para aumentar su productividad por medio del suministro de energía renovable, la eficiencia energética y el establecimiento de objetivos de reducción de emisiones.
+                        h1.home__h1.my-4 #[span] {{$t('about.title2')}}
+                        p.my-4 {{$t('about.p10')}}
                     div.col-md-4.col-12
                         img.img-fluid.w-75.my-0.mx-auto.p-5.d-none.d-sm-block(src="../../images/home/sumate-01.png")
                 div.row.justify-content-center
                     div.col-md-4.col-12
                         img.img-fluid.w-75.p-3.d-none.d-sm-block(src="../../images/home/sumate-02.png")
                     div.col-md-6.col-12
-                        h3 Al participar en la iniciativa Ren mx, obtendrás acceso a nuestros eventos, herramientas y guías exclusivas, incluyendo:
+                        h3 {{$t('about.p11')}}
                         ul
-                            li Sesiones de diálogo exclusivas para usuarios finales de energía renovable para compartir experiencias y mejores prácticas
-                            li Guía en línea para desarrollar una Estrategia de Compra, que indica los principales pasos e hitos para abastecer tu empresa con energía renovable
-                            li Programa de acompañamiento personalizado para identificar oportunidades específicas de suministro de energía para tu empresa
-                            li Plantillas y guías para:
+                            li {{$t('about.list1')}}
+                            li {{$t('about.list2')}}
+                            li {{$t('about.list3')}}
+                            li {{$t('about.list4')}}
                                 ul
-                                    li Analizar el consumo y demanda energética de tu empresa para conocer cuánta electricidad necesitas contratar
-                                    li Conocer las diferentes opciones de suministro y sus implicaciones
-                                    li Negociar un PPA o contrato de suministro, asegurando las mejores condiciones de contratación
-                                    li Recomendaciones para diseñar y publicar licitaciones
-                                    li Sugerencias para formar un equipo multidisciplinario que  gestione la compra de electricidad en tu empresa
+                                    li {{$t('about.list5')}}
+                                    li {{$t('about.list6')}}
+                                    li {{$t('about.list7')}}
+                                    li {{$t('about.list8')}}
+                                    li {{$t('about.list9')}}
                 div.row.justify-content-center.py-5
                     div.col-md-8.col-12.text-center
-                        p.my-4 ¿Quieres participar en nuestros eventos y conocer más nuestros servicios?
-                        router-link.btn.btn-primary.btn-lg.mb-4(tag="button", to="contacto") Contáctanos aqui
+                        p.my-4 {{$t('about.p12')}}
+                        router-link.btn.btn-primary.btn-lg.mb-4(tag="button", to="contacto") {{$t('about.button')}}
         section.beneficios#beneficios
             div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
-                        h1.home__h1.my-4 #[span] Beneficios del Suministro Renovable
-                        p.my-4 El nuevo mercado energético ofrece a los usuarios comerciales e industriales libertad para elegir entre diferentes opciones de suministro de electricidad que ofrezcan precios competitivos y les permitan acceder a energías renovables.
-                        h3.my-4 La elección de un proveedor privado de energía renovable ofrece ventajas considerables como:
+                        h1.home__h1.my-4 #[span] {{$t('about.title3')}}
+                        p.my-4 {{$t('about.p13')}}
+                        h3.my-4 {{$t('about.p14')}}
                         ul
-                            li Flexibilidad para negociar un contrato a tu conveniencia
-                            li Estabilidad en el costo de la electricidad
-                            li Ahorros atractivos y gestión efectiva de riesgos
-                            li Beneficio en los márgenes de operación, al liberar capital para otras inversiones
-                            li Cumplimiento de metas de sostenibilidad
-                            li Transparencia en los costos de la electricidad y los productos asociados del mercado
-                            li Asesoría en estrategias de gestión y ahorro de energía
-                        p Además, tu empresa estaría contribuyendo a impulsar a México hacia una economía sostenible, mejorando su reputación y anticipándose a nuevas regulaciones sobre emisiones.
+                            li {{$t('about.list10')}}
+                            li {{$t('about.list11')}}
+                            li {{$t('about.list12')}}
+                            li {{$t('about.list13')}}
+                            li {{$t('about.list14')}}
+                            li {{$t('about.list15')}}
+                            li {{$t('about.list16')}}
+                        p {{$t('about.p15')}}
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/img-beneficios.jpg")
         section.socios#empresas
             div.container-fluid.p-3.p-md-4
                 div.row.py-4
                     div.col-md-12.col-12.my-5
-                        h1.home__h1.my-4 #[span] Empresas que participan
-                        p.my-4 Entre 2017 y 2020, más de 280empresas han participado en los eventos, casos de estudio, catálogo y programa de acompañamiento organizados por Ren mx. De estas empresas, al menos 100 ya tienen un suministro renovable o están buscando conseguirlo
+                        h1.home__h1.my-4 #[span] {{$t('about.title4')}}
+                        p.my-4 {{$t('about.p16')}}
                         slick(ref="slick" :options="slickOptions")
                             a(href="#")
                                 img.img-fluid.w-50(src="../../images/acercade/socios/TetraPack.jpg")
@@ -133,22 +133,22 @@
                                 img.img-fluid.w-50(src="../../images/acercade/socios/Auto.jpg")
                             a(href="#")
                                 img.img-fluid.w-50(src="../../images/acercade/socios/Audi.jpg")
-                        p.my-4 Además, colaboramos con otras organizaciones de la sociedad civil, gobiernos locales y asociaciones industriales que comparten nuestra visión de transformación para  el sector  eléctrico y que contribuyen a crear oportunidades para lograr un despliegue acelerado de las energías renovables y un mejor acceso a éstas por parte de los grandes usuarios industriales y comerciales.
-                        p.my-4 Ren mx es parte de una red global de iniciativas de WWF que promueven la adopción de energía renovable en Australia, China, Corea, Estados Unidos, India y Vietnam.
+                        p.my-4 {{$t('about.p17')}}
+                        p.my-4 {{$t('about.p18')}}
         section.wwf#wwf
             div.container-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
-                        h1.home__h1.my-4 #[span] Acerca de WWF
-                        p.my-4 El Fondo Mundial para la Naturaleza es la organización de conservación líder en el mundo. Nacida en Suiza en 1961, es conocida por el logo del panda y tiene presencia en más de 100 países.
-                        p.my-4 Bajo el nombre de World Wildlife Fund (WWF), surgió como un pequeño grupo de naturalistas preocupados y comprometidos con la conservación del planeta y ha crecido hasta convertirse en una de las organizaciones independientes más grandes y respetadas del mundo, apoyada por unos cinco millones de personas. Con los años, el objetivo de WWF ha evolucionado hacia una ambiciosa estrategia para preservar la biodiversidad y alcanzar el desarrollo sostenible en todo el planeta.
-                        p.my-4 En México trabajamos para conservar las riquezas naturales, impulsar políticas públicas innovadoras y asegurar la transformación del mercado hacia un modelo más justo y sostenible. Nuestro trabajo en el área de clima y energía se enfoca en catalizar la acción climática por parte de los actores no estatales para cumplir las metas planteadas en la política nacional e internacional y para acelerar la transición del país hacia una economía baja en carbono.
-                        h3 Para ello, nos hemos planteado las siguientes metas:
+                        h1.home__h1.my-4 #[span] {{$t('about.title5')}}
+                        p.my-4 {{$t('about.p19')}}
+                        p.my-4 {{$t('about.p20')}}
+                        p.my-4 {{$t('about.p21')}}
+                        h3 {{$t('about.p22')}}
                         ul
-                            li Acelerar la adquisición de energía renovable a través de la generación de conocimiento, capacitación y facilitación de transacciones bilaterales
-                            li Fortalecer el diseño e implementación de acciones climáticas coordinadas entre empresas, gobiernos locales, universidades y representantes de la sociedad civil
-                            li Impulsar a las empresas a adoptar metas de reducción de emisiones basadas en la ciencia del cambio climático
-                        h3 Para conocer más:
+                            li {{$t('about.list17')}}
+                            li {{$t('about.list18')}}
+                            li {{$t('about.list19')}}
+                        h3 {{$t('about.p23')}}
                         a(href="www.wwf.org.mx", target="_blank") www.wwf.org.mx
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/home/ren_03_desk.jpg")
@@ -159,22 +159,22 @@
                         img.img-fluid(src="../../images/home/luli-pequeira.png")
                     div.col-md-8.col-12
                         h3.my-4 Luli Pesqueira
-                        p.my-4 Coordinadora de Relaciones Corporativas
-                        p.my-4 Es especialista en nuevos modelos de acción colectiva, sobre todo en alianzas entre el sector privado y organismos no gubernamentales (ONG) para la creación de estándares de producción sustentable y certificación, así como para asegurar la transición a una economía baja en carbono. Tiene experiencia de trabajo en áreas comerciales, tanto en el sector privado, como en ONG y sector público, así como en áreas de investigación y enseñanza. Luli es doctora y maestra en Desarrollo Sostenible por la Universidad de Utrecht en los Países Bajos y licenciada en Comunicación por la Universidad Iberoamericana en la Ciudad de México.
+                        p.my-4 {{$t('about.p25')}}
+                        p.my-4 {{$t('about.p26')}}
                 div.row
                     div.col-md-4.col-12
                         img.img-fluid.avatar(src="../../images/home/guillermo.png")
                     div.col-md-8.col-12
                         h3.my-4 Guillermo Punzo
-                        p.my-4 Oficial Jr de Mercados de Energía Renovable
-                        p.my-4 Posee experiencia en temas de investigación, ejecución de proyectos y desarrollo de negocios en los sectores de energía y medio ambiente. Su trabajo está enfocado en apoyar a las empresas de la iniciativa Ren mx en su proceso de transición a un suministro eléctrico renovable. Guillermo es Ingeniero Civil del Tecnológico de Monterrey campus Guadalajara y Maestro en Ingeniería Ambiental por la Universidad de McGill en Montreal, Canadá.
+                        p.my-4 {{$t('about.p28')}}
+                        p.my-4 {{$t('about.p29')}}
                 div.row
                     div.col-md-4.col-12
                         img.img-fluid(src="../../images/home/ninel-escobar.png")
                     div.col-md-8.col-12
                         h3.my-4 Ninel Escobar
-                        p.my-4 Coordinadora de Cambio Climático y Energía
-                        p.my-4 Es especialista en adaptación al cambio climático. Su trabajo se enfoca en la planeación estratégica de WWF en cambio climático y energía; coordinar la implementación de proyectos y brindar apoyo técnico al resto de la organización en materia de mitigación y adaptación. Ha coordinado las contribuciones de WWF en instrumentos de política como la Estrategia Nacional de Cambio Climático, el Programa Especial de Cambio Climático y la Estrategia de Cambio Climático desde las Área Naturales Protegidas. Ninel cuenta con una maestría en Economía Ambiental y Recursos Naturales de la Universidad de Concepción en Chile y una licenciatura en Economía por el Centro de Investigación y Docencia Económicas (CIDE).
+                        p.my-4 {{$t('about.p31')}}
+                        p.my-4 {{$t('about.p32')}}
         Footer
 </template>
 
