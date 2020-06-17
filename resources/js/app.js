@@ -9,7 +9,8 @@ import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import VueScrollTo from 'vue-scrollto';
 import FlagIcon from 'vue-flag-icon';
-import i18n from './plugins/i18n';
+import store from './store/index.js';
+import { i18n } from './plugins/i18n';
 import App from './App.vue';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -260,6 +261,20 @@ const router = new VueRouter({
 
     ]
 })
+router.beforeEach((to,from,next)=>{
+    if (store.state.language.language && store.state.language.language !== i18n.locale) {
+        i18n.locale = store.state.language.language;
+        next();
+      } else if (!store.state.language.language) {
+        store.dispatch('language/setLanguage', navigator.languages)
+          .then(() => {
+            i18n.locale = store.state.language.language;
+            next();
+          });
+      } else {
+        next();
+      }
+})
 
 Vue.router = router;
 
@@ -276,4 +291,7 @@ Vue.use(require('@websanova/vue-auth'),{
 
 App.router = Vue.router;
 
-new Vue({i18n,render:h=>h(App)}).$mount('#app');
+new Vue({store,
+        i18n,
+        render:h=>h(App),
+    }).$mount('#app');

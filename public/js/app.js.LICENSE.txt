@@ -44,9 +44,9 @@
  */
 
 /*!
- * vue-i18n v8.18.2 
- * (c) 2020 kazuya kawaguchi
- * Released under the MIT License.
+ * vuex v3.4.0
+ * (c) 2020 Evan You
+ * @license MIT
  */
 
 /*! 
@@ -58,6 +58,12 @@
   * 
   * https://github.com/linusborg/portal-vue
   * 
+ */
+
+/**
+ * vue-local-storage v0.6.0
+ * (c) 2017 Alexander Avakov
+ * @license MIT
  */
 
 /**!

@@ -69,7 +69,7 @@
     }
 </style>
 <script>
-import i18n from '../plugins/i18n';
+//import i18n from '../plugins/i18n';
 export default {
     data(){
         return{
@@ -81,8 +81,9 @@ export default {
     },
     methods:{
         changeLocale(locale) {
-                i18n.locale = locale;
-                console.log(locale)
+                this.$i18n.locale = locale;
+                this.$store.dispatch('language/setLanguage', locale);
+                console.log(this.$i18n.locale)
             }
     }
 }

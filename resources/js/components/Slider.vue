@@ -1,8 +1,8 @@
 <template lang="pug">
     div.carousel__container(:class="[$auth.check() ? 'carousel__container--auth':' ']")
         b-carousel(fade indicators )
-            b-carousel-slide(caption="México verde y competitivo" img-src="../../images/slider/desktop/home_ren_01.jpg")
-            b-carousel-slide(caption="Energía renovable para tu empresa" img-src="../../images/slider/desktop/home_ren_02.jpg")
+            b-carousel-slide(:caption="$t('slider.slide1')" img-src="../../images/slider/desktop/home_ren_01.jpg")
+            b-carousel-slide(:caption="$t('slider.slide2')" img-src="../../images/slider/desktop/home_ren_02.jpg")
         .icon-scroll
 
 </template>
