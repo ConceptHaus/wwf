@@ -7,7 +7,7 @@
                 h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
                 div.row.p-4
                     div.col-md-4.col-12(v-for="caso in casos" :key="casos.id" v-if="casos && casos.length > 0")
-                        img.img-fluid(:src="caso.img")
+                        img.img-fluid.img-catalog(:src="caso.img")
                         h5.my-4 {{caso.titulo}}
                         p.my-4 {{caso.descripcion}}
                         a.text-right(:href="caso.url") Leer completo
@@ -50,5 +50,8 @@ export default {
         &__content{
             margin-top:300px;
         }
+    }
+    .img-catalog{
+        min-height: 350px;
     }
 </style>
