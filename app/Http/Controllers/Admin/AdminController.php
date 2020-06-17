@@ -37,7 +37,7 @@ class AdminController extends Controller
         ],201);
     }
     public function addRecurso(Request $request){
-        $recurso = new Recurso;
+        $recurso = new Recursos;
         $recurso->titulo = $request->titulo;
         $recurso->descripcion = $request->descripcion;
         $recurso->url = $request->link;

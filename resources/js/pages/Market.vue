@@ -7,21 +7,21 @@
             div.continer-fluid.p-3.p-md-5
                 div.row.py-4
                     div.col-md-6.col-12.my-5
-                        h1.home__h1.my-4 #[span] El MEM y la energía renovable
-                        p.my-4 En México y el mundo, el sistema eléctrico se encuentra en una transición sin precedentes. Un modelo orientado hacia la competencia y la incorporación de una mayor proporción de fuentes de renovables de energía son los principales agentes de este cambio. En esta transición los usuarios finales de electricidad, como tu empresa, tiene una participación e influencia positiva nunca antes vista en el sector.
-                        p.my-4 Un modelo eléctrico que fomenta la competencia permite una mayor interacción de los usuarios finales o consumidores de energía, habilitando opciones para diversificar el suministro de electricidad. En particular, empresas de los sectores comercial e industrial se han visto beneficiadas gracias a las ventajas de un modelo donde es posible participar en un mercado eléctrico.
-                        p.my-4 Algunos de los beneficios logrados por empresas líderes en México y a nivel mundial son:
+                        h1.home__h1.my-4 #[span] {{$t('market.title1')}}
+                        p.my-4 {{$t('market.p1')}}
+                        p.my-4 {{$t('market.p2')}}
+                        p.my-4 {{$t('market.p3')}}
                         ul
-                            li Generar ahorros en los costos de operación asociados al consumo eléctrico
-                            li Tener certidumbre sobre los precios de la energía en el largo plazo
-                            li Y garantizar operaciones sostenibles y amigables con el medioambiente
-                        p Las fuentes de energía renovable encabezan las formas más costo-efectivas de producir electricidad, incluso por delante de fuentes tradicionales como los combustibles fósiles. Además de un menor costo, la reducción de gases de efecto invernadero es una de sus principales ventajas que además contribuye a tu estrategia de reducción de emisiones y aumento de productividad.
-                        p Las energías renovables son fuentes de energía inagotables que se diferencian de los combustibles fósiles por su diversidad, abundancia y potencial de aprovechamiento. Las fuentes más populares en México son la eólica, la solar y la hidroeléctrica, pero también existen la energía geotérmica, la mareomotriz, el biogás y el bioetanol.
+                            li {{$t('market.list1')}}
+                            li {{$t('market.list2')}}
+                            li {{$t('market.list3')}}
+                        p {{$t('market.p4')}}
+                        p {{$t('market.p5')}}
                     div.col-md-6.col-12
                         img.img-fluid(src="../../images/mercado/el-mem.jpg")
         section.tendencias#tendencias
             div.container-fluid.p-3.p-md-5
-                h1.home__h1.my-4 #[span] Tendencias en la compra corporativa de electricidad
+                h1.home__h1.my-4 #[span] {{$t('market.title2')}}
                 div.row.py-4
                     div.col-md-8.col-12
                         p.my-4 A nivel mundial, la compra de electricidad de fuentes renovables por parte de las empresas alcanzó un total de 465 TWh en 2017 (IRENA, 2018), más de la mitad del consumo total de electricidad en México en el mismo año. Compañías de los sectores minero, industrial y tecnologías de la información, así como el sector comercial, lideran esta tendencia.
