@@ -75,7 +75,7 @@ export default {
         return{
             languages: [
                     { flag: 'gb', language: 'en', title: 'English' },
-                    { flag: 'es', language: 'es', title: 'Español' }
+                    { flag: 'mx', language: 'es', title: 'Español' }
                 ]
         }
     },
