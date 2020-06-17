@@ -74,7 +74,7 @@ export default {
     data(){
         return{
             languages: [
-                    { flag: 'us', language: 'en', title: 'English' },
+                    { flag: 'gb', language: 'en', title: 'English' },
                     { flag: 'es', language: 'es', title: 'Español' }
                 ]
         }
