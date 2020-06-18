@@ -6,17 +6,17 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 1 Analiza la situación actual (energía y costo) y define un porcentaje de energía renovable
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta1.title2')}}
                 .row
                     .col-12
-                        p Este paso consiste en realizar un diagnóstico del consumo histórico de energía de la empresa y los costos asociados. Además, en este paso es indispensable fijar el porcentaje mínimo de electricidad renovable que se desea adquirir. Toda esta información será clave para definir las necesidades de la empresa y guiar tus decisiones de compra.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        p {{$t('strategy.ruta1.p2')}}
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta1.title4')}}
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Analiza la información histórica de todos puntos de consumo (centros de carga) de la empresa. Utiliza la herramienta Análisis de Consumo Eléctrico para registrar las mediciones históricas del consumo de energía (en kWh o MWh) y el tipo de tarifas en el que actualmente está contratada la empresa, según lo indicado en los recibos de CFE. Para obtener un panorama completo, registra el consumo de los últimos 12 meses de cada centro de carga.
+                                p.ruta_inner__p {{$t('strategy.ruta1.p3')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -26,7 +26,7 @@
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                              .col-md-6.col-12.my-4
-                                p.ruta_inner__p A partir de la información obtenida en el punto anterior, determina qué centros de carga pueden registrarse como usuario calificado y cuáles deberán de permanecer como usuario básico. Recuerda que los usuarios básicos también tienen opciones para obtener energía renovable.
+                                p.ruta_inner__p {{$t('strategy.ruta1.p4')}}
                                 .row
                                     .col-6.my-2(v-if="buttons" v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -36,7 +36,7 @@
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                              .col-md-6.col-12.my-4
-                                p.ruta_inner__p Fija el porcentaje mínimo deseado de suministro de electricidad renovable a partir de las metas establecidas en la estrategia energética y de sostenibilidad de la empresa. Esto te permitirá diversificar tu portafolio de suministro, dirigir tus esfuerzos y medir el desempeño a mediano/largo plazo e informar a los consumidores sobre las contribuciones ambientales y sociales de tu empresa.
+                                p.ruta_inner__p {{$t('strategy.ruta1.p5')}}
                                 .row
                                     .col-6.my-2(v-if="buttons" v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -46,7 +46,7 @@
                              .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                              .col-md-6.col-12.my-4
-                                p.ruta_inner__p Registra a los centros de carga que fueron identificados como usuario calificado. Hacer esto ahora, te ahorrará tiempo más adelante.
+                                p.ruta_inner__p {{$t('strategy.ruta1.p6')}}
                                 .row
                                     .col-6.my-2(v-if="buttons" v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -54,7 +54,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta1.title5')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

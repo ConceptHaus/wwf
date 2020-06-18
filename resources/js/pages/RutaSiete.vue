@@ -6,17 +6,17 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 7 Prepara los aspectos administrativos y técnicos necesarios para el suministro
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta7.title22')}}
                 .row
                     .col-12
-                        p La pre-operación implica llevar a cabo los trámites administrativos y cumplir los requerimientos técnicos necesarios. Puedes comenzar con este paso incluso antes de firmar un contrato, te ahorrará tiempo para comenzar operaciones con tu nuevo suministrador. Tu suministrador puede ayudarte a realizar algunas de las siguientes actividades.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        p {{$t('strategy.ruta7.p47')}}
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta7.title24')}}
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Registra como usuario calificado a los centros de carga que apliquen, revisa el paso 1.
+                                p.ruta_inner__p {{$t('strategy.ruta7.p48')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -26,7 +26,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Procede a instalar los medidores o el hardware necesario para cumplir con los requerimiento técnicos.
+                                p.ruta_inner__p {{$t('strategy.ruta7.p49')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -36,7 +36,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Firma los contratos con CFE Distribución o Transmisión según el voltaje de línea al que requiera conectarse cada centro de carga.
+                                p.ruta_inner__p {{$t('strategy.ruta7.p50')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -46,7 +46,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Diseña el proceso de pronóstico de consumo de energía, involucra al área de operaciones. Al mismo tiempo diseña un mecanismo para otorgarle esta información a tu nuevo suministrador de energía.
+                                p.ruta_inner__p {{$t('strategy.ruta7.p51')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -54,7 +54,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta3.p30')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

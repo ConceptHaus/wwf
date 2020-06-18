@@ -6,17 +6,17 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 8 Monitorea y gestiona el suministro y sus resultados
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta8.title26')}}
                 .row
                     .col-12
-                        p Como parte de la operación deberás realizar actividades periódicas para la correcta y óptima operación del suministro de energía renovable, así como el monitoreo del desempeño.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        p {{$t('strategy.ruta8.p53')}}
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta8.title28')}}
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Prevé el consumo de tus centros de carga y reportarlo a tu suministrador de energía renovable.
+                                p.ruta_inner__p {{$t('strategy.ruta8.p54')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -26,7 +26,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Define tus requerimientos de CEL con base en tus objetivos independientes (voluntario) y en sus requisitos obligatorios conforme a la CRE (compromiso).
+                                p.ruta_inner__p {{$t('strategy.ruta8.p55')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -36,7 +36,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Revisa y monitorea el cumplimiento de objetivos (financieros y contables, riesgos, sostenibilidad, relaciones con inversionistas, etc.) con respecto al consumo eléctrico y las emisiones asociadas.
+                                p.ruta_inner__p {{$t('strategy.ruta8.p56')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -46,7 +46,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Amplia tu estrategia de suministro de energía renovable, aumentando las metas de la empresa y buscando un portafolio energético óptimo.
+                                p.ruta_inner__p {{$t('strategy.ruta8.p57')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -54,7 +54,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta3.p30')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

@@ -4,10 +4,10 @@
         Nav.bg-header
         section.contacto__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Contáctanos
+                h1.home__h1.my-4.p-4 #[span] {{$t('contact.title')}}
                 div.row.justify-content-center
                     div.col-md-5.col-12.mb-5
-                        h3 Escríbenos y en breve nos comunicaremos.
+                        h3 {{$t('contact.text')}}
                         form(@submit.prevent="contacto")
                             div.form-group
                                 input.form-control(type="text",placeholder="Nombre",v-model="name")

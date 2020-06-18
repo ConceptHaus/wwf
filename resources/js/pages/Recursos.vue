@@ -4,17 +4,14 @@
         Nav.bg-header
         section.recursos__content
             div.container-fluid
-            h1.home__h1.my-4.p-4 #[span] Recursos externos
-            div.row.p-4
-                div.col-md-6.col-12(v-if="recursos && recursos.length > 0")
-                        div.row(v-for="recurso in recursos", :key="recurso.id")
-                            div.col-md-6.col-12
-                                img.img-fluid(:src="recurso.img")
-                            div.col-md-6.col-12
-                                h5.my-4 {{recurso.titulo}}
-                                p.my-4 {{recurso.descripcion}}
-                                a.text-right(:href="recurso.url") Leer completo
-                h2.text-center(v-else) No hay material disponible.
+                h1.home__h1.my-4.p-4 #[span] Recursos externos
+                div.row.p-4
+                    div.col-md-4.col-12(v-for="recurso in recursos" :key="recurso.id" v-if="recursos && recursos.length > 0")
+                        img.img-fluid(:src="recurso.img")
+                        h5.my-4 {{recurso.titulo}}
+                        p.my-4 {{recurso.descripcion}}
+                        a.text-right(:href="recurso.url") Leer completo
+                    h2.text-center(v-else) No hay material disponible.
 
 </template>
 <script>
@@ -32,7 +29,7 @@ export default {
         await this.axios.get('/recursos')
             .then(res=>{
                 this.recursos = res.data.recursos;
-                console.log(this.casos);
+                console.log(this.recursos);
             })
     },
     components:{

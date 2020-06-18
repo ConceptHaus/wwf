@@ -4,9 +4,9 @@
             div.row.justify-content-center.align-items-center
                 div.col-md-6.col-lg-6.col-10
                     div.input-group.mb-3
-                        input.form-control(type="text",v-model="email",placeholder="Correo electrónico")
+                        input.form-control(type="text",v-model="email", :placeholder="$t('footer.text2')")
                         div.input-group-append
-                            button.btn.btn-primary(@click.prevent="newsletter()") Suscribirse
+                            button.btn.btn-primary(@click.prevent="newsletter()") {{$t('footer.button')}}
             div.row.py-3
                 div.col-md-3.col-12.text-center
                     img.img-fluid(src="../../images/wwf.png")
@@ -22,9 +22,9 @@
                         a(href="https://www.youtube.com/channel/UCnxxMFJOd4OKLz7xnpWh6CQ" target="_blank")
                             li.m-2.lab.la-youtube
                 div.col-md-3.col-12.mt-2
-                    a(href="/contacto").btn.btn-light.btn-lg.my-0.mx-auto.d-block Contáctanos
+                    a(href="/contacto").btn.btn-light.btn-lg.my-0.mx-auto.d-block {{$t('footer.text1')}}
                 div.col-md-3.col-12.mt-2
-                    router-link.white(to="aviso").my-0.mx-auto.d-block Aviso de privacidad | REN MX 2019.
+                    router-link.white(to="aviso").my-0.mx-auto.d-block {{$t('footer.text3')}} | REN MX 2020.
 
 
 </template>

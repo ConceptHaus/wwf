@@ -25,20 +25,20 @@
             b-collapse#nav-collapse(is-nav)
                 b-navbar-nav
                     b-nav-item-dropdown.mx-2(:text="$t('nav.about.section')", left)
-                        b-dropdown-item(href="/acerca-de-ren#quehacemos") {{$t('nav.about.menu1')}}
-                        b-dropdown-item(href="/acerca-de-ren#sumate") {{$t('nav.about.menu2')}}
-                        b-dropdown-item(href="/acerca-de-ren#benefecios") {{$t('nav.about.menu3')}}
-                        b-dropdown-item(href="/acerca-de-ren#empresas") {{$t('nav.about.menu4')}}
-                        b-dropdown-item(href="/acerca-de-ren#wwf") {{$t('nav.about.menu5')}}
-                        b-dropdown-item(href="/acerca-de-ren#equipo") {{$t('nav.about.menu6')}}
+                        b-dropdown-item(href="/acerca-de-ren#quehacemos" @click="scrollTo('#quehacemos')") {{$t('nav.about.menu1')}}
+                        b-dropdown-item(href="/acerca-de-ren#sumate" @click="scrollTo('#sumate')") {{$t('nav.about.menu2')}}
+                        b-dropdown-item(href="/acerca-de-ren#benefecios" @click="scrollTo('#benefecios')") {{$t('nav.about.menu3')}}
+                        b-dropdown-item(href="/acerca-de-ren#empresas" @click="scrollTo('#empresas')") {{$t('nav.about.menu4')}}
+                        b-dropdown-item(href="/acerca-de-ren#wwf" @click="scrollTo('#wwf')") {{$t('nav.about.menu5')}}
+                        b-dropdown-item(href="/acerca-de-ren#equipo" @click="scrollTo('#equipo')") {{$t('nav.about.menu6')}}
                     b-nav-item.mx-2(href="/ruta-de-compra") {{$t('nav.strategy')}}
                     b-nav-item.mx-2(href="/catalogo") {{$t('nav.catalogue')}}
                     b-nav-item.mx-2(href="/casos") {{$t('nav.cases')}}
                     b-nav-item-dropdown.mx-2(:text="$t('nav.market.section')")
-                        b-dropdown-item(href="/el-mercado-electrico-mayorista") {{$t('nav.market.menu1')}}
-                        b-dropdown-item(href="/el-mercado-electrico-mayorista#tendencias") {{$t('nav.market.menu2')}}
-                        b-dropdown-item(href="/el-mercado-electrico-mayorista#usuarios") {{$t('nav.market.menu3')}}
-                        b-dropdown-item(href="/el-mercado-electrico-mayorista#opciones") {{$t('nav.market.menu4')}}
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#mem" @click="scrollTo('#mem')") {{$t('nav.market.menu1')}}
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#tendencias" @click="scrollTo('#tendencias')") {{$t('nav.market.menu2')}}
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#usuarios" @click="scrollTo('#usuarios')") {{$t('nav.market.menu3')}}
+                        b-dropdown-item(href="/el-mercado-electrico-mayorista#opciones" @click="scrollTo('#opciones')") {{$t('nav.market.menu4')}}
                     b-nav-item.mx-2(href="/recursos") {{$t('nav.resources')}}
 </template>
 <style lang="scss" scoped>
@@ -84,7 +84,12 @@ export default {
                 this.$i18n.locale = locale;
                 this.$store.dispatch('language/setLanguage', locale);
                 console.log(this.$i18n.locale)
-            }
+            },
+        scrollTo(hash){
+            this.$nextTick(() => {
+                this.$scrollTo(hash, 0, { offset: -120 })
+            })
+        }
     }
 }
 </script>

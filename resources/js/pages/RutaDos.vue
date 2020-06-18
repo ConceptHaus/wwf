@@ -6,26 +6,26 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 2 Compara las alternativas de suministro de energía renovable
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta2.title6')}}
                 .row
                     .col-md-8.col-12
-                        p En este paso podrás comparar y elegir una o varias modalidades de suministro de electricidad renovable. La selección de una u otra opción dependerá del tipo de usuario (básico o calificado), así como de los objetivos económicos y de energía renovable que haya fijado la empresa.
+                        p {{$t('strategy.ruta2.p11')}}
                 .row.justify-content-center
                     .col-md-4.col-12.my-4
                         a.btn.btn-lg.btn-primary.my-5(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/opciones-01.jpg" target="_blank") #[i.las.la-cloud-download-alt] Modalidad de suministro eléctrico
                     .col-md-6.col-12.p-md-5#collapse
-                        p Dado que los usuarios básicos no participan en el mercado eléctrico mayorista (MEM), éstos obtienen su electricidad a través de un suministrador de servicios básicos (SSB). Y, como opciones complementarias, pueden obtener un porcentaje de su electricidad de fuentes renovables a partir de la compra voluntaria de certificados de energía limpia (CEL) o de la generación en sitio, ya sea en la modalidad de generación distribuida (GD) o abasto aislado (AA).
+                        p {{$t('strategy.ruta2.p12')}}
                         b-collapse(id="collapse-1")
-                            p En el extremo opuesto, los usuarios calificados participantes del mercado (UCPM) pueden acceder a todas las modalidades de suministro pero tienen que gestionar su consumo y participación en el MEM con un escritorio que opere 24/7.
-                            p Una de las opciones de suministro de energía más atractiva para la mayoría de las empresas en México es el suministro calificado. En esta modalidad, la compra de energía se hace a través de un contrato bilateral, PPA (power purchase agreement) por sus siglas en inglés, con un suministrador de servicios calificados (SSC) que representa al usuario final ante el MEM y le provee electricidad renovable.
-                        a.text-right.d-block(href="#collapse" v-b-toggle.collapse-1) Leer más
+                            p {{$t('strategy.ruta2.p13')}}
+                            p {{$t('strategy.ruta2.p14')}}
+                        a.text-right.d-block(href="#collapse" v-b-toggle.collapse-1) {{$t('strategy.read')}}
                     .col-12
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta2.title8')}}
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p Investiga los procedimientos y requerimientos específicos de cada alternativa de suministro de electricidad renovable.
+                                p.ruta_inner__p {{$t('strategy.ruta2.p15')}}
                                 //- .row
                                 //-     .col-6.my-2
                                 //-         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/generacion_local.jpg" target="_blank") #[i.las.la-cloud-download-alt] Generación Local y Abasto Aisaldo
@@ -44,7 +44,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Compara las ventajas y desventajas de cada modalidad.
+                                p.ruta_inner__p {{$t('strategy.ruta2.p16')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -54,7 +54,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Elige la(s) alternativa(s) que se mejor se adapten a las necesidades y restricciones de tu empresa, así como al porcentaje de energía renovable que asignaste.
+                                p.ruta_inner__p {{$t('strategy.ruta2.p17')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -64,7 +64,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Comienza a identificar a posibles proveedores.
+                                p.ruta_inner__p {{$t('strategy.ruta2.p18')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -72,7 +72,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta2.title9')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

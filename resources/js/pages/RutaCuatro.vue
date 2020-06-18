@@ -6,17 +6,17 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 4 Asegura el compromiso de la dirección y otras áreas involucradas de la empresa
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta4.title13')}}
                 .row
                     .col-12
-                        p Este paso consiste en asegurar el compromiso de la Dirección y el resto de las áreas involucradas en el proceso de compra. Contar con su apoyo y convicción es de vital importancia para concretar todas las fases del proceso.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        p {{$t('strategy.ruta4.p31')}}
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta4.title15')}}
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Asegura el involucramiento temprano de la Dirección y las áreas involucradas
+                                p.ruta_inner__p {{$t('strategy.ruta4.p32')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -26,7 +26,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Comunica de forma clara y efectiva los beneficios y riesgos de la(s) modalidad(es) de compra de electricidad renovable seleccionada
+                                p.ruta_inner__p {{$t('strategy.ruta4.p33')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -36,7 +36,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Planea una campaña de comunicación interna y externa que resalte el hecho de que sus productos o servicios están hechos con energía renovable.
+                                p.ruta_inner__p {{$t('strategy.ruta4.p34')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -46,7 +46,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Confirma que el reporte de sostenibilidad, el sitio web de la empresa, los comunicados a inversionistas y otros medios clave de la empresa incluirá información sobre su consumo de energía renovable.
+                                p.ruta_inner__p {{$t('strategy.ruta4.p35')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -54,7 +54,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta3.p30')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

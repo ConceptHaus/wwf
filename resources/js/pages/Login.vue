@@ -4,7 +4,7 @@
         Nav.bg-header
         section.login__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Inicia sesión
+                h1.home__h1.my-4.p-4 #[span] {{$t('nav.account.login')}}
                 div.row.justify-content-center
                     div.col-md-4.col-12.mb-5
                         form(@submit.prevent="login")

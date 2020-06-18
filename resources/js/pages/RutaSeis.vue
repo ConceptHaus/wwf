@@ -6,17 +6,17 @@
             div.container-fluid
                 .row
                     .col-md-8.col-12
-                        h1.home__h1.my-4.p-4 #[span] 6 Revisa las condiciones de compra y firma tu contrato
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta6.title19')}}
                 .row
                     .col-12
-                        p Define los términos, las condiciones y detalles de compra a establecer en el contrato de suministro.
-                        h1.home__h1.my-4.p-4 #[span] Actividades
+                        p {{$t('strategy.ruta6.p41')}}
+                        h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta6.title21')}}
                     .col-12
                         .row.justify-content-center
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Comienza por revisar la guía Elaboración de contratos de compra de energía eléctrica (PPA)
+                                p.ruta_inner__p {{$t('strategy.ruta6.p42')}}
                                 //- a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/Guia.Elaboracion_de_contratos_de_compra_de_energia.-PPA.pdf" target="_blank") #[i.las.la-cloud-download-alt] Guía de Elaboración de contratos de compra de energía. PPA
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
@@ -27,7 +27,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 2
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Identifica aspectos relevantes de la oferta seleccionada que no son compatibles con los requerimientos de tu empresa, determina el grado posible de negociación y evalúa los riesgos que potencialmente conllevan.
+                                p.ruta_inner__p {{$t('strategy.ruta6.p43')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso2", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -37,7 +37,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 3
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Define el primer modelo de contrato. Puedes desarrollar un contrato de suministro o revisar la propuesta del proveedor de energía que elegiste. Puedes pedir ayuda al área legal de tu empresa o contratar una firma de abogados, también puedes contactar a la iniciativa Ren mx.
+                                p.ruta_inner__p {{$t('strategy.ruta6.p44')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso3", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -47,7 +47,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 4
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Revisa, valida y negocia los términos y condiciones contenidos en el contrato con tu suministrador de energía renovable. Cuenta con el apoyo de todas las áreas involucradas para la firma exitosa del mismo.
+                                p.ruta_inner__p {{$t('strategy.ruta6.p45')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso4", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -57,7 +57,7 @@
                             .col-3.col-md-1.my-4
                                 h1.ruta_inner__number 5
                             .col-md-6.col-12.my-4
-                                p.ruta_inner__p Cuando te sientas cómodo con las condiciones, obtén las autorizaciones pertinentes dentro de tu empresa y procede a la firma del contrato.
+                                p.ruta_inner__p {{$t('strategy.ruta6.p46')}}
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso5", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -65,7 +65,7 @@
                                 AddMaterial(:ruta="ruta",@update-recursos="updateRecursos")
                 .row
                     .col-12
-                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] Otros materiales
+                        h1.home__h1.my-4.p-4(v-if="recursos.length>0") #[span] {{$t('strategy.ruta3.p30')}}
                 .row
                     .col-12
                         .ruta_inner__material.d-inline-block(v-for="recurso in recursos", :key="recurso.id")

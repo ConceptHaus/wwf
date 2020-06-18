@@ -15,26 +15,26 @@
                 div.row
                     div.col-12
                         h3 {{$t('about.p3')}}
-                div.row
+                div.row.mt-5
                     div.col-12
-                        div.row
+                        div.row.my-4
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-01.jpg")
-                            div.col-md-4.col-12
+                            div.col-md-4.col-12.mt-4
                                 h4 {{$t('about.p4')}}
                             div.col-md-4.col-12
                                 p {{$t('about.p5')}}
-                        div.row
+                        div.row.my-4
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-02.jpg")
-                            div.col-md-4.col-12
+                            div.col-md-4.col-12.mt-4
                                 h4 {{$t('about.p6')}}
                             div.col-md-4.col-12
                                 p {{$t('about.p7')}}
-                        div.row
+                        div.row.my-4
                             div.col-md-2.col-12
                                 img.img-fluid(src="../../images/home/linea-03.jpg")
-                            div.col-md-4.col-12
+                            div.col-md-4.col-12.mt-4
                                 h4 {{$t('about.p8')}}
                             div.col-md-4.col-12
                                 p {{$t('about.p9')}}

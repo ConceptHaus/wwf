@@ -4,10 +4,10 @@
         Nav.bg-header
         section.register__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Registro
+                h1.home__h1.my-4.p-4 #[span] {{$t('nav.account.signup')}}
                 div.row.justify-content-center
                     div.col-md-5.col-12
-                        h3.my-4 Registrate para conocer nuestra ruta de compra de energía renovable
+                        h3.my-4 {{$t('signup.text')}}
                         form.my-4(@submit.prevent="register")
                             div.form-group
                                 label.form-error(v-if="validador.name.error === 'error'") {{validador.name.message}}
@@ -33,7 +33,7 @@
                             div.form-group
                                 label.form-error(v-if="validador.sector.error === 'error'") {{validador.sector.message}}
                                 input.form-control(type="text",v-model="sector", placeholder="Sector")
-                            h3.my-4 ¿Cuál es tu interés principal al visitar nuestro sitio?
+                            h3.my-4 {{$t('signup.q1')}}
                             div.form-group.form-check
                                 label.form-check-label
                                     input.form-check-input(type="checkbox",value="1", v-model="intereses")
@@ -58,7 +58,7 @@
                                 label.form-check-label
                                     input.form-check-input(type="checkbox",value="6",v-model="intereses")
                                     | Otro
-                            h3.my-4 ¿Conoces el consumo eléctrico de tu empresa?
+                            h3.my-4 {{$t('signup.q1')}}
                             div.form-group.form-check-inline
                                 label.form-check-label
                                     input.form-check-input(type="radio",value="No",v-model="consumo")

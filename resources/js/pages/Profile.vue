@@ -4,7 +4,7 @@
         Nav.bg-header
         section.contacto__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Editar mis datos
+                h1.home__h1.my-4.p-4 #[span] {{$t('editprofile.title')}}
                 div.row.justify-content-center
                     div.col-md-5.col-12.mb-5
                         form(@submit.prevent="edit")
