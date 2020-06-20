@@ -5,6 +5,8 @@ export default {
         "text3":"Notice of Privacy",
         "button":"Subscribe"
     },
+    "otrosrecursos":"Other resources ",
+    "casesstudies":"Case studies and reports",
     "nav": {
         "banner": "To design a renewable energy purchase strategy",
         "link": "Signup",

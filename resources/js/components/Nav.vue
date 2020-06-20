@@ -27,7 +27,7 @@
                     b-nav-item-dropdown.mx-2(:text="$t('nav.about.section')", left)
                         b-dropdown-item(href="/acerca-de-ren#quehacemos" @click="scrollTo('#quehacemos')") {{$t('nav.about.menu1')}}
                         b-dropdown-item(href="/acerca-de-ren#sumate" @click="scrollTo('#sumate')") {{$t('nav.about.menu2')}}
-                        b-dropdown-item(href="/acerca-de-ren#benefecios" @click="scrollTo('#benefecios')") {{$t('nav.about.menu3')}}
+                        b-dropdown-item(href="/acerca-de-ren#beneficios" @click="scrollTo('#beneficios')") {{$t('nav.about.menu3')}}
                         b-dropdown-item(href="/acerca-de-ren#empresas" @click="scrollTo('#empresas')") {{$t('nav.about.menu4')}}
                         b-dropdown-item(href="/acerca-de-ren#wwf" @click="scrollTo('#wwf')") {{$t('nav.about.menu5')}}
                         b-dropdown-item(href="/acerca-de-ren#equipo" @click="scrollTo('#equipo')") {{$t('nav.about.menu6')}}

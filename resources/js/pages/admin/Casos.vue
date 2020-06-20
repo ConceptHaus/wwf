@@ -4,7 +4,7 @@
         Nav.bg-header
         section.catalogo__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
+                h1.home__h1.my-4.p-4 #[span] {{$t('casesstudies')}}
                     div.row.p-4
                         div.col-12.my-5
                             button.btn.btn-primary.btn-lg(v-b-modal.addCatalog) Agregar caso de estudio o reporte

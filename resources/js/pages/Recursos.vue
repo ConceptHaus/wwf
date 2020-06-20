@@ -4,7 +4,7 @@
         Nav.bg-header
         section.recursos__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Recursos externos
+                h1.home__h1.my-4.p-4 #[span] {{$t('otrosrecursos')}}
                 div.row.p-4
                     div.col-md-4.col-12(v-for="recurso in recursos" :key="recurso.id" v-if="recursos && recursos.length > 0")
                         img.img-fluid(:src="recurso.img")

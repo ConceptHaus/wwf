@@ -4,7 +4,7 @@
         Nav.bg-header
         section.noticias__content
             div.container-fluid
-                h1.home__h1.my-4.p-4 #[span] Casos de estudio y reportes
+                h1.home__h1.my-4.p-4 #[span] {{$t('casesstudies')}}
                 div.row.p-4
                     div.col-md-4.col-12(v-for="caso in casos" :key="casos.id" v-if="casos && casos.length > 0")
                         img.img-fluid.img-catalog(:src="caso.img")
