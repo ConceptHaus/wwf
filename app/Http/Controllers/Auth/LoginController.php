@@ -59,10 +59,10 @@ class LoginController extends Controller
     public function user(){
         $user = $this->guard()->user();
         return response()->json([
-            'data'=>$user::with('detail')->first()
+            'data'=>User::where('id',$user->id)->with('detail')->first()
         ]);
     }
-    
+
     /**
      * Log the user out (Invalidate the token)
      *
