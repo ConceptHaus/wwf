@@ -12,7 +12,7 @@
                         p.my-4 {{recurso.descripcion}}
                         a.text-right(:href="recurso.url") Leer completo
                     h2.text-center(v-else) No hay material disponible.
-
+        Footer
 </template>
 <script>
 import Header from '../components/Header'

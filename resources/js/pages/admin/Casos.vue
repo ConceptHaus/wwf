@@ -16,27 +16,28 @@
                                         th Título
                                         th Descripción
                                         th Acciones
-                                tbody(v-for="caso in casos", :key="caso.id")
+                                tbody(v-for="(caso,index) in casos", :key="caso.id")
                                     tr
                                         td {{ caso.id }}
                                         td {{ caso.titulo }}
                                         td {{ caso.descripcion }}
                                         td
                                             div.btn-group(role="group")
-                                                button.btn.btn-primary.btn-sm.d-inline-block
+                                                button.btn.btn-primary.btn-sm.d-inline-block(@click="getOne(caso)")
                                                     i.las.la-edit
-                                                button.btn.btn-danger.btn-sm.d-inline-block
+                                                button.btn.btn-danger.btn-sm.d-inline-block(@click="deleteOne(caso.id,index)")
                                                     i.las.la-ban
                             h2.text-center(v-else) No hay registros 😔
         Footer
-        b-modal(id="addCatalog", title="Agregar caso de estudio", hide-footer)
+        b-modal(id="addCatalog", title="Edita el caso de estudio", hide-footer)
             form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
+                input(v-model="id_caso" type="hidden")
                 div.form-group
                     input.form-control(v-model="titulo",type="text", placeholder="Título")
                 div.form-group
                     textarea.form-control(v-model="descripcion", placeholder="Descripción")
                 div.form-group
-                    vue-dropzone(ref="catalogoDropzone", id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
+                    vue-dropzone(ref="catalogoDropzone", url="/api/casos/" id="dropzone", :options="dropzoneOptions", v-on:vdropzone-sending="sendCatalog", v-on:vdropzone-success="successServer", v-on:vdropzone-error="errorServer")
                 button.btn.btn-primary.btn-lg.btn-block(type="submit") Agregar datos
 
 </template>
@@ -50,6 +51,7 @@ import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 export default {
     data(){
         return{
+            id_caso:undefined,
             casos:'',
             titulo:'',
             descripcion:'',
@@ -85,6 +87,23 @@ export default {
             })
     },
     methods:{
+        async getOne(caso){
+            await this.axios.get(`/casos/${caso.id}`)
+                .then(res=>{
+                    this.titulo = res.data.caso.titulo
+                    this.descripcion = res.data.caso.descripcion
+                    this.id_caso = res.data.caso.id
+                })
+            this.$bvModal.show('addCatalog')
+        },
+        async deleteOne(id, index){
+            console.log(id,index)
+            this.casos.splice(index,1)
+            await this.axios.delete(`/casos/${id}`)
+                .then(res=>{
+                    console.log(res)
+                })
+        },
         sendData(){
             if(this.$refs.catalogoDropzone.getAcceptedFiles().length > 0){
                 this.$swal({
@@ -96,6 +115,7 @@ export default {
             }
         },
         sendCatalog(file, xhr, formData){
+            formData.append('id', this.id_caso);
             formData.append('titulo', this.titulo);
             formData.append('descripcion', this.descripcion);
         },
@@ -108,6 +128,7 @@ export default {
                     this.$refs.catalogoDropzone.removeAllFiles();
                     this.titulo = '';
                     this.descripcion = '';
+                    this.$bvModal.hide('addCatalog')
                 }
             })
         },
@@ -119,7 +140,7 @@ export default {
             this.$refs.catalogoDropzone.removeAllFiles();
             this.titulo = '';
             this.descripcion='';
-            console.log(message);
+            this.$bvModal.hide('addCatalog')
         }
     }
 }

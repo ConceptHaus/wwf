@@ -23,8 +23,12 @@ use Excel;
 class AdminController extends Controller
 {
     public function addCaso(Request $request){
+        if(is_numeric($request->id)){
+            $caso = Noticias::where('id', $request->id)->first();
+        }else{
+            $caso = new Noticias;
+        }
         $file = $request->file('file');
-        $caso = new Noticias;
         $caso->titulo = $request->titulo;
         $caso->descripcion = $request->descripcion;
         $caso->url = $this->uploadTicketS3($file[1]);
@@ -36,8 +40,31 @@ class AdminController extends Controller
             'caso'=>$caso
         ],201);
     }
+    public function deleteCaso($id){
+        $id_caso = $id;
+        $caso = Noticias::where('id',$id_caso)->delete();
+
+        return response([
+            'status'=>'success',
+            'delete'=>$id_caso
+        ],200);
+    }
+
+    public function getOneCaso(Request $request){
+        $caso = Noticias::where('id',$request->id)->first();
+
+        return response([
+            'satus'=>'success',
+            'caso'=>$caso
+        ],200);
+    }
+
     public function addRecurso(Request $request){
-        $recurso = new Recursos;
+        if(is_numeric($request->id)){
+            $recurso = Recursos::where('id',$request->id)->first();
+        }else{
+            $recurso = new Recursos;
+        }
         $recurso->titulo = $request->titulo;
         $recurso->descripcion = $request->descripcion;
         $recurso->url = $request->link;
@@ -48,7 +75,25 @@ class AdminController extends Controller
             'recurso'=>$recurso
         ],201);
     }
+    public function deleteRecurso(Request $request){
+        $id_recurso = $request->id;
+        $recurso = Recursos::where('id',$id_recurso)->delete();
+        return response([
+            'status'=>'success',
+            'delete'=>$id_recurso
+        ],200);
+    }
 
+
+
+    public function getOneRecurso(Request $request){
+        $recurso = Recursos::where('id',$request->id)->first();
+
+        return response([
+            'satus'=>'success',
+            'recurso'=>$recurso
+        ],200);
+    }
     public function addRecursoRuta(Request $request){
         $recurso = new RecursosRutaCompra;
         $recurso->ruta = $request->ruta;

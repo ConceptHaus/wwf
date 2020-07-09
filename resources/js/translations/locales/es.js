@@ -32,7 +32,7 @@ export default {
             "menu5": "Acerca de WWF",
             "menu6": "Nuestro equipo"
         },
-        "strategy": "Estrategía de compra",
+        "strategy": "Estrategia de compra",
         "catalogue": "Catálogo de soluciones",
         "cases": "Casos de estudio y reportes",
         "market": {

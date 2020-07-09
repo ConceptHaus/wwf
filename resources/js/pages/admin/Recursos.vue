@@ -16,21 +16,22 @@
                                         th Título
                                         th Descripción
                                         th Acciones
-                                tbody(v-for="recurso in recursos", :key="recurso.id")
+                                tbody(v-for="(recurso,index) in recursos", :key="recurso.id")
                                     tr
                                         td {{ recurso.id }}
                                         td {{ recurso.titulo }}
                                         td {{ recurso.descripcion }}
                                         td
                                             div.btn-group(role="group")
-                                                button.btn.btn-primary.btn-sm.d-inline-block
+                                                button.btn.btn-primary.btn-sm.d-inline-block(@click="getOne(recurso)")
                                                     i.las.la-edit
-                                                button.btn.btn-danger.btn-sm.d-inline-block
+                                                button.btn.btn-danger.btn-sm.d-inline-block(@click="deleteOne(recurso.id,index)")
                                                     i.las.la-ban
                             h2.text-center(v-else) No hay recursos registrados 😔
         Footer
         b-modal(id="addCatalog", title="Agregar recurso", hide-footer)
             form(@submit.prevent="sendData",enctype="multipart/form-data",autocomplete="off")
+                input(v-model="id_recurso" type="hidden")
                 div.form-group
                     input.form-control(v-model="titulo",type="text", placeholder="Título")
                 div.form-group
@@ -53,6 +54,7 @@ import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 export default {
     data(){
         return{
+            id_recurso:undefined,
             recursos:'',
             titulo:'',
             link:'',
@@ -87,6 +89,23 @@ export default {
             })
     },
     methods:{
+        async getOne(resource){
+            await this.axios.get(`/recursos/${resource.id}`)
+                .then(res=>{
+                    this.titulo = res.data.recurso.titulo;
+                    this.link = res.data.recurso.url;
+                    this.descripcion = res.data.recurso.descripcion;
+                    this.id_recurso= res.data.recurso.id;
+                })
+                this.$bvModal.show('addCatalog')
+        },
+        async deleteOne(id,index){
+            this.recursos.splice(index,1)
+            await this.axios.delete(`/recursos/${id}`)
+                .then(res=>{
+                    console.log(res)
+                })
+        },
         sendData(){
             if(this.$refs.recursosDropzone.getAcceptedFiles().length > 0){
                 this.$swal({
@@ -98,6 +117,7 @@ export default {
             }
         },
         sendCatalog(file, xhr, formData){
+            formData.append('id', this.id_recurso);
             formData.append('titulo', this.titulo);
             formData.append('link', this.link);
             formData.append('descripcion', this.descripcion);
@@ -113,6 +133,7 @@ export default {
                     this.link = '';
                     this.descripcion = '';
                 }
+                this.$bvModal.hide('addCatalog')
             })
         },
         errorServer(file, message, xhr){
@@ -124,7 +145,7 @@ export default {
             this.titulo = '';
             this.link='';
             this.descripcion='';
-            console.log(message);
+            this.$bvModal.hide('addCatalog')
         }
     }
 }
