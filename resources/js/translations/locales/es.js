@@ -182,7 +182,7 @@ export default {
     "strategy": {
         "title1": "Estrategia de compra",
         "p1": "Siguiendo la Estrategia de Compra podrás definir en tan sólo ocho pasos una estrategia de abastecimiento de energía renovable para tu empresa. Ésta te facilitará la toma de decisiones sobre modalidades de suministro, diseño de licitaciones, evaluación de ofertas y elección de proveedores.",
-        "read":"Leer más...",
+        "read":'Leer %{msg}...',
         "ruta1": {
             "title2": "1 Analiza la situación actual (energía y costo) y define un porcentaje de energía renovable",
             "title3": "Analiza la situación actual (energía y costo) y define un porcentaje de energía renovable",

@@ -58,7 +58,7 @@ export default {
         &__content{
             margin-top:300px;
             @include down-screen(mobile-big){
-                margin-top: 200px;
+                margin-top: 250px;
             }
             &--auth{
                     @include down-screen(mobile-big){

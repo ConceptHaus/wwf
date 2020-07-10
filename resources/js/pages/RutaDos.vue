@@ -18,7 +18,7 @@
                         b-collapse(id="collapse-1")
                             p {{$t('strategy.ruta2.p13')}}
                             p {{$t('strategy.ruta2.p14')}}
-                        a.text-right.d-block(href="#collapse" v-b-toggle.collapse-1) {{$t('strategy.read')}}
+                        a.text-right.d-block(@click="readMore()" href="#collapse" v-b-toggle.collapse-1) {{$t('strategy.read',{msg:msg})}}
                     .col-12
                         h1.home__h1.my-4.p-4 #[span] {{$t('strategy.ruta2.title8')}}
                         .row.justify-content-center
@@ -26,15 +26,6 @@
                                 h1.ruta_inner__number 1
                             .col-md-6.col-12.my-4
                                 p.ruta_inner__p {{$t('strategy.ruta2.p15')}}
-                                //- .row
-                                //-     .col-6.my-2
-                                //-         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/generacion_local.jpg" target="_blank") #[i.las.la-cloud-download-alt] Generación Local y Abasto Aisaldo
-                                //-     .col-6.my-2
-                                //-         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/subasta.jpg" target="_blank") #[i.las.la-cloud-download-alt] Subastas de Mediano y Largo Plazo
-                                //-     .col-6.my-2
-                                //-         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="https://kiperbucket.s3.us-east-2.amazonaws.com/wwf/contratos_bilaterales.jpg" target="_blank") #[i.las.la-cloud-download-alt] Contratos Bilaterales
-                                //-     .col-6.my-2
-                                //-         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(href="#") #[i.las.la-cloud-download-alt] Generación Distribuida
                                 .row
                                     .col-6.my-2(v-for="item in buttons.paso1", :key="item.id")
                                         a.ruta_inner__button.btn.btn-primary.btn-lg.my-0.mx-auto.d-block(:href="item.file" target="_blank") #[i.las.la-cloud-download-alt] {{item.titulo}}
@@ -96,9 +87,11 @@ import AddButton from '../components/AddButton'
 export default {
     data(){
         return{
+            more:true,
             ruta:2,
             buttons:[],
-            recursos:[]
+            recursos:[],
+            msg:'más'
         }
     },
     async mounted(){
@@ -114,6 +107,17 @@ export default {
         })
     },
     methods:{
+        readMore(){
+            if(this.more){
+                this.more = false
+                this.msg = 'menos'
+
+            }else{
+                this.more = true
+                this.msg = 'mas'
+            }
+            console.log(this.more)
+        },
         updateRecursos(e){
             this.recursos.push(e);
             console.log('emit',e)

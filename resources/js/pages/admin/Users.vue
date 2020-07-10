@@ -16,14 +16,14 @@
                                         th Nombre
                                         th E-mail
                                         th Teléfono
-                                        th Empresa
-                                tbody(v-for="user in users", :key="user.id")
+                                        th Fecha de registro
+                                tbody(v-for="(user,index) in users", :key="user.id")
                                     tr
-                                        td {{user.id}}
+                                        td {{index + 1}}
                                         td {{user.name}}
                                         td {{user.email}}
                                         td {{user.phone}}
-                                        td Empresa
+                                        td {{user.created_at}}
                             h2.text-center(v-else) No hay usuarios registrados 😔
         Footer
 </template>
