@@ -25,6 +25,9 @@
     -o-animation: UpDown infinite 2s ease;
     animation: UpDown infinite 2s ease;
     z-index: 10;
+    @include down-screen(mobile-big){
+        display: none;
+    }
 }
 @keyframes UpDown {
     0% {

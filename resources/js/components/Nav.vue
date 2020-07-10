@@ -4,7 +4,7 @@
             b-navbar-brand(href="/")
                 img.img-fluid.w-50(src="../../images/logo.png")
             b-collapse.justify-content-end(is-nav)
-                b-navbar-nav
+                b-navbar-nav.d-none.d-md-flex
                     b-nav-item(v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)")
                         flag(:iso="entry.flag" :squared="false") {{entry.title}}
                 b-navbar-nav(v-if="!$auth.check()")
@@ -40,6 +40,9 @@
                         b-dropdown-item(href="/el-mercado-electrico-mayorista#usuarios" @click="scrollTo('#usuarios')") {{$t('nav.market.menu3')}}
                         b-dropdown-item(href="/el-mercado-electrico-mayorista#opciones" @click="scrollTo('#opciones')") {{$t('nav.market.menu4')}}
                     b-nav-item.mx-2(href="/recursos") {{$t('nav.resources')}}
+                b-navbar-nav.d-flex.d-md-none
+                    b-nav-item(v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)")
+                        flag(:iso="entry.flag" :squared="false") {{entry.title}}
 </template>
 <style lang="scss" scoped>
     .navbar{
@@ -55,7 +58,7 @@
           }
         }
         position: absolute;
-        z-index: 10;
+        z-index: 1000;
         margin-top: 60px;
         //background: transparent;
         top: 0;
@@ -65,7 +68,8 @@
         }
     }
     .dropdown-item{
-        font-size: 12px;
+        font-size: 12px !important;
+        padding: 0.25rem .3rem !important;
     }
 </style>
 <script>

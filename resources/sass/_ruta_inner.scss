@@ -11,7 +11,7 @@
     &__content{
         margin-top: 300px;
         @include down-screen(mobile-big){
-            margin-top: 250px;
+            margin-top: 150px;
         }
     }
     &__number{

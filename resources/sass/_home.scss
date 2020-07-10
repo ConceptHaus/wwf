@@ -5,7 +5,7 @@ h1 span{
 }
 .home{
     &__h1{
-        @include fluid-type($min-vw,$max-vw,42px,50px)
+        @include fluid-type($min-vw,$max-vw,30px,50px)
     }
     &__recursos{
         background-color: #eff7e6;
@@ -21,5 +21,5 @@ h1 span{
     &__quees{
         background: $blanco;
     }
-    
+
 }
