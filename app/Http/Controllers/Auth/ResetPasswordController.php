@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\User;
+use DB;
 
 class ResetPasswordController extends Controller
 {
@@ -49,7 +50,7 @@ class ResetPasswordController extends Controller
             "status"=>"error",
             "data"=>"Código inválido"
         ],401);
-        
+
     }
     public function resetManual(Request $request){
         $user = Auth::guard()->user();
