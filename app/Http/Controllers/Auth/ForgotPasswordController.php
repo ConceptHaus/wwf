@@ -3,8 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
-
+use App\User;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ForgotPassword;
+use DB;
 
 
 class ForgotPasswordController extends Controller
@@ -30,5 +35,5 @@ class ForgotPasswordController extends Controller
         Mail::to($request->email)->send(new ForgotPassword($token));
     }
 
-    
+
 }

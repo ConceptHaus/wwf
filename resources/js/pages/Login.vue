@@ -24,6 +24,9 @@
                                     input.form-check-input(type="checkbox")
                                     | Recuerdame
                             button.btn.btn-primary.btn-lg.btn-block(type="submit") Entrar
+                .row.justify-content-center
+                    .col-4.mb-4
+                        a.text-center(href="/forgot-password") ¿Olvidaste tu contraseña?
         Footer
 
 

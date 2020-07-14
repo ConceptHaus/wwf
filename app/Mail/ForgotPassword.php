@@ -16,9 +16,10 @@ class ForgotPassword extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $code;
+    public function __construct($code)
     {
-        //
+        $this->code = $code;
     }
 
     /**
@@ -28,6 +29,6 @@ class ForgotPassword extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->subject('Reestablece tu password | Ren MX')->view('emails.ForgotPassword');
     }
 }

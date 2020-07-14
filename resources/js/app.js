@@ -1,43 +1,45 @@
 
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue';
-import {CarouselPlugin, NavbarPlugin, ModalPlugin, CollapsePlugin} from 'bootstrap-vue';
-import VueRouter from 'vue-router';
-import axios from 'axios';
-import VueAxios from 'vue-axios';
-import VueSweetalert2 from 'vue-sweetalert2';
-import 'sweetalert2/dist/sweetalert2.min.css';
-import VueScrollTo from 'vue-scrollto';
-import FlagIcon from 'vue-flag-icon';
-import store from './store/index.js';
-import { i18n } from './plugins/i18n';
-import App from './App.vue';
-import Home from './pages/Home';
-import About from './pages/About';
-import Market from './pages/Market';
-import Ruta from './pages/Ruta';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Recursos from './pages/Recursos';
-import Noticias from './pages/Noticias';
-import Contacto from './pages/Contacto';
-import Profile from './pages/Profile';
-import Password from './pages/Password';
-import Casos from './pages/admin/Casos';
-import AdminRecursos from './pages/admin/Recursos';
-import Aviso from './pages/Aviso';
-import Newsletter from './pages/admin/Newsletter';
-import Users from './pages/admin/Users';
-import Mensajes from './pages/admin/Mensajes';
-import UserCatalogo from './pages/UserCatalogo';
-import RutaUno from './pages/RutaUno';
-import RutaDos from './pages/RutaDos';
-import RutaTres from './pages/RutaTres';
-import RutaCuatro from './pages/RutaCuatro';
-import RutaCinco from './pages/RutaCinco';
-import RutaSeis from './pages/RutaSeis';
-import RutaSiete from './pages/RutaSiete';
-import RutaOcho from './pages/RutaOcho';
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+import {CarouselPlugin, NavbarPlugin, ModalPlugin, CollapsePlugin} from 'bootstrap-vue'
+import VueRouter from 'vue-router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import VueSweetalert2 from 'vue-sweetalert2'
+import 'sweetalert2/dist/sweetalert2.min.css'
+import VueScrollTo from 'vue-scrollto'
+import FlagIcon from 'vue-flag-icon'
+import store from './store/index.js'
+import { i18n } from './plugins/i18n'
+import App from './App.vue'
+import Home from './pages/Home'
+import About from './pages/About'
+import Market from './pages/Market'
+import Ruta from './pages/Ruta'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Recursos from './pages/Recursos'
+import Noticias from './pages/Noticias'
+import Contacto from './pages/Contacto'
+import Profile from './pages/Profile'
+import Password from './pages/Password'
+import ForgotPassword from './pages/ForgotPassword'
+import ResetPassword from './pages/ResetPassword'
+import Casos from './pages/admin/Casos'
+import AdminRecursos from './pages/admin/Recursos'
+import Aviso from './pages/Aviso'
+import Newsletter from './pages/admin/Newsletter'
+import Users from './pages/admin/Users'
+import Mensajes from './pages/admin/Mensajes'
+import UserCatalogo from './pages/UserCatalogo'
+import RutaUno from './pages/RutaUno'
+import RutaDos from './pages/RutaDos'
+import RutaTres from './pages/RutaTres'
+import RutaCuatro from './pages/RutaCuatro'
+import RutaCinco from './pages/RutaCinco'
+import RutaSeis from './pages/RutaSeis'
+import RutaSiete from './pages/RutaSiete'
+import RutaOcho from './pages/RutaOcho'
 
 const moment = require('moment');
 require('moment/locale/es');
@@ -193,6 +195,16 @@ const router = new VueRouter({
             meta:{
                 auth:false
             }
+        },
+        {
+            path:'/forgot-password',
+            name:'forgot',
+            component:ForgotPassword
+        },
+        {
+            path:'/reset-password',
+            name:'reset',
+            component:ResetPassword
         },
         {
             path:'/registro',
