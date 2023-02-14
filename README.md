@@ -29,9 +29,6 @@ npm run watch
 👤 **ConceptHaus**
 
 * Website: concepthaus.mx
-* Twitter: [@sergirams](https://twitter.com/sergirams)
-* Github: [@sergirams](https://github.com/sergirams)
-* LinkedIn: [@sergiorams](https://linkedin.com/in/sergiorams)
 
 ## Show your support
 
